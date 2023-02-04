@@ -100,7 +100,6 @@ export const Main = () => {
       <div
         style={{
           fontSize: "small",
-          fontWeight: "bolder",
           color: "grey",
           width: "100%",
           display: "flex",
@@ -111,7 +110,7 @@ export const Main = () => {
         }}
       >
         <span style={{ color: "white", fontFamily: "Kaushan Script" }}>
-          2023, Vojtěch Uhlir
+          2023, Vojtech Uhlir
         </span>
       </div>
     </>

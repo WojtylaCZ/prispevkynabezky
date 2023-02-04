@@ -93,7 +93,7 @@ export const data: Array<District> = [
     name: "Krušné hory",
     trailparks: [
       {
-        name: "Západní Krusné Hory",
+        name: "Západní Krušné hory",
         bankAccountNumber: "269980072/0300",
         transparentBankAccountUrl:
           "https://www.csob.cz/portal/firmy/bezne-ucty/transparentni-ucty/ucet?account=269980072",
@@ -112,7 +112,7 @@ export const data: Array<District> = [
         checkedAt: "4.2.2023",
       },
       {
-        name: "Alšovka - střední Krušné Hory",
+        name: "Alšovka - střední Krušné hory",
         bankAccountNumber: "204457600/0600",
         transparentBankAccountUrl: null,
         url: "https://alsovka.cz/bezecke-trasy/",
@@ -121,7 +121,7 @@ export const data: Array<District> = [
         checkedAt: "4.2.2023",
       },
       {
-        name: "Klíny - střední Krušné Hory",
+        name: "Klíny - střední Krušné hory",
         bankAccountNumber: null,
         transparentBankAccountUrl: null,
         url: "https://kliny.cz/bezecke-trasy/",
