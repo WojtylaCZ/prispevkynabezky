@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Container, Image, Stack, Button } from "react-bootstrap";
+import { Navbar, Container, Image, Stack } from "react-bootstrap";
 import { DistrictSection } from "./district";
 import Track from "../assets/img/track4.jpeg";
 import Skier from "../assets/img/skier2.png";

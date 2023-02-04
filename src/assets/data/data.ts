@@ -11,7 +11,9 @@ import RokytniceNadJizerou from "./qr-codes/RokytniceNadJizerou-123-5314220287-0
 import ZapadniKrusneHory from "./qr-codes/ZapadniKrusneHory-269980072-0300.png";
 import LoucnaPodKlinovcem from "./qr-codes/LoucnaPodKlinovcem-2302061393-2010.png";
 import Alsovka from "./qr-codes/Alsovka-204457600-0600.png";
-import VychodniKrusneHory from "./qr-codes/VychodniKrusneHory-35-6888660227-0100.png";
+import StredniKrusneHory from "./qr-codes/StredniKrusneHory-35-6888660227-0100.png";
+import BukovaHora from "./qr-codes/BukovaHora-6114987349-0800.png";
+import RickyVOrlickycHorach from "./qr-codes/RickyVOrlickychHorach-276681775-0300.png";
 
 export const data: Array<District> = [
   {
@@ -141,13 +143,49 @@ export const data: Array<District> = [
         checkedAt: "4.2.2023",
       },
       {
-        name: "Východní Krušné hory",
+        name: "Střední Krušné hory",
         operator: "Krušnohorský klub Osek",
         bankAccountNumber: "35-6888660227/0100",
         transparentBankAccountUrl: null,
         url: "http://kbstopa.cz/",
-        qrImage: VychodniKrusneHory,
+        qrImage: StredniKrusneHory,
         facebookPageUrl: null,
+        checkedAt: "4.2.2023",
+      },
+      {
+        name: "Děčínský Sněžník - Východní Krušné hory",
+        operator: "HUDYsport a.s.",
+        bankAccountNumber: null,
+        transparentBankAccountUrl: null,
+        url: null,
+        qrImage: null,
+        facebookPageUrl: "https://www.facebook.com/bezkysneznik/",
+        checkedAt: "4.2.2023",
+      },
+    ],
+  },
+  {
+    name: "Orlické hory",
+    trailparks: [
+      {
+        name: "Říčky v Orlických horách",
+        operator: "SKI KLUB Ústí nad Orlicí. spol. s r.o.",
+        bankAccountNumber: "276681775/0300",
+        transparentBankAccountUrl: null,
+        url: "https://skiricky.cz/bezecke-trasy/",
+        qrImage: RickyVOrlickycHorach,
+        facebookPageUrl: "https://www.facebook.com/skicentrumricky",
+        checkedAt: "4.2.2023",
+      },
+      {
+        name: "Buková hora - Suchý vrch",
+        operator: "Sdružení obcí Orlicko",
+        bankAccountNumber: "6114987349/0800",
+        transparentBankAccountUrl:
+          "https://www.csas.cz/cs/transparentni-ucty#/000000-6114987349/Sdruzeni-obci-Orlicko",
+        url: "https://www.orlicko.cz/lyzarske-stopy-orlicka",
+        qrImage: BukovaHora,
+        facebookPageUrl: "https://www.facebook.com/skicentrumricky",
         checkedAt: "4.2.2023",
       },
     ],
