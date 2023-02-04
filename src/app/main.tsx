@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Container, Image, Stack, Button } from "react-bootstrap";
 import { DistrictSection } from "./district";
-import Track from "../assets/img/track3.jpeg";
+import Track from "../assets/img/track4.jpeg";
 import Skier from "../assets/img/skier2.png";
 
 import { data } from "../assets/data/data";
@@ -21,11 +21,10 @@ export const Main = () => {
       <>
         <style type="text/css">
           {`
-    .navbar-custom {
-      background-color: #0a3383;
-      
-    }
-    `}
+          .navbar-custom {
+            background-color: #0a3383;
+          }
+          `}
         </style>
 
         <Navbar variant="custom" sticky="top">
