@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Container, Image, Stack } from "react-bootstrap";
+import { Navbar, Container, Image, Stack, Button } from "react-bootstrap";
 import { DistrictSection } from "./district";
 import Track from "../assets/img/track3.jpeg";
 import Skier from "../assets/img/skier2.png";
@@ -18,32 +18,43 @@ export const Main = () => {
 
   return (
     <>
-      <Navbar bg="dark" variant="dark" sticky="top">
-        <Container>
-          <Navbar.Brand
-            style={{
-              fontFamily: "Kaushan Script",
-            }}
-          >
-            PrispevkyNaBezky.cz
-          </Navbar.Brand>
-        </Container>
-      </Navbar>
-      <div
-        style={{
-          margin: "auto",
-          maxWidth: "1300px",
-        }}
-      >
-        <Image
-          src={Track}
-          style={{
-            maxHeight: "500px",
-            width: "100%",
-          }}
-        />
-      </div>
+      <>
+        <style type="text/css">
+          {`
+    .navbar-custom {
+      background-color: #0a3383;
+      
+    }
+    `}
+        </style>
 
+        <Navbar variant="custom" sticky="top">
+          <Container>
+            <Navbar.Brand
+              style={{
+                fontFamily: "Kaushan Script",
+                color: "white",
+              }}
+            >
+              PrispevkyNaBezky.cz
+            </Navbar.Brand>
+          </Container>
+        </Navbar>
+        <div
+          style={{
+            margin: "auto",
+            maxWidth: "1300px",
+          }}
+        >
+          <Image
+            src={Track}
+            style={{
+              maxHeight: "500px",
+              width: "100%",
+            }}
+          />
+        </div>
+      </>
       <Stack
         gap={3}
         style={{
@@ -51,22 +62,31 @@ export const Main = () => {
           width: "95%",
           margin: "auto",
           maxWidth: "700px",
+          marginTop: "1em",
         }}
       >
         <span
           style={{
-            fontSize: "2em",
+            fontSize: "2.5em",
             fontWeight: "bolder",
             margin: "auto",
+            color: "#0a3383",
+            textAlign: "center",
           }}
         >
-          Přispějte jednoduše a rychle
+          Příspěvky na tratě jednoduše
         </span>
 
-        <span>
+        <span
+          style={{
+            margin: "auto",
+
+            textAlign: "center",
+          }}
+        >
           Běžkařské trasy a stopy se sami neupraví, spolky na úpravu tras
-          fungující ze státních, ale i občanských příspěvků. Tento web vznikl
-          pro zjednodučení příspívání.
+          fungují ze státních, ale i občanských příspěvků. Tento web vznikl pro
+          zjednodučení příspívání.
         </span>
         {districtsList}
         <Image
@@ -80,17 +100,19 @@ export const Main = () => {
       <div
         style={{
           fontSize: "small",
+          fontWeight: "bolder",
           color: "grey",
           width: "100%",
           display: "flex",
           height: "4em",
           justifyContent: "center",
-          backgroundColor: "black",
+          backgroundColor: "#0a3383",
           alignItems: "center",
-          fontFamily: "Kaushan Script",
         }}
       >
-        2023, Vojtěch Uhlir
+        <span style={{ color: "white", fontFamily: "Kaushan Script" }}>
+          2023, Vojtěch Uhlir
+        </span>
       </div>
     </>
   );

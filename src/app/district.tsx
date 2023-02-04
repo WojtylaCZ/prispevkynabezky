@@ -28,6 +28,7 @@ export const DistrictSection = ({
           fontSize: "2em",
           fontWeight: "bolder",
           margin: "auto",
+          color: "#f7b500",
         }}
       >
         {name}
