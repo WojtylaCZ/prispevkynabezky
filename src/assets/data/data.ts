@@ -19,6 +19,7 @@ export const data: Array<District> = [
     trailparks: [
       {
         name: "Jizerská magistrála",
+        operator: "Jizerská o.p.s.",
         bankAccountNumber: "255899476/0300",
         transparentBankAccountUrl: null,
         url: "https://www.jizerskaops.cz/chci-prispet/verejna-sbirka/",
@@ -33,6 +34,7 @@ export const data: Array<District> = [
     trailparks: [
       {
         name: "Malá Úpa",
+        operator: "Obec Malá Úpa",
         bankAccountNumber: "6138641369/0800",
         transparentBankAccountUrl:
           "https://www.csas.cz/cs/transparentni-ucty#/000000-6138641369/OBEC-MALA-UPA",
@@ -43,6 +45,7 @@ export const data: Array<District> = [
       },
       {
         name: "Vrchlabí",
+        operator: "Areál Vejspachy",
         bankAccountNumber: "262563989/0300",
         transparentBankAccountUrl: null,
         url: "https://nabezky.cz",
@@ -52,15 +55,17 @@ export const data: Array<District> = [
       },
       {
         name: "Benecko",
+        operator: "Sdružení pro rozvoj Benecku z. s.",
         bankAccountNumber: null,
         transparentBankAccountUrl: null,
-        url: "https://www.benecko.info/zima/bezecke-lyzovani/z",
+        url: "https://www.benecko.info/zima/bezecke-lyzovani",
         qrImage: null,
         facebookPageUrl: "https://www.facebook.com/BeneckoKrkonose/",
         checkedAt: "4.2.2023",
       },
       {
         name: "Jilemnice",
+        operator: "ČKS SKI Jilemnice",
         bankAccountNumber: "1261416359/0800",
         transparentBankAccountUrl: null,
         url: "https://www.skijilemnice.cz/web/trate/mapy",
@@ -70,6 +75,7 @@ export const data: Array<District> = [
       },
       {
         name: "Harrachov",
+        operator: "Město Harrachov",
         bankAccountNumber: "20036-1263085389/0800",
         transparentBankAccountUrl:
           "https://www.csas.cz/cs/transparentni-ucty#/020036-1263085389/Mesto-Harrachov",
@@ -80,6 +86,7 @@ export const data: Array<District> = [
       },
       {
         name: "Rokytnice nad Jizerou",
+        operator: "Město Rokytnice nad Jizerou",
         bankAccountNumber: "123-5314220287/0100",
         transparentBankAccountUrl: null,
         url: "https://www.mesto-rokytnice.cz/turisticke-info/lyze-bezky-snowboard",
@@ -94,16 +101,18 @@ export const data: Array<District> = [
     trailparks: [
       {
         name: "Západní Krušné hory",
+        operator: "První krušnohorská o.p.s.",
         bankAccountNumber: "269980072/0300",
         transparentBankAccountUrl:
           "https://www.csob.cz/portal/firmy/bezne-ucty/transparentni-ucty/ucet?account=269980072",
-        url: "https://www.facebook.com/KLMzapad/",
+        url: "http://www.krusnehoryaktivne.cz/",
         qrImage: ZapadniKrusneHory,
         facebookPageUrl: "https://www.facebook.com/jizerskamagistrala",
         checkedAt: "4.2.2023",
       },
       {
         name: "Loučná pod Klínovcem",
+        operator: "Město Loučná pod Klínovcem",
         bankAccountNumber: "2302061393/2010",
         transparentBankAccountUrl: null,
         url: "https://www.loucna.eu/infocentrum/zima/bezecke-lyzovani/bezecke-trate/",
@@ -113,6 +122,7 @@ export const data: Array<District> = [
       },
       {
         name: "Alšovka - střední Krušné hory",
+        operator: "Horal Venkov z.s.",
         bankAccountNumber: "204457600/0600",
         transparentBankAccountUrl: null,
         url: "https://alsovka.cz/bezecke-trasy/",
@@ -122,6 +132,7 @@ export const data: Array<District> = [
       },
       {
         name: "Klíny - střední Krušné hory",
+        operator: "Sport areál Klíny",
         bankAccountNumber: null,
         transparentBankAccountUrl: null,
         url: "https://kliny.cz/bezecke-trasy/",
@@ -131,6 +142,7 @@ export const data: Array<District> = [
       },
       {
         name: "Východní Krušné hory",
+        operator: "Krušnohorský klub Osek",
         bankAccountNumber: "35-6888660227/0100",
         transparentBankAccountUrl: null,
         url: "http://kbstopa.cz/",

@@ -11,6 +11,7 @@ export type Trailpark = {
   transparentBankAccountUrl: string | null;
   url: string | null;
   facebookPageUrl: string | null;
+  operator: string;
   checkedAt: string;
 };
 
@@ -40,6 +41,7 @@ export const TrailparkCard = ({
           display: "flex",
           paddingLeft: "0.6em",
           alignItems: "center",
+          cursor: "pointer",
         }}
         onClick={() => setOpen(!open)}
       >
@@ -69,10 +71,15 @@ export const TrailparkCard = ({
                 </div>
               </Col>
               <Col sm style={{ marginBottom: "0.5em" }}>
-                <span style={{ fontWeight: "bold" }}>Účet:</span>
+                <span style={{ fontWeight: "bold" }}>Provozovatel:</span>
 
-                <div style={{ marginLeft: "0.3em" }}>
-                  {trailpark.bankAccountNumber || "❌ Ne"}
+                <div style={{ marginLeft: "0.3em" }}>{trailpark.operator}</div>
+
+                <div style={{ marginTop: "1em" }}>
+                  <span style={{ fontWeight: "bold" }}>Účet:</span>
+                  <div style={{ marginLeft: "0.3em" }}>
+                    {trailpark.bankAccountNumber || "❌ Ne"}
+                  </div>
                 </div>
 
                 <div style={{ marginTop: "1em" }}>
