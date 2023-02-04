@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/prispevkynabezky/static/css/main.01355882.css",
-    "main.js": "/prispevkynabezky/static/js/main.9878482c.js",
+    "main.js": "/prispevkynabezky/static/js/main.fbdeb8c7.js",
     "static/js/787.d6b98a22.chunk.js": "/prispevkynabezky/static/js/787.d6b98a22.chunk.js",
     "static/media/Alsovka-204457600-0600.png": "/prispevkynabezky/static/media/Alsovka-204457600-0600.0b5767232167276fe986.png",
     "static/media/LoucnaPodKlinovcem-2302061393-2010.png": "/prispevkynabezky/static/media/LoucnaPodKlinovcem-2302061393-2010.e362c24dea7d5dbe9d91.png",
@@ -20,11 +20,11 @@
     "static/media/chevron-down.svg": "/prispevkynabezky/static/media/chevron-down.bdc5512bebaafee5cfb979d7683ecb5e.svg",
     "static/media/facebook.svg": "/prispevkynabezky/static/media/facebook.22d5e33c85b7691bd69150ce20e2d12b.svg",
     "main.01355882.css.map": "/prispevkynabezky/static/css/main.01355882.css.map",
-    "main.9878482c.js.map": "/prispevkynabezky/static/js/main.9878482c.js.map",
+    "main.fbdeb8c7.js.map": "/prispevkynabezky/static/js/main.fbdeb8c7.js.map",
     "787.d6b98a22.chunk.js.map": "/prispevkynabezky/static/js/787.d6b98a22.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.01355882.css",
-    "static/js/main.9878482c.js"
+    "static/js/main.fbdeb8c7.js"
   ]
 }
