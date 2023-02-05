@@ -1,7 +1,6 @@
 import React from "react";
 import { Navbar, Container, Image, Stack } from "react-bootstrap";
 import { DistrictSection } from "./district";
-import Track from "../assets/img/track4.jpeg";
 import Skier from "../assets/img/skier2.png";
 
 import { data } from "../assets/data/data";
@@ -70,17 +69,18 @@ export const Main = () => {
           marginTop: "1em",
         }}
       >
-        <span
+        <h1
           style={{
             fontSize: "2.5em",
             fontWeight: "bolder",
             margin: "auto",
             color: "#0a3383",
             textAlign: "center",
+            fontFamily: "Kaushan Script",
           }}
         >
           Příspěvky na bežkařské tratě jednoduše
-        </span>
+        </h1>
 
         <span
           style={{

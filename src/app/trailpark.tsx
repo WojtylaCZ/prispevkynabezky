@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Col, Collapse, Container, Image, Row } from "react-bootstrap";
+import { Col, Collapse, Container, Image, Row, Stack } from "react-bootstrap";
 import { ChevronDownIcon } from "../assets/icons/chevronDown";
 import { ChevronRightIcon } from "../assets/icons/chevronRight";
 import FacebookIcon from "../assets/icons/facebook.svg";
@@ -31,7 +31,6 @@ export const TrailparkCard = ({
         borderRadius: "7px",
         boxShadow: "0 0 20px 0 rgba(29, 17, 86, 0.12)",
         padding: "8px",
-        fontSize: "0.9em",
       }}
       aria-controls="example-collapse-text"
       aria-expanded={open}
@@ -50,7 +49,13 @@ export const TrailparkCard = ({
         </div>
 
         <span style={{ paddingLeft: "1em", marginTop: "0.8em" }}>
-          <h3>{trailpark.name}</h3>
+          <h3
+            style={{
+              fontSize: "1.5em",
+            }}
+          >
+            {trailpark.name}
+          </h3>
         </span>
       </div>
 
@@ -60,76 +65,80 @@ export const TrailparkCard = ({
           <Container>
             <Row>
               <Col md style={{ marginBottom: "0.5em" }}>
-                <span style={{ fontWeight: "bold" }}>QR kód pro platbu:</span>
+                <h5 style={{ fontWeight: "bold" }}>QR kód pro platbu:</h5>
 
-                <div style={{ marginLeft: "0.3em" }}>
+                <div style={{}}>
                   {trailpark.qrImage ? (
                     <Image src={trailpark.qrImage} thumbnail />
                   ) : (
-                    "Není"
+                    "❌"
                   )}
                 </div>
               </Col>
               <Col sm style={{ marginBottom: "0.5em" }}>
-                <span style={{ fontWeight: "bold" }}>Provozovatel:</span>
-
-                <div style={{ marginLeft: "0.3em" }}>{trailpark.operator}</div>
-
-                <div style={{ marginTop: "1em" }}>
-                  <span style={{ fontWeight: "bold" }}>
-                    Číslo bankovního účtu:
-                  </span>
-                  <div style={{ marginLeft: "0.3em" }}>
-                    {trailpark.bankAccountNumber || "Není"}
+                <Stack gap={3}>
+                  <div>
+                    <h5 style={{ fontWeight: "bold" }}>Číslo účtu:</h5>
+                    <h6
+                      style={{
+                        fontSize: "large",
+                        color: "#0a3383",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      {trailpark.bankAccountNumber || "❌"}
+                    </h6>
                   </div>
-                </div>
 
-                {trailpark.transparentBankAccountUrl && (
-                  <div style={{ marginTop: "1em" }}>
-                    <span style={{ fontWeight: "bold" }}>
-                      Odkaz na transparentní účet:
-                    </span>
-                    <div style={{ margin: "0.3em" }}>
-                      <a
-                        href={trailpark.transparentBankAccountUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{ textDecoration: "none" }}
-                      >
-                        🌐 web
-                      </a>
-                    </div>
+                  <div>
+                    {trailpark.transparentBankAccountUrl && (
+                      <>
+                        <h5 style={{ fontWeight: "bold" }}>
+                          Transparentní účet:
+                        </h5>
+                        <h6 style={{}}>
+                          <a
+                            href={trailpark.transparentBankAccountUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: "none", color: "#0a3383" }}
+                          >
+                            Web ↗️
+                          </a>
+                        </h6>
+                      </>
+                    )}
                   </div>
-                )}
+                </Stack>
               </Col>
 
               <Col sm style={{ marginBottom: "0.5em" }}>
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    height: "100%",
-                  }}
-                >
-                  <span style={{ fontWeight: "bold" }}>Web:</span>
-                  <div style={{ marginLeft: "0.3em" }}>
-                    {trailpark.url ? (
-                      <a
-                        href={trailpark.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{ textDecoration: "none" }}
-                      >
-                        🌐 {trailpark.name}
-                      </a>
-                    ) : (
-                      "❌"
-                    )}
-                  </div>
+                <Stack gap={3}>
+                  <div>
+                    <h5 style={{ fontWeight: "bold" }}>Provozovatel:</h5>
 
-                  <div style={{ marginTop: "1em" }}>
-                    <span style={{ fontWeight: "bold" }}>Facebook:</span>
-                    <div style={{ marginLeft: "0.1em" }}>
+                    <h6 style={{}}>{trailpark.operator}</h6>
+                  </div>
+                  <div>
+                    <h5 style={{ fontWeight: "bold" }}>Web:</h5>
+                    <h6 style={{}}>
+                      {trailpark.url ? (
+                        <a
+                          href={trailpark.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ textDecoration: "none", color: "#0a3383" }}
+                        >
+                          {trailpark.name} ↗️
+                        </a>
+                      ) : (
+                        "❌"
+                      )}
+                    </h6>
+                  </div>
+                  <div>
+                    <h5 style={{ fontWeight: "bold" }}>Facebook:</h5>
+                    <h6>
                       {trailpark.facebookPageUrl ? (
                         <a
                           href={trailpark.facebookPageUrl}
@@ -141,7 +150,7 @@ export const TrailparkCard = ({
                       ) : (
                         "❌"
                       )}
-                    </div>
+                    </h6>
                   </div>
                   <div
                     style={{
@@ -161,7 +170,7 @@ export const TrailparkCard = ({
                       Naposledy aktualizováno {trailpark.checkedAt}
                     </span>
                   </div>
-                </div>
+                </Stack>
               </Col>
             </Row>
           </Container>

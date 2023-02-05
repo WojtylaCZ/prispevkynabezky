@@ -25,7 +25,7 @@ export const DistrictSection = ({
       <h2
         style={{
           fontFamily: "Kaushan Script",
-          fontSize: "2.5em",
+          fontSize: "2.2em",
           fontWeight: "bolder",
           margin: "auto",
           color: "#f7b500",

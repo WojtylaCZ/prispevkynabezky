@@ -1,5 +1,6 @@
 * {
   font-family: 'Helvetica';
+  color: #0a3383;
 }
 
 body {
@@ -10,6 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #f9fcff;
+  
 }
 
 code {
