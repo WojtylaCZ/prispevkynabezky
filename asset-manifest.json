@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/prispevkynabezky/static/css/main.01355882.css",
-    "main.js": "/prispevkynabezky/static/js/main.cc1f473a.js",
+    "main.css": "/prispevkynabezky/static/css/main.1a0c123a.css",
+    "main.js": "/prispevkynabezky/static/js/main.ae100e60.js",
     "static/js/787.d6b98a22.chunk.js": "/prispevkynabezky/static/js/787.d6b98a22.chunk.js",
     "static/media/Alsovka-204457600-0600.png": "/prispevkynabezky/static/media/Alsovka-204457600-0600.0b5767232167276fe986.png",
     "static/media/RickyVOrlickychHorach-276681775-0300.png": "/prispevkynabezky/static/media/RickyVOrlickychHorach-276681775-0300.c81cc3876200af04574e.png",
@@ -19,15 +19,15 @@
     "static/media/ZapadniKrusneHory-269980072-0300.png": "/prispevkynabezky/static/media/ZapadniKrusneHory-269980072-0300.dd4fc3a51920dbd50853.png",
     "static/media/skier2.png": "/prispevkynabezky/static/media/skier2.16c882f829e9b23d6928.png",
     "index.html": "/prispevkynabezky/index.html",
+    "static/media/facebook.svg": "/prispevkynabezky/static/media/facebook.7e4ef551f9d0b45dd1acc00f84e784a8.svg",
     "static/media/chevron-right.svg": "/prispevkynabezky/static/media/chevron-right.25c69bd887f3f5e50f0ee169d70ae9e4.svg",
     "static/media/chevron-down.svg": "/prispevkynabezky/static/media/chevron-down.bdc5512bebaafee5cfb979d7683ecb5e.svg",
-    "static/media/facebook.svg": "/prispevkynabezky/static/media/facebook.22d5e33c85b7691bd69150ce20e2d12b.svg",
-    "main.01355882.css.map": "/prispevkynabezky/static/css/main.01355882.css.map",
-    "main.cc1f473a.js.map": "/prispevkynabezky/static/js/main.cc1f473a.js.map",
+    "main.1a0c123a.css.map": "/prispevkynabezky/static/css/main.1a0c123a.css.map",
+    "main.ae100e60.js.map": "/prispevkynabezky/static/js/main.ae100e60.js.map",
     "787.d6b98a22.chunk.js.map": "/prispevkynabezky/static/js/787.d6b98a22.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.01355882.css",
-    "static/js/main.cc1f473a.js"
+    "static/css/main.1a0c123a.css",
+    "static/js/main.ae100e60.js"
   ]
 }
