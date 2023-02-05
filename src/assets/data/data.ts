@@ -19,6 +19,10 @@ import BukovaHora from "./qr-codes/BukovaHora-6114987349-0800.png";
 import HlavniSumava from "./qr-codes/HlavniSumava-207602447-0600.png";
 import Pasecna from "./qr-codes/Pasecna-299936101-0300.png";
 
+import Jeseniky from "./qr-codes/Jeseniky-283995131-0300.png";
+
+import VelkeKarlovice from "./qr-codes/VelkeKarlovice-20036-1765312369-0800.png";
+
 export const data: Array<District> = [
   {
     name: "Jizerské hory",
@@ -106,7 +110,7 @@ export const data: Array<District> = [
     name: "Krušné hory",
     trailparks: [
       {
-        name: "Západní Krušné hory",
+        name: "západní Krušné hory",
         operator: "První krušnohorská o.p.s.",
         bankAccountNumber: "269980072/0300",
         transparentBankAccountUrl:
@@ -147,13 +151,13 @@ export const data: Array<District> = [
       //   checkedAt: "4.2.2023",
       // },
       {
-        name: "Střední Krušné hory",
+        name: "střední Krušné hory",
         operator: "Krušnohorský klub Osek",
         bankAccountNumber: "35-6888660227/0100",
         transparentBankAccountUrl: null,
         url: "http://kbstopa.cz/",
         qrImage: StredniKrusneHory,
-        facebookPageUrl: null,
+        facebookPageUrl: "https://www.facebook.com/krusnohorskabilastopa",
         checkedAt: "4.2.2023",
       },
       {
@@ -198,7 +202,7 @@ export const data: Array<District> = [
     name: "Šumava",
     trailparks: [
       {
-        name: "Hlavní část Šumavy",
+        name: "hlavní část Šumavy",
         operator: "Regionální rozvojová agentura Šumava, o.p.s.",
         bankAccountNumber: "207602447/0600",
         transparentBankAccountUrl: null,
@@ -215,6 +219,39 @@ export const data: Array<District> = [
         url: "https://bezkypasecna.cz/",
         qrImage: Pasecna,
         facebookPageUrl: "https://www.facebook.com/bezky.pasecna",
+        checkedAt: "5.2.2023",
+      },
+    ],
+  },
+  {
+    name: "Jeseníky",
+    trailparks: [
+      {
+        name: "celé hory Jeseníky",
+        operator: "Sdružení cestovního ruchu Jeseníky",
+        bankAccountNumber: "283995131/0300",
+        transparentBankAccountUrl:
+          "https://www.csob.cz/portal/firmy/bezne-ucty/transparentni-ucty/ucet?account=283995131",
+        url: "https://www.jeseniky.cz/cz/turisticke-cile/k2198-lyzarska-bezecka-centra/",
+        qrImage: Jeseniky,
+        facebookPageUrl: "https://www.facebook.com/navstivtejeseniky.cz/",
+        checkedAt: "5.2.2023",
+      },
+    ],
+  },
+  {
+    name: "Beskydy",
+    // https://www.beskydy.cz/web/bezky/
+    // Vetsina "parku" nema sbirku, cislo uctu, nic.
+    trailparks: [
+      {
+        name: "Velké Karlovice",
+        operator: "Obec Velké Karlovice",
+        bankAccountNumber: "20036-1765312369/0800",
+        transparentBankAccountUrl: null,
+        url: "https://www.velkekarlovice.cz/rekreace-sport/zimni-sporty/bezecke-trasy-1/",
+        qrImage: VelkeKarlovice,
+        facebookPageUrl: "",
         checkedAt: "5.2.2023",
       },
     ],

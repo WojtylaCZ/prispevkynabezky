@@ -130,31 +130,36 @@ export const TrailparkCard = ({
               </Col>
 
               <Col sm style={{ marginBottom: "0.5em" }}>
-                <Stack gap={3}>
-                  <div>
-                    <h5 style={{ fontWeight: "bold" }}>Provozovatel:</h5>
+                <div
+                  style={{
+                    height: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Stack gap={3}>
+                    <div>
+                      <h5 style={{ fontWeight: "bold" }}>Provozovatel:</h5>
+                      <h6 style={{ color: "#000000" }}>{trailpark.operator}</h6>
+                    </div>
 
-                    <h6 style={{ color: "#000000" }}>{trailpark.operator}</h6>
-                  </div>
-                  <div>
-                    <h5 style={{ fontWeight: "bold" }}>Web:</h5>
-                    <h6 style={{}}>
-                      {trailpark.url ? (
-                        <a
-                          href={trailpark.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          style={{ textDecoration: "none", color: "#000000" }}
-                        >
-                          {trailpark.name} ↗️
-                        </a>
-                      ) : (
-                        "❌"
-                      )}
-                    </h6>
-                  </div>
-                  <div>
-                    {trailpark.facebookPageUrl ? (
+                    {trailpark.url && (
+                      <div>
+                        <h5 style={{ fontWeight: "bold" }}>Web:</h5>
+                        <h6 style={{}}>
+                          <a
+                            href={trailpark.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: "none", color: "#000000" }}
+                          >
+                            {trailpark.name} ↗️
+                          </a>
+                        </h6>
+                      </div>
+                    )}
+                    {trailpark.facebookPageUrl && (
                       <a
                         href={trailpark.facebookPageUrl}
                         target="_blank"
@@ -164,10 +169,9 @@ export const TrailparkCard = ({
                         <h5 style={{ fontWeight: "bold" }}>Facebook: </h5>
                         <Image src={FacebookIcon} />
                       </a>
-                    ) : (
-                      "❌"
                     )}
-                  </div>
+                    <div>{/* padding */}</div>
+                  </Stack>
                   <div
                     style={{
                       marginTop: "auto",
@@ -186,7 +190,7 @@ export const TrailparkCard = ({
                       Naposledy aktualizováno {trailpark.checkedAt}
                     </span>
                   </div>
-                </Stack>
+                </div>
               </Col>
             </Row>
           </Container>

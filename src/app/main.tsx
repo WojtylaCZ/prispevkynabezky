@@ -96,6 +96,11 @@ export const Main = () => {
           Běžkařské trasy a stopy se sami neupraví, spolky na úpravu tras
           fungují ze státních, ale i občanských příspěvků. Tento web vznikl pro
           zjednodučení příspívání.
+          <br />
+          <br />
+          Jsou tu pouze areály, u kterých jsem našel číslo účtu nebo aktivní
+          Facebook stránku. Zejména například v Beskydech je několik okruhů,
+          které žádnou sbírku nemají ani žádné další informace.
         </span>
         {districtsList}
         <Image
