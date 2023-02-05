@@ -46,7 +46,10 @@ export const Main = () => {
           }}
         >
           <Image
-            src={Track}
+            src={
+              "https://upload.wikimedia.org/wikipedia/commons/2/28/Skate_skiing_track.jpg"
+            }
+            alt="Tiia Monto, CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0, via Wikimedia Commons"
             style={{
               maxHeight: "500px",
               width: "100%",
@@ -95,6 +98,37 @@ export const Main = () => {
             width: "100%",
           }}
         />
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            marginBottom: "1em",
+          }}
+        >
+          <span
+            style={{
+              color: "#0a3383",
+            }}
+          >
+            Je něco špatně nebo něco chybí?
+          </span>
+          <span
+            style={{
+              fontSize: "small",
+              margin: "auto",
+            }}
+          >
+            <a
+              href={"https://www.facebook.com/WojtylaCZ/"}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
+              Dejte vědet! ✍️
+            </a>
+          </span>
+        </div>
       </Stack>
       <div
         style={{
