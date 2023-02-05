@@ -12,8 +12,12 @@ import ZapadniKrusneHory from "./qr-codes/ZapadniKrusneHory-269980072-0300.png";
 import LoucnaPodKlinovcem from "./qr-codes/LoucnaPodKlinovcem-2302061393-2010.png";
 import Alsovka from "./qr-codes/Alsovka-204457600-0600.png";
 import StredniKrusneHory from "./qr-codes/StredniKrusneHory-35-6888660227-0100.png";
-import BukovaHora from "./qr-codes/BukovaHora-6114987349-0800.png";
+
 import RickyVOrlickycHorach from "./qr-codes/RickyVOrlickychHorach-276681775-0300.png";
+import BukovaHora from "./qr-codes/BukovaHora-6114987349-0800.png";
+
+import HlavniSumava from "./qr-codes/HlavniSumava-207602447-0600.png";
+import Pasecna from "./qr-codes/Pasecna-299936101-0300.png";
 
 export const data: Array<District> = [
   {
@@ -187,6 +191,31 @@ export const data: Array<District> = [
         qrImage: BukovaHora,
         facebookPageUrl: "https://www.facebook.com/skicentrumricky",
         checkedAt: "4.2.2023",
+      },
+    ],
+  },
+  {
+    name: "Šumava",
+    trailparks: [
+      {
+        name: "Hlavní část Šumavy",
+        operator: "Regionální rozvojová agentura Šumava, o.p.s.",
+        bankAccountNumber: "207602447/0600",
+        transparentBankAccountUrl: null,
+        url: "https://bilastopa.cz/",
+        qrImage: HlavniSumava,
+        facebookPageUrl: "https://www.facebook.com/bilastopasumava",
+        checkedAt: "5.2.2023",
+      },
+      {
+        name: "Pasečná",
+        operator: "Reuterovy paseky SE",
+        bankAccountNumber: "299936101/0300",
+        transparentBankAccountUrl: null,
+        url: "https://bezkypasecna.cz/",
+        qrImage: Pasecna,
+        facebookPageUrl: "https://www.facebook.com/bezky.pasecna",
+        checkedAt: "5.2.2023",
       },
     ],
   },
