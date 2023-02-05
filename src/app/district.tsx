@@ -22,17 +22,17 @@ export const DistrictSection = ({
 
   return (
     <Stack gap={3}>
-      <span
+      <h2
         style={{
           fontFamily: "Kaushan Script",
-          fontSize: "2em",
+          fontSize: "2.5em",
           fontWeight: "bolder",
           margin: "auto",
           color: "#f7b500",
         }}
       >
         {name}
-      </span>
+      </h2>
 
       {trailparksList}
     </Stack>

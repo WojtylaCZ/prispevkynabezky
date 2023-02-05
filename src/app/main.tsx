@@ -29,13 +29,16 @@ export const Main = () => {
 
         <Navbar variant="custom" sticky="top">
           <Container>
-            <Navbar.Brand
-              style={{
-                fontFamily: "Kaushan Script",
-                color: "white",
-              }}
-            >
-              PrispevkyNaBezky.cz
+            <Navbar.Brand>
+              <span
+                style={{
+                  fontSize: "1.5em",
+                  fontFamily: "Kaushan Script",
+                  color: "white",
+                }}
+              >
+                Prispevky Na Bezky .cz
+              </span>
             </Navbar.Brand>
           </Container>
         </Navbar>
@@ -76,7 +79,7 @@ export const Main = () => {
             textAlign: "center",
           }}
         >
-          Příspěvky na tratě jednoduše
+          Příspěvky na bežkařské tratě jednoduše
         </span>
 
         <span

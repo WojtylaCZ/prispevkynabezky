@@ -49,8 +49,8 @@ export const TrailparkCard = ({
           {open ? <ChevronDownIcon /> : <ChevronRightIcon />}
         </div>
 
-        <span style={{ paddingLeft: "0.6em", marginTop: "2px" }}>
-          {trailpark.name}
+        <span style={{ paddingLeft: "1em", marginTop: "0.8em" }}>
+          <h3>{trailpark.name}</h3>
         </span>
       </div>
 
@@ -66,7 +66,7 @@ export const TrailparkCard = ({
                   {trailpark.qrImage ? (
                     <Image src={trailpark.qrImage} thumbnail />
                   ) : (
-                    "❌ Ne"
+                    "Není"
                   )}
                 </div>
               </Col>
@@ -76,34 +76,31 @@ export const TrailparkCard = ({
                 <div style={{ marginLeft: "0.3em" }}>{trailpark.operator}</div>
 
                 <div style={{ marginTop: "1em" }}>
-                  <span style={{ fontWeight: "bold" }}>Účet:</span>
+                  <span style={{ fontWeight: "bold" }}>
+                    Číslo bankovního účtu:
+                  </span>
                   <div style={{ marginLeft: "0.3em" }}>
-                    {trailpark.bankAccountNumber || "❌ Ne"}
+                    {trailpark.bankAccountNumber || "Není"}
                   </div>
                 </div>
 
-                <div style={{ marginTop: "1em" }}>
-                  <span style={{ fontWeight: "bold" }}>
-                    Transparentní účet?
-                  </span>
-                  <div style={{ margin: "0.3em" }}>
-                    {trailpark.transparentBankAccountUrl ? (
-                      <>
-                        ✅ ano,{" "}
-                        <a
-                          href={trailpark.transparentBankAccountUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          style={{ textDecoration: "none" }}
-                        >
-                          🌐 web
-                        </a>
-                      </>
-                    ) : (
-                      "❌ Ne"
-                    )}
+                {trailpark.transparentBankAccountUrl && (
+                  <div style={{ marginTop: "1em" }}>
+                    <span style={{ fontWeight: "bold" }}>
+                      Odkaz na transparentní účet:
+                    </span>
+                    <div style={{ margin: "0.3em" }}>
+                      <a
+                        href={trailpark.transparentBankAccountUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none" }}
+                      >
+                        🌐 web
+                      </a>
+                    </div>
                   </div>
-                </div>
+                )}
               </Col>
 
               <Col sm style={{ marginBottom: "0.5em" }}>
