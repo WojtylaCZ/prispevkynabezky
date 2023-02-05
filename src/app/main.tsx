@@ -27,7 +27,11 @@ export const Main = () => {
         </style>
 
         <Navbar variant="custom" sticky="top">
-          <Container>
+          <Container
+            style={{
+              maxWidth: "1080px",
+            }}
+          >
             <Navbar.Brand>
               <span
                 style={{
@@ -44,7 +48,7 @@ export const Main = () => {
         <div
           style={{
             margin: "auto",
-            maxWidth: "1300px",
+            maxWidth: "1400px",
           }}
         >
           <Image
@@ -65,14 +69,14 @@ export const Main = () => {
           alignItems: "center",
           width: "95%",
           margin: "auto",
-          maxWidth: "700px",
+          maxWidth: "690px",
           marginTop: "1em",
         }}
       >
         <h1
           style={{
             fontSize: "2.5em",
-            fontWeight: "bolder",
+            // fontWeight: "bolder",
             margin: "auto",
             color: "#0a3383",
             textAlign: "center",

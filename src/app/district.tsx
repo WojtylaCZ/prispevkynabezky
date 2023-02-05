@@ -21,12 +21,11 @@ export const DistrictSection = ({
   ));
 
   return (
-    <Stack gap={3}>
+    <Stack gap={4}>
       <h2
         style={{
           fontFamily: "Kaushan Script",
           fontSize: "2.2em",
-          fontWeight: "bolder",
           margin: "auto",
           color: "#f7b500",
         }}

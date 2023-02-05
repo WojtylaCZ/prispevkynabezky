@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Col, Collapse, Container, Image, Row, Stack } from "react-bootstrap";
 import { ChevronDownIcon } from "../assets/icons/chevronDown";
 import { ChevronRightIcon } from "../assets/icons/chevronRight";
+import { ChevronUpIcon } from "../assets/icons/chevronUp";
+
 import FacebookIcon from "../assets/icons/facebook.svg";
 
 export type Trailpark = {
@@ -28,7 +30,7 @@ export const TrailparkCard = ({
     <div
       style={{
         backgroundColor: "#ffffff",
-        borderRadius: "7px",
+        borderRadius: "0px",
         boxShadow: "0 0 20px 0 rgba(29, 17, 86, 0.12)",
         padding: "8px",
       }}
@@ -38,17 +40,16 @@ export const TrailparkCard = ({
       <div
         style={{
           display: "flex",
-          paddingLeft: "0.6em",
+          paddingLeft: "16px",
+          paddingRight: "16px",
+
           alignItems: "center",
           cursor: "pointer",
+          justifyContent: "space-between",
         }}
         onClick={() => setOpen(!open)}
       >
-        <div style={{ width: "0.6em" }}>
-          {open ? <ChevronDownIcon /> : <ChevronRightIcon />}
-        </div>
-
-        <span style={{ paddingLeft: "1em", marginTop: "0.8em" }}>
+        <span style={{ marginTop: "0.8em" }}>
           <h3
             style={{
               fontSize: "1.5em",
@@ -57,6 +58,29 @@ export const TrailparkCard = ({
             {trailpark.name}
           </h3>
         </span>
+
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <h6
+            style={{
+              fontSize: "smaller",
+              paddingRight: "0.6em",
+              marginBottom: "-0.2em",
+              width: "95px",
+              textAlign: "right",
+            }}
+          >
+            {open ? "Skrýt detail" : "Zobrazit detail"}
+          </h6>
+
+          <div style={{ width: "0.6em" }}>
+            {open ? <ChevronUpIcon /> : <ChevronDownIcon />}
+          </div>
+        </div>
       </div>
 
       <Collapse in={open}>
@@ -76,40 +100,33 @@ export const TrailparkCard = ({
                 </div>
               </Col>
               <Col sm style={{ marginBottom: "0.5em" }}>
-                <Stack gap={3}>
-                  <div>
-                    <h5 style={{ fontWeight: "bold" }}>Číslo účtu:</h5>
-                    <h6
-                      style={{
-                        fontSize: "large",
-                        color: "#0a3383",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      {trailpark.bankAccountNumber || "❌"}
+                <div>
+                  <h5 style={{ fontWeight: "bold" }}>Číslo účtu:</h5>
+                  <h6
+                    style={{
+                      fontSize: "large",
+                      color: "#000000",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    {trailpark.bankAccountNumber || "❌"}
+                  </h6>
+                </div>
+
+                {trailpark.transparentBankAccountUrl && (
+                  <div style={{ marginTop: "12px" }}>
+                    <h6 style={{}}>
+                      <a
+                        href={trailpark.transparentBankAccountUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "#000000" }}
+                      >
+                        Transparentní účet ↗️
+                      </a>
                     </h6>
                   </div>
-
-                  <div>
-                    {trailpark.transparentBankAccountUrl && (
-                      <>
-                        <h5 style={{ fontWeight: "bold" }}>
-                          Transparentní účet:
-                        </h5>
-                        <h6 style={{}}>
-                          <a
-                            href={trailpark.transparentBankAccountUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ textDecoration: "none", color: "#0a3383" }}
-                          >
-                            Web ↗️
-                          </a>
-                        </h6>
-                      </>
-                    )}
-                  </div>
-                </Stack>
+                )}
               </Col>
 
               <Col sm style={{ marginBottom: "0.5em" }}>
@@ -117,7 +134,7 @@ export const TrailparkCard = ({
                   <div>
                     <h5 style={{ fontWeight: "bold" }}>Provozovatel:</h5>
 
-                    <h6 style={{}}>{trailpark.operator}</h6>
+                    <h6 style={{ color: "#000000" }}>{trailpark.operator}</h6>
                   </div>
                   <div>
                     <h5 style={{ fontWeight: "bold" }}>Web:</h5>
@@ -127,7 +144,7 @@ export const TrailparkCard = ({
                           href={trailpark.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          style={{ textDecoration: "none", color: "#0a3383" }}
+                          style={{ textDecoration: "none", color: "#000000" }}
                         >
                           {trailpark.name} ↗️
                         </a>
@@ -137,20 +154,19 @@ export const TrailparkCard = ({
                     </h6>
                   </div>
                   <div>
-                    <h5 style={{ fontWeight: "bold" }}>Facebook:</h5>
-                    <h6>
-                      {trailpark.facebookPageUrl ? (
-                        <a
-                          href={trailpark.facebookPageUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <Image src={FacebookIcon} />
-                        </a>
-                      ) : (
-                        "❌"
-                      )}
-                    </h6>
+                    {trailpark.facebookPageUrl ? (
+                      <a
+                        href={trailpark.facebookPageUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none" }}
+                      >
+                        <h5 style={{ fontWeight: "bold" }}>Facebook: </h5>
+                        <Image src={FacebookIcon} />
+                      </a>
+                    ) : (
+                      "❌"
+                    )}
                   </div>
                   <div
                     style={{
