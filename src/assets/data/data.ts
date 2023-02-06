@@ -23,6 +23,11 @@ import Jeseniky from "./qr-codes/Jeseniky-283995131-0300.png";
 
 import VelkeKarlovice from "./qr-codes/VelkeKarlovice-20036-1765312369-0800.png";
 
+import ZdarNadSazavou from "./qr-codes/ZdarNadSazavou-317339651-0300.png";
+import VelkeDarko from "./qr-codes/VelkeDarko-287591038-0300.png";
+import Svratka from "./qr-codes/Svratka-2802081518-2010.png";
+import Novomestsko from "./qr-codes/Novomestsko-107-3157480237-0100.png";
+
 export const data: Array<District> = [
   {
     name: "Jizerské hory",
@@ -235,7 +240,7 @@ export const data: Array<District> = [
         url: "https://www.jeseniky.cz/cz/turisticke-cile/k2198-lyzarska-bezecka-centra/",
         qrImage: Jeseniky,
         facebookPageUrl: "https://www.facebook.com/navstivtejeseniky.cz/",
-        checkedAt: "5.2.2023",
+        checkedAt: "6.2.2023",
       },
     ],
   },
@@ -252,7 +257,55 @@ export const data: Array<District> = [
         url: "https://www.velkekarlovice.cz/rekreace-sport/zimni-sporty/bezecke-trasy-1/",
         qrImage: VelkeKarlovice,
         facebookPageUrl: "",
-        checkedAt: "5.2.2023",
+        checkedAt: "6.2.2023",
+      },
+    ],
+  },
+  {
+    name: "Vysočina",
+    trailparks: [
+      {
+        name: "Žďár nad Sázavou",
+        operator: "Sportis Žďár nad Sázavou",
+        bankAccountNumber: "317339651/0300",
+        transparentBankAccountUrl:
+          "https://www.csob.cz/portal/firmy/bezne-ucty/transparentni-ucty/ucet?account=317339651",
+        url: "https://www.sportispo.cz/page.aspx?IDTema=12",
+        qrImage: ZdarNadSazavou,
+        facebookPageUrl: "",
+        checkedAt: "6.2.2023",
+      },
+      {
+        name: "Velké Dářko",
+        operator: "DSO Subregion Velké Dářko",
+        bankAccountNumber: "287591038/0300",
+        transparentBankAccountUrl:
+          "https://www.csob.cz/portal/firmy/bezne-ucty/transparentni-ucty/ucet?account=287591038",
+        url: "http://www.ski-velkedarko.cz/",
+        qrImage: VelkeDarko,
+        facebookPageUrl: "https://www.facebook.com/skivelkedarko",
+        checkedAt: "6.2.2023",
+      },
+      {
+        name: "Svratka",
+        operator: "Niva Svratky, o.p.s.",
+        bankAccountNumber: "2802081518/2010",
+        transparentBankAccountUrl:
+          "https://ib.fio.cz/ib/transparent?a=2802081518",
+        url: null,
+        qrImage: Svratka,
+        facebookPageUrl: "https://www.facebook.com/xcskisvratka/",
+        checkedAt: "6.2.2023",
+      },
+      {
+        name: "Novoměstsko",
+        operator: "Mikroregion Novoměstsko",
+        bankAccountNumber: "107-3157480237/0100",
+        transparentBankAccountUrl: null,
+        url: "https://lyzovani.nmnm.cz/verejna-sbirka-na-udrzbu-trati/",
+        qrImage: Novomestsko,
+        facebookPageUrl: null,
+        checkedAt: "6.2.2023",
       },
     ],
   },
