@@ -100,7 +100,7 @@ export const TrailparkCard = ({
                   QR kód pro platbu:
                 </h5>
 
-                <div style={{ margin: "auto", maxWidth: "320px" }}>
+                <div style={{ margin: "auto", maxWidth: "250px" }}>
                   {trailpark.qrImage ? (
                     <Image src={trailpark.qrImage} thumbnail />
                   ) : (

@@ -4,6 +4,7 @@ import { DistrictSection } from "./district";
 import Skier from "../assets/img/skier2.png";
 
 import { data } from "../assets/data/data";
+import { url } from "inspector";
 
 export const Main = () => {
   const districtsList = data.map((district, id) => (
@@ -22,6 +23,7 @@ export const Main = () => {
           {`
           .navbar-custom {
             background-color: #0a3383;
+            padding: 2px
           }
           `}
         </style>
@@ -33,14 +35,14 @@ export const Main = () => {
             }}
           >
             <Navbar.Brand>
-              <h2
+              <h3
                 style={{
                   fontFamily: "Kaushan Script",
                   color: "white",
                 }}
               >
-                Prispevky Na Bezky .cz
-              </h2>
+                Příspěvky na běžky . cz
+              </h3>
             </Navbar.Brand>
           </Container>
         </Navbar>
@@ -48,20 +50,14 @@ export const Main = () => {
           style={{
             margin: "auto",
             maxWidth: "1400px",
+            height: "250px",
             position: "relative",
+            width: "100%",
+            backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 92.61%), url("https://upload.wikimedia.org/wikipedia/commons/2/28/Skate_skiing_track.jpg")`,
+            // "Tiia Monto, CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0, via Wikimedia Commons",
+            backgroundSize: "cover",
           }}
         >
-          <Image
-            src={
-              "https://upload.wikimedia.org/wikipedia/commons/2/28/Skate_skiing_track.jpg"
-            }
-            alt="Tiia Monto, CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0, via Wikimedia Commons"
-            style={{
-              maxHeight: "500px",
-              width: "100%",
-            }}
-          />
-
           <h1
             style={{
               color: "#0a3383",
@@ -70,7 +66,7 @@ export const Main = () => {
               zIndex: "10",
               position: "absolute",
               left: "0px",
-              bottom: "20%",
+              bottom: "30%",
               right: "0px",
             }}
           >
