@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Col, Collapse, Container, Image, Row, Stack } from "react-bootstrap";
 import { ChevronDownIcon } from "../assets/icons/chevronDown";
-import { ChevronRightIcon } from "../assets/icons/chevronRight";
 import { ChevronUpIcon } from "../assets/icons/chevronUp";
 
 import FacebookIcon from "../assets/icons/facebook.svg";
@@ -30,68 +29,78 @@ export const TrailparkCard = ({
     <div
       style={{
         backgroundColor: "#ffffff",
-        borderRadius: "0px",
+        borderRadius: "2px",
         boxShadow: "0 0 20px 0 rgba(29, 17, 86, 0.12)",
-        padding: "8px",
       }}
       aria-controls="example-collapse-text"
       aria-expanded={open}
     >
-      <div
-        style={{
-          display: "flex",
-          paddingLeft: "16px",
-          paddingRight: "16px",
-
-          alignItems: "center",
-          cursor: "pointer",
-          justifyContent: "space-between",
-        }}
-        onClick={() => setOpen(!open)}
-      >
-        <span style={{ marginTop: "0.8em" }}>
-          <h3
-            style={{
-              fontSize: "1.5em",
-            }}
-          >
-            {trailpark.name}
-          </h3>
-        </span>
-
+      <style type="text/css">
+        {`
+          .trailparkHeader:hover {
+            background-color: #F8F8F8;
+          }
+          `}
+      </style>
+      <div className="trailparkHeader">
         <div
           style={{
             display: "flex",
+            padding: "16px 16px 16px 16px ",
             alignItems: "center",
+            cursor: "pointer",
+            justifyContent: "space-between",
+            alignContent: "center",
           }}
+          onClick={() => setOpen(!open)}
         >
-          <h6
+          <span>
+            <h3
+              style={{
+                marginBottom: "0px",
+              }}
+            >
+              {trailpark.name}
+            </h3>
+          </span>
+
+          <div
             style={{
-              fontSize: "smaller",
-              paddingRight: "0.6em",
-              marginBottom: "-0.2em",
-              width: "95px",
-              textAlign: "right",
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "center",
             }}
           >
-            {open ? "Skrýt detail" : "Zobrazit detail"}
-          </h6>
+            <h6
+              style={{
+                fontSize: "smaller",
+                paddingRight: "0.6em",
+                marginBottom: "-0.2em",
+                width: "95px",
+                textAlign: "right",
+              }}
+            >
+              {open ? "Skrýt detail" : "Zobrazit detail"}
+            </h6>
 
-          <div style={{ width: "0.6em" }}>
-            {open ? <ChevronUpIcon /> : <ChevronDownIcon />}
+            <div style={{ width: "10px" }}>
+              {open ? <ChevronUpIcon /> : <ChevronDownIcon />}
+            </div>
           </div>
         </div>
       </div>
-
       <Collapse in={open}>
         <div id="example-collapse-text">
-          <hr style={{ marginTop: "0.4em" }} />
+          <hr style={{ marginTop: "0px" }} />
+
           <Container>
             <Row>
-              <Col md style={{ marginBottom: "0.5em" }}>
-                <h5 style={{ fontWeight: "bold" }}>QR kód pro platbu:</h5>
+              <Col sm style={{ marginBottom: "0.5em" }}>
+                <h5 style={{ fontWeight: "bold", minWidth: "170px" }}>
+                  QR kód pro platbu:
+                </h5>
 
-                <div style={{}}>
+                <div style={{ margin: "auto", maxWidth: "320px" }}>
                   {trailpark.qrImage ? (
                     <Image src={trailpark.qrImage} thumbnail />
                   ) : (

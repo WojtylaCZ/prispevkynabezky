@@ -33,15 +33,14 @@ export const Main = () => {
             }}
           >
             <Navbar.Brand>
-              <span
+              <h2
                 style={{
-                  fontSize: "1.5em",
                   fontFamily: "Kaushan Script",
                   color: "white",
                 }}
               >
                 Prispevky Na Bezky .cz
-              </span>
+              </h2>
             </Navbar.Brand>
           </Container>
         </Navbar>
@@ -49,6 +48,7 @@ export const Main = () => {
           style={{
             margin: "auto",
             maxWidth: "1400px",
+            position: "relative",
           }}
         >
           <Image
@@ -61,10 +61,25 @@ export const Main = () => {
               width: "100%",
             }}
           />
+
+          <h1
+            style={{
+              color: "#0a3383",
+              textAlign: "center",
+              fontFamily: "Kaushan Script",
+              zIndex: "10",
+              position: "absolute",
+              left: "0px",
+              bottom: "20%",
+              right: "0px",
+            }}
+          >
+            Příspěvky na bežkařské tratě jednoduše
+          </h1>
         </div>
       </>
       <Stack
-        gap={3}
+        gap={4}
         style={{
           alignItems: "center",
           width: "95%",
@@ -73,23 +88,11 @@ export const Main = () => {
           marginTop: "1em",
         }}
       >
-        <h1
-          style={{
-            fontSize: "2.5em",
-            // fontWeight: "bolder",
-            margin: "auto",
-            color: "#0a3383",
-            textAlign: "center",
-            fontFamily: "Kaushan Script",
-          }}
-        >
-          Příspěvky na bežkařské tratě jednoduše
-        </h1>
+        {/* <hr style={{ width: "30px", color: "#f7b500" }} /> */}
 
         <span
           style={{
             margin: "auto",
-
             textAlign: "center",
           }}
         >
@@ -102,7 +105,9 @@ export const Main = () => {
           Facebook stránku. Zejména například v Beskydech je několik okruhů,
           které žádnou sbírku nemají ani žádné další informace.
         </span>
-        {districtsList}
+
+        <Stack gap={5}>{districtsList}</Stack>
+
         <Image
           src={Skier}
           style={{
@@ -115,7 +120,7 @@ export const Main = () => {
           style={{
             display: "flex",
             flexDirection: "column",
-            marginBottom: "1em",
+            marginBottom: "12px",
           }}
         >
           <span
@@ -148,7 +153,7 @@ export const Main = () => {
           color: "grey",
           width: "100%",
           display: "flex",
-          height: "4em",
+          height: "48px",
           justifyContent: "center",
           backgroundColor: "#0a3383",
           alignItems: "center",

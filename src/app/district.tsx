@@ -21,19 +21,24 @@ export const DistrictSection = ({
   ));
 
   return (
-    <Stack gap={4}>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        width: "100%",
+      }}
+    >
       <h2
         style={{
           fontFamily: "Kaushan Script",
-          fontSize: "2.2em",
-          margin: "auto",
           color: "#f7b500",
+          marginBottom: "24px",
         }}
       >
         {name}
       </h2>
-
-      {trailparksList}
-    </Stack>
+      <Stack gap={4}>{trailparksList}</Stack>
+    </div>
   );
 };
