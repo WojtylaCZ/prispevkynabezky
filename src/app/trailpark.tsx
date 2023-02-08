@@ -39,6 +39,7 @@ export const TrailparkCard = ({
         {`
           .trailparkHeader:hover {
             background-color: #F8F8F8;
+            text-decoration: underline
           }
           `}
       </style>
@@ -132,8 +133,7 @@ export const TrailparkCard = ({
                         style={{ color: "#000000" }}
                       >
                         Transparentní účet
-                      </a>{" "}
-                      ↗️
+                      </a>
                     </h6>
                   </div>
                 )}
@@ -165,8 +165,7 @@ export const TrailparkCard = ({
                             style={{ color: "#000000" }}
                           >
                             {trailpark.name}
-                          </a>{" "}
-                          ↗️
+                          </a>
                         </h6>
                       </div>
                     )}
