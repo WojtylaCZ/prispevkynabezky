@@ -34,6 +34,7 @@ export const DistrictSection = ({
           fontFamily: "Kaushan Script",
           color: "#f7b500",
           marginBottom: "24px",
+          fontSize: "calc(1.775rem + 1.1vw)",
         }}
       >
         {name}

@@ -129,10 +129,11 @@ export const TrailparkCard = ({
                         href={trailpark.transparentBankAccountUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        style={{ textDecoration: "none", color: "#000000" }}
+                        style={{ color: "#000000" }}
                       >
-                        Transparentní účet ↗️
-                      </a>
+                        Transparentní účet
+                      </a>{" "}
+                      ↗️
                     </h6>
                   </div>
                 )}
@@ -161,10 +162,11 @@ export const TrailparkCard = ({
                             href={trailpark.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            style={{ textDecoration: "none", color: "#000000" }}
+                            style={{ color: "#000000" }}
                           >
-                            {trailpark.name} ↗️
-                          </a>
+                            {trailpark.name}
+                          </a>{" "}
+                          ↗️
                         </h6>
                       </div>
                     )}

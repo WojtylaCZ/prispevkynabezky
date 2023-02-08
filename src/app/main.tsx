@@ -67,6 +67,7 @@ export const Main = () => {
               left: "0px",
               bottom: "30%",
               right: "0px",
+              fontSize: "calc(1.975rem + 1.3vw)",
             }}
           >
             Příspěvky na bežkařské tratě jednoduše
@@ -91,7 +92,7 @@ export const Main = () => {
             textAlign: "center",
           }}
         >
-          Běžkařské trasy a stopy se sami neupraví, spolky na úpravu tras
+          Běžkařské trasy a stopy se samy neupraví, spolky na úpravu tras
           fungují ze státních, ale i občanských příspěvků. Tento web vznikl pro
           zjednodučení příspívání.
           <br />
