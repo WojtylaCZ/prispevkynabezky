@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/prispevkynabezky/static/css/main.239c8c88.css",
-    "main.js": "/prispevkynabezky/static/js/main.a09a4e11.js",
+    "main.js": "/prispevkynabezky/static/js/main.76b65c41.js",
     "static/js/787.d6b98a22.chunk.js": "/prispevkynabezky/static/js/787.d6b98a22.chunk.js",
     "static/media/Alsovka-204457600-0600.png": "/prispevkynabezky/static/media/Alsovka-204457600-0600.0b5767232167276fe986.png",
     "static/media/RickyVOrlickychHorach-276681775-0300.png": "/prispevkynabezky/static/media/RickyVOrlickychHorach-276681775-0300.c81cc3876200af04574e.png",
@@ -29,11 +29,11 @@
     "static/media/chevron-down.svg": "/prispevkynabezky/static/media/chevron-down.bdc5512bebaafee5cfb979d7683ecb5e.svg",
     "static/media/chevron-up.svg": "/prispevkynabezky/static/media/chevron-up.0fab3e8c7e4f106fee079a2fdd13ffa2.svg",
     "main.239c8c88.css.map": "/prispevkynabezky/static/css/main.239c8c88.css.map",
-    "main.a09a4e11.js.map": "/prispevkynabezky/static/js/main.a09a4e11.js.map",
+    "main.76b65c41.js.map": "/prispevkynabezky/static/js/main.76b65c41.js.map",
     "787.d6b98a22.chunk.js.map": "/prispevkynabezky/static/js/787.d6b98a22.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.239c8c88.css",
-    "static/js/main.a09a4e11.js"
+    "static/js/main.76b65c41.js"
   ]
 }
