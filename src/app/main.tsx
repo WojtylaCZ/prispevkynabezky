@@ -22,7 +22,6 @@ export const Main = () => {
           {`
           .navbar-custom {
             background-color: #0a3383;
-            padding: 2px
           }
           `}
         </style>
@@ -36,11 +35,12 @@ export const Main = () => {
             <Navbar.Brand>
               <h3
                 style={{
-                  fontFamily: "Kaushan Script",
+                  // fontFamily: "Kaushan Script",
                   color: "white",
+                  margin: "0px",
                 }}
               >
-                Příspěvky na běžky . cz
+                PříspěvkyNaBěžky.cz
               </h3>
             </Navbar.Brand>
           </Container>
@@ -155,9 +155,7 @@ export const Main = () => {
           alignItems: "center",
         }}
       >
-        <span style={{ color: "white", fontFamily: "Kaushan Script" }}>
-          2023, Vojtech Uhlir
-        </span>
+        <span style={{ color: "white" }}>2023, Vojtech Uhlir</span>
       </div>
     </>
   );

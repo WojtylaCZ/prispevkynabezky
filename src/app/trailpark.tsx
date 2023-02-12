@@ -39,8 +39,11 @@ export const TrailparkCard = ({
         {`
           .trailparkHeader:hover {
             background-color: #F8F8F8;
-            text-decoration: underline
           }
+          
+          .trailparkHeader:hover .detailDropdown {
+            text-decoration: underline
+        }
           `}
       </style>
       <div className="trailparkHeader">
@@ -66,6 +69,7 @@ export const TrailparkCard = ({
           </span>
 
           <div
+            className="detailDropdown"
             style={{
               display: "flex",
               justifyContent: "flex-end",
