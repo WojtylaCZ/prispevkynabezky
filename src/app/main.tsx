@@ -81,26 +81,40 @@ export const Main = () => {
           width: "95%",
           margin: "auto",
           maxWidth: "690px",
-          marginTop: "1em",
+          marginBottom: "16px",
         }}
       >
-        {/* <hr style={{ width: "30px", color: "#f7b500" }} /> */}
-
-        <span
+        <div
           style={{
-            margin: "auto",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
             textAlign: "center",
           }}
         >
-          Běžkařské trasy a stopy se samy neupraví, spolky na úpravu tras
-          fungují ze státních, ale i občanských příspěvků. Tento web vznikl pro
-          zjednodučení příspívání.
+          <span>
+            Obout si běžky a vyrazit bílou stopou skoro nic nestojí. Údržba tratí ale ano.
+          </span>
+
+          <span>
+            Běžkařské trasy a stopy se samy neupraví. Udržují je různé kluby, spolky nebo organizace
+            za pomocí občanských sbírek a státních příspěvků.
+          </span>
           <br />
-          <br />
-          Jsou tu pouze areály, u kterých jsem našel číslo účtu nebo aktivní
-          Facebook stránku. Zejména například v Beskydech je několik okruhů,
-          které žádnou sbírku nemají ani žádné další informace.
-        </span>
+          <span>
+            Projekt PříspěvkyNaBěžky.cz vznikl pro zjednodušení přispívání, aby na jednom místě byl
+            seznam jednotlivých organizací s platebními údaji.
+          </span>
+          <hr
+            style={{
+              width: "100px",
+              color: "#f7b500",
+              border: 0,
+              borderTop: "1px solid",
+              opacity: "90%",
+            }}
+          />
+        </div>
 
         <Stack gap={5}>{districtsList}</Stack>
 
@@ -116,31 +130,37 @@ export const Main = () => {
           style={{
             display: "flex",
             flexDirection: "column",
-            marginBottom: "12px",
+            alignItems: "center",
+            textAlign: "center",
           }}
         >
-          <span
-            style={{
-              color: "#0a3383",
-            }}
-          >
-            Je něco špatně nebo něco chybí?
-          </span>
-          <span
-            style={{
-              fontSize: "small",
-              margin: "auto",
-            }}
-          >
+          <span>
+            Tento dobročinný web vytvořil{" "}
             <a
               href={"https://www.facebook.com/WojtylaCZ/"}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ textDecoration: "none" }}
             >
-              Dejte vědet! ✍️
+              Vojtěch Uhlíř
             </a>
+            , sportovec, nadšenec na bežky, programátor.
           </span>
+          <br />
+          <span>
+            Jsou tu pouze areály, u kterých jsem našel číslo účtu nebo aktivní Facebook stránku.
+          </span>
+        </div>
+        <div
+          style={{
+            color: "#0a3383",
+            textAlign: "center",
+          }}
+        >
+          <span>Je něco špatně nebo něco chybí?</span>
+          <br />
+          <a href={"https://www.facebook.com/WojtylaCZ/"} target="_blank" rel="noopener noreferrer">
+            Napište a dejte mi vědet! ✍️
+          </a>
         </div>
       </Stack>
       <div

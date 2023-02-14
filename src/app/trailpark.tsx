@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import { Col, Collapse, Container, Image, Row, Stack } from "react-bootstrap";
 import { ChevronDownIcon } from "../assets/icons/chevronDown";
 import { ChevronUpIcon } from "../assets/icons/chevronUp";
-
 import FacebookIcon from "../assets/icons/facebook.svg";
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-TJGECJ2MHV");
 
 export type Trailpark = {
+  id: number;
   name: string;
   qrImage: string | null;
   bankAccountNumber: string | null;
@@ -23,7 +26,16 @@ export const TrailparkCard = ({
   trailpark: Trailpark;
   isFirst: boolean;
 }) => {
-  const [open, setOpen] = useState(isFirst);
+  const [isExpanded, setIsExpanded] = useState(isFirst);
+
+  const handleClick = useCallback(() => {
+    if (!isExpanded) {
+      ReactGA.event("trailparkcard_expanded", {
+        trailparkId: trailpark.id,
+      });
+    }
+    setIsExpanded(!isExpanded);
+  }, [trailpark.id, isExpanded]);
 
   return (
     <div
@@ -33,7 +45,7 @@ export const TrailparkCard = ({
         boxShadow: "0 0 20px 0 rgba(29, 17, 86, 0.12)",
       }}
       aria-controls="example-collapse-text"
-      aria-expanded={open}
+      aria-expanded={isExpanded}
     >
       <style type="text/css">
         {`
@@ -56,7 +68,7 @@ export const TrailparkCard = ({
             justifyContent: "space-between",
             alignContent: "center",
           }}
-          onClick={() => setOpen(!open)}
+          onClick={handleClick}
         >
           <span>
             <h3
@@ -85,16 +97,16 @@ export const TrailparkCard = ({
                 textAlign: "right",
               }}
             >
-              {open ? "Skrýt detail" : "Zobrazit detail"}
+              {isExpanded ? "Skrýt detail" : "Zobrazit detail"}
             </h6>
 
             <div style={{ width: "10px" }}>
-              {open ? <ChevronUpIcon /> : <ChevronDownIcon />}
+              {isExpanded ? <ChevronUpIcon /> : <ChevronDownIcon />}
             </div>
           </div>
         </div>
       </div>
-      <Collapse in={open}>
+      <Collapse in={isExpanded}>
         <div id="example-collapse-text">
           <hr style={{ marginTop: "0px" }} />
 
