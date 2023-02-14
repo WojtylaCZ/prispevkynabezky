@@ -33,6 +33,7 @@ export const data: Array<District> = [
     name: "Jizerské hory",
     trailparks: [
       {
+        id: 11,
         name: "Jizerská magistrála",
         operator: "Jizerská o.p.s.",
         bankAccountNumber: "255899476/0300",
@@ -48,6 +49,7 @@ export const data: Array<District> = [
     name: "Krkonoše",
     trailparks: [
       {
+        id: 21,
         name: "Malá Úpa",
         operator: "Obec Malá Úpa",
         bankAccountNumber: "6138641369/0800",
@@ -60,6 +62,7 @@ export const data: Array<District> = [
         checkedAt: "4.2.2023",
       },
       {
+        id: 22,
         name: "Vrchlabí",
         operator: "Areál Vejspachy",
         bankAccountNumber: "262563989/0300",
@@ -70,6 +73,7 @@ export const data: Array<District> = [
         checkedAt: "4.2.2023",
       },
       {
+        id: 23,
         name: "Benecko",
         operator: "Sdružení pro rozvoj na Benecku z. s.",
         bankAccountNumber: null,
@@ -80,6 +84,7 @@ export const data: Array<District> = [
         checkedAt: "4.2.2023",
       },
       {
+        id: 24,
         name: "Jilemnice",
         operator: "ČKS SKI Jilemnice",
         bankAccountNumber: "1261416359/0800",
@@ -90,6 +95,7 @@ export const data: Array<District> = [
         checkedAt: "4.2.2023",
       },
       {
+        id: 25,
         name: "Harrachov",
         operator: "Město Harrachov",
         bankAccountNumber: "20036-1263085389/0800",
@@ -102,6 +108,7 @@ export const data: Array<District> = [
         checkedAt: "4.2.2023",
       },
       {
+        id: 26,
         name: "Rokytnice nad Jizerou",
         operator: "Město Rokytnice nad Jizerou",
         bankAccountNumber: "123-5314220287/0100",
@@ -117,6 +124,7 @@ export const data: Array<District> = [
     name: "Krušné hory",
     trailparks: [
       {
+        id: 31,
         name: "západní Krušné hory",
         operator: "První krušnohorská o.p.s.",
         bankAccountNumber: "269980072/0300",
@@ -129,6 +137,7 @@ export const data: Array<District> = [
         checkedAt: "4.2.2023",
       },
       {
+        id: 32,
         name: "Loučná pod Klínovcem",
         operator: "Město Loučná pod Klínovcem",
         bankAccountNumber: "2302061393/2010",
@@ -139,6 +148,7 @@ export const data: Array<District> = [
         checkedAt: "4.2.2023",
       },
       {
+        id: 33,
         name: "Alšovka - střední Krušné hory",
         operator: "Horal Venkov z.s.",
         bankAccountNumber: "204457600/0600",
@@ -159,6 +169,7 @@ export const data: Array<District> = [
       //   checkedAt: "4.2.2023",
       // },
       {
+        id: 34,
         name: "střední Krušné hory",
         operator: "Krušnohorský klub Osek",
         bankAccountNumber: "35-6888660227/0100",
@@ -169,6 +180,7 @@ export const data: Array<District> = [
         checkedAt: "4.2.2023",
       },
       {
+        id: 35,
         name: "Děčínský Sněžník - Východní Krušné hory",
         operator: "HUDYsport a.s.",
         bankAccountNumber: null,
@@ -184,6 +196,7 @@ export const data: Array<District> = [
     name: "Orlické hory",
     trailparks: [
       {
+        id: 41,
         name: "Říčky v Orlických horách",
         operator: "SKI KLUB Ústí nad Orlicí. spol. s r.o.",
         bankAccountNumber: "276681775/0300",
@@ -194,6 +207,7 @@ export const data: Array<District> = [
         checkedAt: "4.2.2023",
       },
       {
+        id: 42,
         name: "Buková hora - Suchý vrch",
         operator: "Sdružení obcí Orlicko",
         bankAccountNumber: "6114987349/0800",
@@ -210,6 +224,7 @@ export const data: Array<District> = [
     name: "Šumava",
     trailparks: [
       {
+        id: 51,
         name: "hlavní část Šumavy",
         operator: "Regionální rozvojová agentura Šumava, o.p.s.",
         bankAccountNumber: "207602447/0600",
@@ -220,6 +235,7 @@ export const data: Array<District> = [
         checkedAt: "5.2.2023",
       },
       {
+        id: 52,
         name: "Pasečná",
         operator: "Reuterovy paseky SE",
         bankAccountNumber: "299936101/0300",
@@ -235,6 +251,7 @@ export const data: Array<District> = [
     name: "Jeseníky",
     trailparks: [
       {
+        id: 61,
         name: "celé hory Jeseníky",
         operator: "Sdružení cestovního ruchu Jeseníky",
         bankAccountNumber: "283995131/0300",
@@ -253,6 +270,7 @@ export const data: Array<District> = [
     // Vetsina "parku" nema sbirku, cislo uctu, nic.
     trailparks: [
       {
+        id: 71,
         name: "Velké Karlovice",
         operator: "Obec Velké Karlovice",
         bankAccountNumber: "20036-1765312369/0800",
@@ -268,6 +286,7 @@ export const data: Array<District> = [
     name: "Vysočina",
     trailparks: [
       {
+        id: 81,
         name: "Žďár nad Sázavou",
         operator: "Sportis Žďár nad Sázavou",
         bankAccountNumber: "317339651/0300",
@@ -279,6 +298,7 @@ export const data: Array<District> = [
         checkedAt: "6.2.2023",
       },
       {
+        id: 82,
         name: "Velké Dářko",
         operator: "DSO Subregion Velké Dářko",
         bankAccountNumber: "287591038/0300",
@@ -290,6 +310,7 @@ export const data: Array<District> = [
         checkedAt: "6.2.2023",
       },
       {
+        id: 83,
         name: "Svratka",
         operator: "Niva Svratky, o.p.s.",
         bankAccountNumber: "2802081518/2010",
@@ -301,6 +322,7 @@ export const data: Array<District> = [
         checkedAt: "6.2.2023",
       },
       {
+        id: 84,
         name: "Novoměstsko",
         operator: "Mikroregion Novoměstsko",
         bankAccountNumber: "107-3157480237/0100",
