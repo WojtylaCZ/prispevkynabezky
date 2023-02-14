@@ -49,7 +49,7 @@ export const Main = () => {
           style={{
             margin: "auto",
             maxWidth: "1400px",
-            height: "250px",
+            height: "300px",
             position: "relative",
             width: "100%",
             backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 92.61%), url("https://upload.wikimedia.org/wikipedia/commons/2/28/Skate_skiing_track.jpg")`,
@@ -134,6 +134,16 @@ export const Main = () => {
             textAlign: "center",
           }}
         >
+          <h2
+            style={{
+              fontFamily: "Kaushan Script",
+              color: "#f7b500",
+              marginBottom: "24px",
+              fontSize: "calc(1.775rem + 1.1vw)",
+            }}
+          >
+            Kontakt
+          </h2>
           <span>
             Tento dobročinný web vytvořil{" "}
             <a

@@ -125,7 +125,7 @@ export const data: Array<District> = [
     trailparks: [
       {
         id: 31,
-        name: "západní Krušné hory",
+        name: "Západní Krušné hory",
         operator: "První krušnohorská o.p.s.",
         bankAccountNumber: "269980072/0300",
         transparentBankAccountUrl:
@@ -170,7 +170,7 @@ export const data: Array<District> = [
       // },
       {
         id: 34,
-        name: "střední Krušné hory",
+        name: "Střední Krušné hory",
         operator: "Krušnohorský klub Osek",
         bankAccountNumber: "35-6888660227/0100",
         transparentBankAccountUrl: null,
@@ -225,7 +225,7 @@ export const data: Array<District> = [
     trailparks: [
       {
         id: 51,
-        name: "hlavní část Šumavy",
+        name: "Hlavní část Šumavy",
         operator: "Regionální rozvojová agentura Šumava, o.p.s.",
         bankAccountNumber: "207602447/0600",
         transparentBankAccountUrl: null,
@@ -252,7 +252,7 @@ export const data: Array<District> = [
     trailparks: [
       {
         id: 61,
-        name: "celé hory Jeseníky",
+        name: "Celé hory Jeseníky",
         operator: "Sdružení cestovního ruchu Jeseníky",
         bankAccountNumber: "283995131/0300",
         transparentBankAccountUrl:
@@ -314,8 +314,7 @@ export const data: Array<District> = [
         name: "Svratka",
         operator: "Niva Svratky, o.p.s.",
         bankAccountNumber: "2802081518/2010",
-        transparentBankAccountUrl:
-          "https://ib.fio.cz/ib/transparent?a=2802081518",
+        transparentBankAccountUrl: "https://ib.fio.cz/ib/transparent?a=2802081518",
         url: null,
         qrImage: Svratka,
         facebookPageUrl: "https://www.facebook.com/xcskisvratka/",
