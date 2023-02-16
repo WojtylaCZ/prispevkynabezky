@@ -15,6 +15,7 @@ import StredniKrusneHory from "./qr-codes/StredniKrusneHory-35-6888660227-0100.p
 
 import RickyVOrlickycHorach from "./qr-codes/RickyVOrlickychHorach-276681775-0300.png";
 import BukovaHora from "./qr-codes/BukovaHora-6114987349-0800.png";
+import Destne from "./qr-codes/DesteVOrlickychHorach293272551-0300.png";
 
 import HlavniSumava from "./qr-codes/HlavniSumava-207602447-0600.png";
 import Pasecna from "./qr-codes/Pasecna-299936101-0300.png";
@@ -217,6 +218,18 @@ export const data: Array<District> = [
         qrImage: BukovaHora,
         facebookPageUrl: "https://www.facebook.com/skicentrumricky",
         checkedAt: "4.2.2023",
+      },
+      {
+        id: 43,
+        name: "Deštné v Orlických horách",
+        operator: "Deštenský spolek",
+        bankAccountNumber: "293272551/0300",
+        transparentBankAccountUrl:
+          "https://www.csob.cz/portal/firmy/bezne-ucty/transparentni-ucty/ucet?account=293272551",
+        url: "https://www.destne.info/#/aktuality",
+        qrImage: Destne,
+        facebookPageUrl: "",
+        checkedAt: "16.2.2023",
       },
     ],
   },
