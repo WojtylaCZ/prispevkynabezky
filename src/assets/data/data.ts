@@ -23,6 +23,7 @@ import Pasecna from "./qr-codes/Pasecna-299936101-0300.png";
 import Jeseniky from "./qr-codes/Jeseniky-283995131-0300.png";
 
 import VelkeKarlovice from "./qr-codes/VelkeKarlovice-20036-1765312369-0800.png";
+import Pustevny from "./qr-codes/Pustevny-6003963379-0800.png";
 
 import ZdarNadSazavou from "./qr-codes/ZdarNadSazavou-317339651-0300.png";
 import VelkeDarko from "./qr-codes/VelkeDarko-287591038-0300.png";
@@ -292,6 +293,17 @@ export const data: Array<District> = [
         qrImage: VelkeKarlovice,
         facebookPageUrl: "",
         checkedAt: "6.2.2023",
+      },
+      {
+        id: 72,
+        name: "Pustevny",
+        operator: "Běžecký areál Pustevny z.s.",
+        bankAccountNumber: "6003963379/0800",
+        transparentBankAccountUrl: "https://www.csas.cz/cs/transparentni-ucty#/000000-6003963379",
+        url: "http://www.ba-pustevny.cz/",
+        qrImage: Pustevny,
+        facebookPageUrl: "https://www.facebook.com/bapustevny",
+        checkedAt: "15.2.2023",
       },
     ],
   },
