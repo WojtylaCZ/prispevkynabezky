@@ -2,6 +2,7 @@ import { District } from "../../app/district";
 
 import Jizerka from "./qr-codes/Jizerka-255899476-0300.png";
 import PencinskaMagistrala from "./qr-codes/Pencinska-magistrala-115-8520840237-0100.png";
+import Zasada from "./qr-codes/Zasada-123-3394480257-0100.png";
 
 import MalaUpa from "./qr-codes/MalaUpa-6138641369-0800.png";
 import Vrchlabi from "./qr-codes/Vrchlabi-262563989-0300.png";
@@ -55,6 +56,17 @@ export const data: Array<District> = [
         url: "https://bezecke-trate-huntirov.webnode.cz/",
         qrImage: PencinskaMagistrala,
         facebookPageUrl: "https://www.facebook.com/pencinskamagistrala",
+        checkedAt: "16.2.2023",
+      },
+      {
+        id: 12,
+        name: "Zásada a okolí",
+        operator: "Město Zásada",
+        bankAccountNumber: "123-3394480257/0100",
+        transparentBankAccountUrl: null,
+        url: "https://www.zasada.cz/volny-cas/lyzarske-bezecke-trate",
+        qrImage: Zasada,
+        facebookPageUrl: "https://www.facebook.com/CrossCountrySkiZasada",
         checkedAt: "16.2.2023",
       },
     ],
