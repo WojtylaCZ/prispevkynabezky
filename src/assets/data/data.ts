@@ -1,6 +1,7 @@
 import { District } from "../../app/district";
 
 import Jizerka from "./qr-codes/Jizerka-255899476-0300.png";
+import PencinskaMagistrala from "./qr-codes/Pencinska-magistrala-115-8520840237-0100.png";
 
 import MalaUpa from "./qr-codes/MalaUpa-6138641369-0800.png";
 import Vrchlabi from "./qr-codes/Vrchlabi-262563989-0300.png";
@@ -44,6 +45,17 @@ export const data: Array<District> = [
         qrImage: Jizerka,
         facebookPageUrl: "https://www.facebook.com/jizerskamagistrala",
         checkedAt: "4.2.2023",
+      },
+      {
+        id: 12,
+        name: "Pěnčínská magistrála",
+        operator: "Pavel Pavlata - Huntířov",
+        bankAccountNumber: "115-8520840237/0100",
+        transparentBankAccountUrl: null,
+        url: "https://bezecke-trate-huntirov.webnode.cz/",
+        qrImage: PencinskaMagistrala,
+        facebookPageUrl: "https://www.facebook.com/pencinskamagistrala",
+        checkedAt: "16.2.2023",
       },
     ],
   },
