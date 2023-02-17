@@ -159,7 +159,7 @@ export const data: Array<District> = [
         // url: "http://www.krusnehoryaktivne.cz/",
         url: "http://www.krusnehoryaktivne.cz/?page_id=11",
         qrImage: ZapadniKrusneHory,
-        facebookPageUrl: "https://www.facebook.com/jizerskamagistrala",
+        facebookPageUrl: "https://www.facebook.com/KLMzapad",
         checkedAt: "4.2.2023",
       },
       {
