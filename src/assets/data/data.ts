@@ -1,6 +1,7 @@
 import { District } from "../../app/district";
 
 import Jizerka from "./qr-codes/Jizerka-255899476-0300.png";
+import Korenov from "./qr-codes/Korenov-123-4434000217-0100.png";
 import PencinskaMagistrala from "./qr-codes/Pencinska-magistrala-115-8520840237-0100.png";
 import Zasada from "./qr-codes/Zasada-123-3394480257-0100.png";
 
@@ -51,6 +52,17 @@ export const data: Array<District> = [
       },
       {
         id: 12,
+        name: "Kořenov, Paseky nad Jizerou",
+        operator: "Jizersky pro vás o.p.s.",
+        bankAccountNumber: "123-4434000217/0100",
+        transparentBankAccountUrl: "https://www.kb.cz/cs/transparentni-ucty/123-4434000217",
+        url: "http://www.jizerkyprovas.cz/",
+        qrImage: Korenov,
+        facebookPageUrl: null,
+        checkedAt: "17.2.2023",
+      },
+      {
+        id: 13,
         name: "Pěnčínská magistrála",
         operator: "Pavel Pavlata - Huntířov",
         bankAccountNumber: "115-8520840237/0100",
@@ -61,7 +73,7 @@ export const data: Array<District> = [
         checkedAt: "16.2.2023",
       },
       {
-        id: 12,
+        id: 14,
         name: "Zásada a okolí",
         operator: "Město Zásada",
         bankAccountNumber: "123-3394480257/0100",
