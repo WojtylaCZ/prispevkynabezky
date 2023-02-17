@@ -15,9 +15,11 @@ import LoucnaPodKlinovcem from "./qr-codes/LoucnaPodKlinovcem-2302061393-2010.pn
 import Alsovka from "./qr-codes/Alsovka-204457600-0600.png";
 import StredniKrusneHory from "./qr-codes/StredniKrusneHory-35-6888660227-0100.png";
 
-import RickyVOrlickycHorach from "./qr-codes/RickyVOrlickychHorach-276681775-0300.png";
 import BukovaHora from "./qr-codes/BukovaHora-6114987349-0800.png";
+// Zahori QR contains note with web
+import OrlickeZahori from "./qr-codes/Orlicke-Zahori-296969346-0300.png";
 import Destne from "./qr-codes/DesteVOrlickychHorach293272551-0300.png";
+import RickyVOrlickycHorach from "./qr-codes/RickyVOrlickychHorach-276681775-0300.png";
 
 import HlavniSumava from "./qr-codes/HlavniSumava-207602447-0600.png";
 import Pasecna from "./qr-codes/Pasecna-299936101-0300.png";
@@ -222,17 +224,6 @@ export const data: Array<District> = [
     name: "Orlické hory",
     trailparks: [
       {
-        id: 41,
-        name: "Říčky v Orlických horách",
-        operator: "SKI KLUB Ústí nad Orlicí. spol. s r.o.",
-        bankAccountNumber: "276681775/0300",
-        transparentBankAccountUrl: null,
-        url: "https://skiricky.cz/bezecke-trasy/",
-        qrImage: RickyVOrlickycHorach,
-        facebookPageUrl: "https://www.facebook.com/skicentrumricky",
-        checkedAt: "4.2.2023",
-      },
-      {
         id: 42,
         name: "Buková hora - Suchý vrch",
         operator: "Sdružení obcí Orlicko",
@@ -255,6 +246,29 @@ export const data: Array<District> = [
         qrImage: Destne,
         facebookPageUrl: "",
         checkedAt: "16.2.2023",
+      },
+      {
+        id: 43,
+        name: "Orlické Záhoří",
+        operator: "Obec Orlické Záhoří",
+        bankAccountNumber: "296969346/0300",
+        transparentBankAccountUrl:
+          "https://www.csob.cz/portal/firmy/bezne-ucty/transparentni-ucty/ucet?account=296969346",
+        url: "https://www.orlickezahori.eu/index.php/cs/index-tic/akce-v-kalendari/upravovane-bezecke-trate-a-ski-arena-orlicke-zahori-sezona-2021-2022",
+        qrImage: OrlickeZahori,
+        facebookPageUrl: "",
+        checkedAt: "17.2.2023",
+      },
+      {
+        id: 41,
+        name: "Říčky v Orlických horách",
+        operator: "SKI KLUB Ústí nad Orlicí. spol. s r.o.",
+        bankAccountNumber: "276681775/0300",
+        transparentBankAccountUrl: null,
+        url: "https://skiricky.cz/bezecke-trasy/",
+        qrImage: RickyVOrlickycHorach,
+        facebookPageUrl: "https://www.facebook.com/skicentrumricky",
+        checkedAt: "4.2.2023",
       },
     ],
   },
