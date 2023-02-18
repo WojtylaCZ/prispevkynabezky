@@ -33,6 +33,12 @@ export const TrailparkCard = ({
       ReactGA.event("trailparkcard_expanded", {
         trailparkId: trailpark.id,
       });
+      ReactGA.event({
+        // action becomes the event name
+        action: `trailparkcardexpanded2_${trailpark.id}`,
+        //  "event_category" becomes a custom parameter
+        category: `${trailpark.id}`,
+      });
     }
     setIsExpanded(!isExpanded);
   }, [trailpark.id, isExpanded]);
@@ -113,16 +119,10 @@ export const TrailparkCard = ({
           <Container>
             <Row>
               <Col sm style={{ marginBottom: "0.5em" }}>
-                <h5 style={{ fontWeight: "bold", minWidth: "170px" }}>
-                  QR kód pro platbu:
-                </h5>
+                <h5 style={{ fontWeight: "bold", minWidth: "170px" }}>QR kód pro platbu:</h5>
 
                 <div style={{ margin: "auto", maxWidth: "250px" }}>
-                  {trailpark.qrImage ? (
-                    <Image src={trailpark.qrImage} thumbnail />
-                  ) : (
-                    "❌"
-                  )}
+                  {trailpark.qrImage ? <Image src={trailpark.qrImage} thumbnail /> : "❌"}
                 </div>
               </Col>
               <Col sm style={{ marginBottom: "0.5em" }}>
