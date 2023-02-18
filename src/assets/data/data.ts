@@ -15,6 +15,9 @@ import RokytniceNadJizerou from "./qr-codes/RokytniceNadJizerou-123-5314220287-0
 import ZapadniKrusneHory from "./qr-codes/ZapadniKrusneHory-269980072-0300.png";
 import LoucnaPodKlinovcem from "./qr-codes/LoucnaPodKlinovcem-2302061393-2010.png";
 import Alsovka from "./qr-codes/Alsovka-204457600-0600.png";
+// NoveMesto with qr note v2
+import NoveMesto from "./qr-codes/NoveMesto-301456968-0300.png";
+
 import StredniKrusneHory from "./qr-codes/StredniKrusneHory-35-6888660227-0100.png";
 
 import BukovaHora from "./qr-codes/BukovaHora-6114987349-0800.png";
@@ -186,6 +189,17 @@ export const data: Array<District> = [
         qrImage: LoucnaPodKlinovcem,
         facebookPageUrl: null,
         checkedAt: "4.2.2023",
+      },
+      {
+        id: 35,
+        name: "Cínovec - Nové Město",
+        operator: "MAS Cínovecko, o.p.s.",
+        bankAccountNumber: "301456968/0300",
+        transparentBankAccountUrl: null,
+        url: "http://www.mascinovecko.cz/clanek?nazev=prispet-na-bezecke-stopy-v-useku-komari-vizka---nove-mesto-je-snazsi",
+        qrImage: NoveMesto,
+        facebookPageUrl: "https://www.facebook.com/bezeckestopy",
+        checkedAt: "19.2.2023",
       },
       {
         id: 34,
