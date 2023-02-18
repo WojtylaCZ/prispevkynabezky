@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.239c8c88.css",
-    "main.js": "/static/js/main.d29d6951.js",
+    "main.js": "/static/js/main.fda23b13.js",
     "static/js/787.d6b98a22.chunk.js": "/static/js/787.d6b98a22.chunk.js",
     "static/media/Alsovka-204457600-0600.png": "/static/media/Alsovka-204457600-0600.0b5767232167276fe986.png",
     "static/media/LoucnaPodKlinovcem-2302061393-2010.png": "/static/media/LoucnaPodKlinovcem-2302061393-2010.e362c24dea7d5dbe9d91.png",
@@ -36,11 +36,11 @@
     "static/media/chevron-down.svg": "/static/media/chevron-down.bdc5512bebaafee5cfb979d7683ecb5e.svg",
     "static/media/chevron-up.svg": "/static/media/chevron-up.0fab3e8c7e4f106fee079a2fdd13ffa2.svg",
     "main.239c8c88.css.map": "/static/css/main.239c8c88.css.map",
-    "main.d29d6951.js.map": "/static/js/main.d29d6951.js.map",
+    "main.fda23b13.js.map": "/static/js/main.fda23b13.js.map",
     "787.d6b98a22.chunk.js.map": "/static/js/787.d6b98a22.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.239c8c88.css",
-    "static/js/main.d29d6951.js"
+    "static/js/main.fda23b13.js"
   ]
 }
