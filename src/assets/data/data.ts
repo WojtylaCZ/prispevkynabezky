@@ -248,7 +248,8 @@ export const data: Array<District> = [
           "https://www.csas.cz/cs/transparentni-ucty#/000000-6114987349/Sdruzeni-obci-Orlicko",
         url: "https://www.orlicko.cz/lyzarske-stopy-orlicka",
         qrImage: BukovaHora,
-        facebookPageUrl: "https://www.facebook.com/skicentrumricky",
+        facebookPageUrl:
+          "https://www.facebook.com/Sdru%C5%BEen%C3%AD-obc%C3%AD-Orlicko-1621311478157605",
         checkedAt: "4.2.2023",
       },
       {
