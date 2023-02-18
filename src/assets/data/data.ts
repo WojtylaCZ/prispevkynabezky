@@ -1,6 +1,7 @@
 import { District } from "../../app/district";
 
 import Jizerka from "./qr-codes/Jizerka-255899476-0300.png";
+// Korenov QR contains note with web
 import Korenov from "./qr-codes/Korenov-123-4434000217-0100.png";
 import PencinskaMagistrala from "./qr-codes/Pencinska-magistrala-115-8520840237-0100.png";
 import Zasada from "./qr-codes/Zasada-123-3394480257-0100.png";
@@ -20,6 +21,7 @@ import BukovaHora from "./qr-codes/BukovaHora-6114987349-0800.png";
 // Zahori QR contains note with web
 import OrlickeZahori from "./qr-codes/Orlicke-Zahori-296969346-0300.png";
 import Destne from "./qr-codes/DesteVOrlickychHorach293272551-0300.png";
+// Ricky QR contains note with web
 import RickyVOrlickycHorach from "./qr-codes/RickyVOrlickychHorach-276681775-0300.png";
 
 import HlavniSumava from "./qr-codes/HlavniSumava-207602447-0600.png";
@@ -89,6 +91,30 @@ export const data: Array<District> = [
     name: "Krkonoše",
     trailparks: [
       {
+        id: 25,
+        name: "Harrachov",
+        operator: "Město Harrachov",
+        bankAccountNumber: "20036-1263085389/0800",
+        transparentBankAccountUrl:
+          "https://www.csas.cz/cs/transparentni-ucty#/020036-1263085389/Mesto-Harrachov",
+        // url: "https://www.harrachovcard.cz/zima/bezecke-lyzovani",
+        url: "https://www.harrachovcard.cz/harrachov/verejna-sbirka",
+        qrImage: Harrachov,
+        facebookPageUrl: null,
+        checkedAt: "4.2.2023",
+      },
+      {
+        id: 24,
+        name: "Jilemnice",
+        operator: "ČKS SKI Jilemnice",
+        bankAccountNumber: "1261416359/0800",
+        transparentBankAccountUrl: null,
+        url: "https://www.skijilemnice.cz/web/trate/mapy",
+        qrImage: Jilemnice,
+        facebookPageUrl: null,
+        checkedAt: "4.2.2023",
+      },
+      {
         id: 21,
         name: "Malá Úpa",
         operator: "Obec Malá Úpa",
@@ -99,6 +125,17 @@ export const data: Array<District> = [
         url: "https://malaupa.cz/blog/2022/02/07/dobrovolny-prispevek-na-upravu-bezeckych-trati-v-male-upe/",
         qrImage: MalaUpa,
         facebookPageUrl: "https://www.facebook.com/malaupa",
+        checkedAt: "4.2.2023",
+      },
+      {
+        id: 26,
+        name: "Rokytnice nad Jizerou",
+        operator: "Město Rokytnice nad Jizerou",
+        bankAccountNumber: "123-5314220287/0100",
+        transparentBankAccountUrl: null,
+        url: "https://www.mesto-rokytnice.cz/turisticke-info/lyze-bezky-snowboard",
+        qrImage: RokytniceNadJizerou,
+        facebookPageUrl: null,
         checkedAt: "4.2.2023",
       },
       {
@@ -123,57 +160,20 @@ export const data: Array<District> = [
         facebookPageUrl: "https://www.facebook.com/BeneckoKrkonose/",
         checkedAt: "4.2.2023",
       },
-      {
-        id: 24,
-        name: "Jilemnice",
-        operator: "ČKS SKI Jilemnice",
-        bankAccountNumber: "1261416359/0800",
-        transparentBankAccountUrl: null,
-        url: "https://www.skijilemnice.cz/web/trate/mapy",
-        qrImage: Jilemnice,
-        facebookPageUrl: null,
-        checkedAt: "4.2.2023",
-      },
-      {
-        id: 25,
-        name: "Harrachov",
-        operator: "Město Harrachov",
-        bankAccountNumber: "20036-1263085389/0800",
-        transparentBankAccountUrl:
-          "https://www.csas.cz/cs/transparentni-ucty#/020036-1263085389/Mesto-Harrachov",
-        // url: "https://www.harrachovcard.cz/zima/bezecke-lyzovani",
-        url: "https://www.harrachovcard.cz/harrachov/verejna-sbirka",
-        qrImage: Harrachov,
-        facebookPageUrl: null,
-        checkedAt: "4.2.2023",
-      },
-      {
-        id: 26,
-        name: "Rokytnice nad Jizerou",
-        operator: "Město Rokytnice nad Jizerou",
-        bankAccountNumber: "123-5314220287/0100",
-        transparentBankAccountUrl: null,
-        url: "https://www.mesto-rokytnice.cz/turisticke-info/lyze-bezky-snowboard",
-        qrImage: RokytniceNadJizerou,
-        facebookPageUrl: null,
-        checkedAt: "4.2.2023",
-      },
     ],
   },
   {
     name: "Krušné hory",
     trailparks: [
       {
-        id: 31,
-        name: "Západní Krušné hory",
-        operator: "První krušnohorská o.p.s.",
-        bankAccountNumber: "269980072/0300",
-        transparentBankAccountUrl:
-          "https://www.csob.cz/portal/firmy/bezne-ucty/transparentni-ucty/ucet?account=269980072",
-        // url: "http://www.krusnehoryaktivne.cz/",
-        url: "http://www.krusnehoryaktivne.cz/?page_id=11",
-        qrImage: ZapadniKrusneHory,
-        facebookPageUrl: "https://www.facebook.com/KLMzapad",
+        id: 33,
+        name: "Alšovka - střední Krušné hory",
+        operator: "Horal Venkov z.s.",
+        bankAccountNumber: "204457600/0600",
+        transparentBankAccountUrl: null,
+        url: "https://alsovka.cz/bezecke-trasy/",
+        qrImage: Alsovka,
+        facebookPageUrl: "https://www.facebook.com/SkiarealAlsovka",
         checkedAt: "4.2.2023",
       },
       {
@@ -188,27 +188,6 @@ export const data: Array<District> = [
         checkedAt: "4.2.2023",
       },
       {
-        id: 33,
-        name: "Alšovka - střední Krušné hory",
-        operator: "Horal Venkov z.s.",
-        bankAccountNumber: "204457600/0600",
-        transparentBankAccountUrl: null,
-        url: "https://alsovka.cz/bezecke-trasy/",
-        qrImage: Alsovka,
-        facebookPageUrl: "https://www.facebook.com/SkiarealAlsovka",
-        checkedAt: "4.2.2023",
-      },
-      // {
-      //   name: "Klíny - střední Krušné hory",
-      //   operator: "Sport areál Klíny",
-      //   bankAccountNumber: null,
-      //   transparentBankAccountUrl: null,
-      //   url: "https://kliny.cz/bezecke-trasy/",
-      //   qrImage: null,
-      //   facebookPageUrl: null,
-      //   checkedAt: "4.2.2023",
-      // },
-      {
         id: 34,
         name: "Střední Krušné hory",
         operator: "Krušnohorský klub Osek",
@@ -219,6 +198,31 @@ export const data: Array<District> = [
         facebookPageUrl: "https://www.facebook.com/krusnohorskabilastopa",
         checkedAt: "4.2.2023",
       },
+      {
+        id: 31,
+        name: "Západní Krušné hory",
+        operator: "První krušnohorská o.p.s.",
+        bankAccountNumber: "269980072/0300",
+        transparentBankAccountUrl:
+          "https://www.csob.cz/portal/firmy/bezne-ucty/transparentni-ucty/ucet?account=269980072",
+        // url: "http://www.krusnehoryaktivne.cz/",
+        url: "http://www.krusnehoryaktivne.cz/?page_id=11",
+        qrImage: ZapadniKrusneHory,
+        facebookPageUrl: "https://www.facebook.com/KLMzapad",
+        checkedAt: "4.2.2023",
+      },
+
+      // {
+      //   name: "Klíny - střední Krušné hory",
+      //   operator: "Sport areál Klíny",
+      //   bankAccountNumber: null,
+      //   transparentBankAccountUrl: null,
+      //   url: "https://kliny.cz/bezecke-trasy/",
+      //   qrImage: null,
+      //   facebookPageUrl: null,
+      //   checkedAt: "4.2.2023",
+      // },
+
       {
         id: 35,
         name: "Děčínský Sněžník - Východní Krušné hory",
@@ -334,17 +338,6 @@ export const data: Array<District> = [
     // Vetsina "parku" nema sbirku, cislo uctu, nic.
     trailparks: [
       {
-        id: 71,
-        name: "Velké Karlovice",
-        operator: "Obec Velké Karlovice",
-        bankAccountNumber: "20036-1765312369/0800",
-        transparentBankAccountUrl: null,
-        url: "https://www.velkekarlovice.cz/rekreace-sport/zimni-sporty/bezecke-trasy-1/",
-        qrImage: VelkeKarlovice,
-        facebookPageUrl: "",
-        checkedAt: "6.2.2023",
-      },
-      {
         id: 72,
         name: "Pustevny",
         operator: "Běžecký areál Pustevny z.s.",
@@ -355,21 +348,42 @@ export const data: Array<District> = [
         facebookPageUrl: "https://www.facebook.com/bapustevny",
         checkedAt: "15.2.2023",
       },
+      {
+        id: 71,
+        name: "Velké Karlovice",
+        operator: "Obec Velké Karlovice",
+        bankAccountNumber: "20036-1765312369/0800",
+        transparentBankAccountUrl: null,
+        url: "https://www.velkekarlovice.cz/rekreace-sport/zimni-sporty/bezecke-trasy-1/",
+        qrImage: VelkeKarlovice,
+        facebookPageUrl: "",
+        checkedAt: "6.2.2023",
+      },
     ],
   },
   {
     name: "Vysočina",
     trailparks: [
       {
-        id: 81,
-        name: "Žďár nad Sázavou",
-        operator: "Sportis Žďár nad Sázavou",
-        bankAccountNumber: "317339651/0300",
-        transparentBankAccountUrl:
-          "https://www.csob.cz/portal/firmy/bezne-ucty/transparentni-ucty/ucet?account=317339651",
-        url: "https://www.sportispo.cz/page.aspx?IDTema=12",
-        qrImage: ZdarNadSazavou,
-        facebookPageUrl: "",
+        id: 84,
+        name: "Novoměstsko",
+        operator: "Mikroregion Novoměstsko",
+        bankAccountNumber: "107-3157480237/0100",
+        transparentBankAccountUrl: null,
+        url: "https://lyzovani.nmnm.cz/verejna-sbirka-na-udrzbu-trati/",
+        qrImage: Novomestsko,
+        facebookPageUrl: null,
+        checkedAt: "6.2.2023",
+      },
+      {
+        id: 83,
+        name: "Svratka",
+        operator: "Niva Svratky, o.p.s.",
+        bankAccountNumber: "2802081518/2010",
+        transparentBankAccountUrl: "https://ib.fio.cz/ib/transparent?a=2802081518",
+        url: null,
+        qrImage: Svratka,
+        facebookPageUrl: "https://www.facebook.com/xcskisvratka/",
         checkedAt: "6.2.2023",
       },
       {
@@ -385,25 +399,15 @@ export const data: Array<District> = [
         checkedAt: "6.2.2023",
       },
       {
-        id: 83,
-        name: "Svratka",
-        operator: "Niva Svratky, o.p.s.",
-        bankAccountNumber: "2802081518/2010",
-        transparentBankAccountUrl: "https://ib.fio.cz/ib/transparent?a=2802081518",
-        url: null,
-        qrImage: Svratka,
-        facebookPageUrl: "https://www.facebook.com/xcskisvratka/",
-        checkedAt: "6.2.2023",
-      },
-      {
-        id: 84,
-        name: "Novoměstsko",
-        operator: "Mikroregion Novoměstsko",
-        bankAccountNumber: "107-3157480237/0100",
-        transparentBankAccountUrl: null,
-        url: "https://lyzovani.nmnm.cz/verejna-sbirka-na-udrzbu-trati/",
-        qrImage: Novomestsko,
-        facebookPageUrl: null,
+        id: 81,
+        name: "Žďár nad Sázavou",
+        operator: "Sportis Žďár nad Sázavou",
+        bankAccountNumber: "317339651/0300",
+        transparentBankAccountUrl:
+          "https://www.csob.cz/portal/firmy/bezne-ucty/transparentni-ucty/ucet?account=317339651",
+        url: "https://www.sportispo.cz/page.aspx?IDTema=12",
+        qrImage: ZdarNadSazavou,
+        facebookPageUrl: "",
         checkedAt: "6.2.2023",
       },
     ],
