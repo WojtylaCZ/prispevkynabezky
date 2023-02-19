@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.11c0302a.css",
+    "main.css": "/static/css/main.f0447cff.css",
     "main.js": "/static/js/main.9dbe7741.js",
     "static/js/787.d6b98a22.chunk.js": "/static/js/787.d6b98a22.chunk.js",
     "static/media/Alsovka-204457600-0600.png": "/static/media/Alsovka-204457600-0600.0b5767232167276fe986.png",
@@ -35,12 +35,12 @@
     "static/media/facebook.svg": "/static/media/facebook.ca0ea9eec9d586d7487660920e95810f.svg",
     "static/media/chevron-down.svg": "/static/media/chevron-down.bdc5512bebaafee5cfb979d7683ecb5e.svg",
     "static/media/chevron-up.svg": "/static/media/chevron-up.0fab3e8c7e4f106fee079a2fdd13ffa2.svg",
-    "main.11c0302a.css.map": "/static/css/main.11c0302a.css.map",
+    "main.f0447cff.css.map": "/static/css/main.f0447cff.css.map",
     "main.9dbe7741.js.map": "/static/js/main.9dbe7741.js.map",
     "787.d6b98a22.chunk.js.map": "/static/js/787.d6b98a22.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11c0302a.css",
+    "static/css/main.f0447cff.css",
     "static/js/main.9dbe7741.js"
   ]
 }
