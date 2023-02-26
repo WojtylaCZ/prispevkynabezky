@@ -30,6 +30,8 @@ import RickyVOrlickycHorach from "./qr-codes/RickyVOrlickychHorach-276681775-030
 import HlavniSumava from "./qr-codes/HlavniSumava-207602447-0600.png";
 import Pasecna from "./qr-codes/Pasecna-299936101-0300.png";
 
+import HojnaVoda from "./qr-codes/NovohradskeHory-HojnaVoda-2102245016-2010.png";
+
 import Jeseniky from "./qr-codes/Jeseniky-283995131-0300.png";
 
 import VelkeKarlovice from "./qr-codes/VelkeKarlovice-20036-1765312369-0800.png";
@@ -327,6 +329,22 @@ export const data: Array<District> = [
         qrImage: Pasecna,
         facebookPageUrl: "https://www.facebook.com/bezky.pasecna",
         checkedAt: "5.2.2023",
+      },
+    ],
+  },
+  {
+    name: "Novohradské hory",
+    trailparks: [
+      {
+        id: 91,
+        name: "Hojná Voda",
+        operator: "Sportklub Hojná Voda, z.s.",
+        bankAccountNumber: "2102245016/2010",
+        transparentBankAccountUrl: null,
+        url: "https://www.hojna-voda.eu/index.php/bezky",
+        qrImage: HojnaVoda,
+        facebookPageUrl: null,
+        checkedAt: "26.2.2023",
       },
     ],
   },
