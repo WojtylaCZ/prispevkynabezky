@@ -42,6 +42,8 @@ import VelkeDarko from "./qr-codes/VelkeDarko-287591038-0300.png";
 import Svratka from "./qr-codes/Svratka-2802081518-2010.png";
 import Novomestsko from "./qr-codes/Novomestsko-107-3157480237-0100.png";
 
+import Polevsko from "./qr-codes/Polevsko-43-1708990227-0100.png";
+
 export const data: Array<District> = [
   {
     name: "Jizerské hory",
@@ -249,6 +251,22 @@ export const data: Array<District> = [
         qrImage: null,
         facebookPageUrl: "https://www.facebook.com/bezkysneznik/",
         checkedAt: "4.2.2023",
+      },
+    ],
+  },
+  {
+    name: "Lužické hory",
+    trailparks: [
+      {
+        id: 101,
+        name: "Polevsko",
+        operator: "SKI Polevsko - oddíl běžeckého lyžování",
+        bankAccountNumber: "43-1708990227/0100",
+        transparentBankAccountUrl: null,
+        url: "https://skipolevsko.estranky.cz/clanky/kontakt.html",
+        qrImage: Polevsko,
+        facebookPageUrl: "https://www.facebook.com/ski.polevsko/",
+        checkedAt: "7.3.2023",
       },
     ],
   },
