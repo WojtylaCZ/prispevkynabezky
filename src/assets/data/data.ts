@@ -42,6 +42,7 @@ import VelkeDarko from "./qr-codes/VelkeDarko-287591038-0300.png";
 import Svratka from "./qr-codes/Svratka-2802081518-2010.png";
 import Novomestsko from "./qr-codes/Novomestsko-107-3157480237-0100.png";
 
+// Polevsko with qr note v2
 import Polevsko from "./qr-codes/Polevsko-43-1708990227-0100.png";
 
 export const data: Array<District> = [
