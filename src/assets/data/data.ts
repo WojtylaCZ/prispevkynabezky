@@ -1,25 +1,34 @@
 import { District } from "../../app/district";
 
+// Jizerske hory
 import Jizerka from "./qr-codes/Jizerka-255899476-0300.png";
 // Korenov QR contains note with web
 import Korenov from "./qr-codes/Korenov-123-4434000217-0100.png";
 import PencinskaMagistrala from "./qr-codes/Pencinska-magistrala-115-8520840237-0100.png";
 import Zasada from "./qr-codes/Zasada-123-3394480257-0100.png";
 
+// Krkonose
 import MalaUpa from "./qr-codes/MalaUpa-6138641369-0800.png";
 import Vrchlabi from "./qr-codes/Vrchlabi-262563989-0300.png";
 import Jilemnice from "./qr-codes/Jilemnice-1261416359-0800.png";
 import Harrachov from "./qr-codes/Harrachov-20036-1263085389-0800.png";
 import RokytniceNadJizerou from "./qr-codes/RokytniceNadJizerou-123-5314220287-0100.png";
 
+// Krusne hory
+// Adolfov with qr note v2
+import Adolfov from "./qr-codes/Adolfov-656595-0100.png";
 import ZapadniKrusneHory from "./qr-codes/ZapadniKrusneHory-269980072-0300.png";
 import LoucnaPodKlinovcem from "./qr-codes/LoucnaPodKlinovcem-2302061393-2010.png";
 import Alsovka from "./qr-codes/Alsovka-204457600-0600.png";
 // NoveMesto with qr note v2
 import NoveMesto from "./qr-codes/NoveMesto-301456968-0300.png";
-
 import StredniKrusneHory from "./qr-codes/StredniKrusneHory-35-6888660227-0100.png";
 
+// Luzicke hory
+// Polevsko with qr note v2
+import Polevsko from "./qr-codes/Polevsko-43-1708990227-0100.png";
+
+// Orlicke hory
 import BukovaHora from "./qr-codes/BukovaHora-6114987349-0800.png";
 // Zahori QR contains note with web
 import OrlickeZahori from "./qr-codes/Orlicke-Zahori-296969346-0300.png";
@@ -27,23 +36,25 @@ import Destne from "./qr-codes/DesteVOrlickychHorach293272551-0300.png";
 // Ricky QR contains note with web
 import RickyVOrlickycHorach from "./qr-codes/RickyVOrlickychHorach-276681775-0300.png";
 
+// Sumava
 import HlavniSumava from "./qr-codes/HlavniSumava-207602447-0600.png";
 import Pasecna from "./qr-codes/Pasecna-299936101-0300.png";
 
+// Novohradske hory
 import HojnaVoda from "./qr-codes/NovohradskeHory-HojnaVoda-2102245016-2010.png";
 
+// Jeseniky
 import Jeseniky from "./qr-codes/Jeseniky-283995131-0300.png";
 
+// Beskydy
 import VelkeKarlovice from "./qr-codes/VelkeKarlovice-20036-1765312369-0800.png";
 import Pustevny from "./qr-codes/Pustevny-6003963379-0800.png";
 
+// Vysocina
 import ZdarNadSazavou from "./qr-codes/ZdarNadSazavou-317339651-0300.png";
 import VelkeDarko from "./qr-codes/VelkeDarko-287591038-0300.png";
 import Svratka from "./qr-codes/Svratka-2802081518-2010.png";
 import Novomestsko from "./qr-codes/Novomestsko-107-3157480237-0100.png";
-
-// Polevsko with qr note v2
-import Polevsko from "./qr-codes/Polevsko-43-1708990227-0100.png";
 
 export const data: Array<District> = [
   {
@@ -174,6 +185,17 @@ export const data: Array<District> = [
     name: "Krušné hory",
     trailparks: [
       {
+        id: 37,
+        name: "Adolfov",
+        operator: "Horský spolek Adolfov, z.s.",
+        bankAccountNumber: "656595/0100",
+        transparentBankAccountUrl: "https://www.kb.cz/cs/transparentni-ucty/656595",
+        url: "https://www.hsadolfov.cz/zima/",
+        qrImage: Adolfov,
+        facebookPageUrl: "https://www.facebook.com/hsadolfov",
+        checkedAt: "12.3.2023",
+      },
+      {
         id: 33,
         name: "Alšovka",
         operator: "Horal Venkov z.s.",
@@ -185,7 +207,7 @@ export const data: Array<District> = [
         checkedAt: "4.2.2023",
       },
       {
-        id: 35,
+        id: 36,
         name: "Cínovec - Nové Město",
         operator: "MAS Cínovecko, o.p.s.",
         bankAccountNumber: "301456968/0300",
