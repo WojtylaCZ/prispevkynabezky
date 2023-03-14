@@ -3,7 +3,7 @@ import { Navbar, Container, Image, Stack } from "react-bootstrap";
 import { DistrictSection } from "./district";
 import Skier from "../assets/img/skier2.png";
 
-import { data } from "../assets/data/data";
+import { data } from "../assets/data/data-new";
 
 export const Main = () => {
   const districtsList = data.map((district, id) => (

@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import { Main } from "./app/main";
-import reportWebVitals from "./reportWebVitals";
+import reportWebVitals from "./cra/reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SSRProvider from "react-bootstrap/SSRProvider";
 
