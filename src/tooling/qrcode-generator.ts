@@ -44,7 +44,8 @@ export const generateAll = () => {
     console.log(`import ${filename} from "./qr-codes-new/${filename}.png"`);
 
     QRCode.toFile("./src/assets/data/qr-codes-new/" + filename + ".png", qr, {
-      margin: 0,
+      margin: 1,
+      width: 600,
       errorCorrectionLevel: "M",
     });
   });
