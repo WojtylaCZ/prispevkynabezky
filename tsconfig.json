@@ -16,12 +16,12 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "src/index.d.ts"],
+  "include": ["src"],
   "ts-node": {
-    "transpileOnly": true, // you can specify ts-node options here
+    "transpileOnly": true,
     "compilerOptions": {
       "target": "es6",
-      "module": "commonjs", // you can also override compilerOptions.  Only ts-node will use these overrides
+      "module": "commonjs",
       "esModuleInterop": true,
       "skipLibCheck": true,
       "moduleResolution": "node",
