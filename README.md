@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# PrispevkyNaBezky.cz
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple FE app.
+
+## Deploy to web (GH pages)
+
+It also create a snapshot with react-snap to pre-render a web app into static HTML for SEO.
+
+`yarn deploy`
+
+## Regenerate QR codes.
+
+from CLI: `yarn run qrcode -q 0 -o test.png "SPD*1.0*AM:300*CC:CZK*ACC:CZ4303000000000255899476*MSG:prispevek"`
+
+from code: `yarn qr:generate`
 
 ## Available Scripts
 

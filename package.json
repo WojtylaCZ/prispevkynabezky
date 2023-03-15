@@ -4,22 +4,13 @@
   "private": true,
   "homepage": "https://prispevkynabezky.cz",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^16.7.13",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
     "bootstrap": "^5.2.3",
     "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
     "react-ga4": "^2.0.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,7 +19,9 @@
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
-    "postbuild": "react-snap"
+    "postbuild": "react-snap",
+    "qr:generate": "ts-node src/tooling/qrcode-generator.ts",
+    "qr:validate": "ts-node src/tooling/qrcode-validator.ts"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +42,21 @@
     ]
   },
   "devDependencies": {
-    "react-snap": "^1.23.0"
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/qrcode": "^1.5.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "jimp": "^0.22.7",
+    "qrcode-reader": "^1.0.4",
+    "qrcode.react": "^3.1.0",
+    "react-snap": "^1.23.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.0",
+    "qrcode": "^1.5.1"
   }
 }

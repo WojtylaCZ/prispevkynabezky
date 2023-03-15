@@ -13,6 +13,7 @@ export type Trailpark = {
   qrImage: string | null;
   bankAccountNumber: string | null;
   transparentBankAccountUrl: string | null;
+  variableSymbol: number | null;
   url: string | null;
   facebookPageUrl: string | null;
   operator: string;
