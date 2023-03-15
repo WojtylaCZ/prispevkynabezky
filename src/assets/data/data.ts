@@ -199,6 +199,7 @@ export const data: Array<District> = [
         name: "Adolfov",
         operator: "Horský spolek Adolfov, z.s.",
         bankAccountNumber: "656595/0100",
+        variableSymbol: null,
         transparentBankAccountUrl: "https://www.kb.cz/cs/transparentni-ucty/656595",
         url: "https://www.hsadolfov.cz/zima/",
         qrImage: Adolfov,

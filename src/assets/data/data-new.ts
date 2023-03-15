@@ -10,8 +10,9 @@ import Id21_6138641369_0800 from "./qr-codes-new/Id21_6138641369_0800.png";
 import Id26_123_5314220287_0100 from "./qr-codes-new/Id26_123_5314220287_0100.png";
 import Id22_262563989_0300 from "./qr-codes-new/Id22_262563989_0300.png";
 import Id33_204457600_0600 from "./qr-codes-new/Id33_204457600_0600.png";
-import Id35_301456968_0300 from "./qr-codes-new/Id35_301456968_0300.png";
 import Id34_35_6888660227_0100 from "./qr-codes-new/Id34_35_6888660227_0100.png";
+import Id36_301456968_0300 from "./qr-codes-new/Id36_301456968_0300.png";
+import Id37_656595_0100 from "./qr-codes-new/Id37_656595_0100.png";
 import Id32_2302061393_2010 from "./qr-codes-new/Id32_2302061393_2010.png";
 import Id31_269980072_0300 from "./qr-codes-new/Id31_269980072_0300.png";
 import Id101_43_1708990227_0100 from "./qr-codes-new/Id101_43_1708990227_0100.png";
@@ -169,6 +170,18 @@ export const data: Array<District> = [
     name: "Krušné hory",
     trailparks: [
       {
+        id: 37,
+        name: "Adolfov",
+        operator: "Horský spolek Adolfov, z.s.",
+        bankAccountNumber: "656595/0100",
+        variableSymbol: null,
+        transparentBankAccountUrl: "https://www.kb.cz/cs/transparentni-ucty/656595",
+        url: "https://www.hsadolfov.cz/zima/",
+        qrImage: Id37_656595_0100,
+        facebookPageUrl: "https://www.facebook.com/hsadolfov",
+        checkedAt: "12.3.2023",
+      },
+      {
         id: 33,
         name: "Alšovka",
         operator: "Horal Venkov z.s.",
@@ -181,14 +194,14 @@ export const data: Array<District> = [
         checkedAt: "4.2.2023",
       },
       {
-        id: 35,
+        id: 36,
         name: "Cínovec - Nové Město",
         operator: "MAS Cínovecko, o.p.s.",
         bankAccountNumber: "301456968/0300",
         variableSymbol: null,
         transparentBankAccountUrl: null,
         url: "http://www.mascinovecko.cz/clanek?nazev=prispet-na-bezecke-stopy-v-useku-komari-vizka---nove-mesto-je-snazsi",
-        qrImage: Id35_301456968_0300,
+        qrImage: Id36_301456968_0300,
         facebookPageUrl: "https://www.facebook.com/bezeckestopy",
         checkedAt: "19.2.2023",
       },
