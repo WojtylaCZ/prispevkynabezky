@@ -7,12 +7,29 @@ import SSRProvider from "react-bootstrap/SSRProvider";
 
 import { hydrate, render } from "react-dom";
 
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ErrorPage } from "./app/error-page";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Main />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "oblast/:trailparkSlug",
+        element: <Main />,
+      },
+    ],
+  },
+]);
+
 const rootElement = document.getElementById("root") as HTMLElement;
 if (rootElement.hasChildNodes()) {
   hydrate(
     <React.StrictMode>
       <SSRProvider>
-        <Main />
+        <RouterProvider router={router} />
       </SSRProvider>
     </React.StrictMode>,
 
@@ -22,7 +39,7 @@ if (rootElement.hasChildNodes()) {
   render(
     <React.StrictMode>
       <SSRProvider>
-        <Main />
+        <RouterProvider router={router} />
       </SSRProvider>
     </React.StrictMode>,
     rootElement

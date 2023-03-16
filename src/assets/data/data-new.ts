@@ -38,6 +38,7 @@ export const data: Array<District> = [
       {
         id: 11,
         name: "Jizerská magistrála",
+        slug: "jizerskehorymagistrala",
         operator: "Jizerská o.p.s.",
         bankAccountNumber: "255899476/0300",
         variableSymbol: 3100,
@@ -50,6 +51,7 @@ export const data: Array<District> = [
       {
         id: 12,
         name: "Kořenov, Paseky nad Jizerou",
+        slug: "korenov",
         operator: "Jizersky pro vás o.p.s.",
         bankAccountNumber: "123-4434000217/0100",
         variableSymbol: null,
@@ -62,6 +64,7 @@ export const data: Array<District> = [
       {
         id: 13,
         name: "Pěnčínská magistrála",
+        slug: "pencinskamagistrala",
         operator: "Pavel Pavlata - Huntířov",
         bankAccountNumber: "115-8520840237/0100",
         variableSymbol: null,
@@ -74,6 +77,7 @@ export const data: Array<District> = [
       {
         id: 14,
         name: "Zásada a okolí",
+        slug: "zasada",
         operator: "Město Zásada",
         bankAccountNumber: "123-3394480257/0100",
         variableSymbol: null,
@@ -91,6 +95,7 @@ export const data: Array<District> = [
       {
         id: 25,
         name: "Harrachov",
+        slug: "harrachov",
         operator: "Město Harrachov",
         bankAccountNumber: "20036-1263085389/0800",
         variableSymbol: null,
@@ -105,6 +110,7 @@ export const data: Array<District> = [
       {
         id: 24,
         name: "Jilemnice",
+        slug: "jilemnice",
         operator: "ČKS SKI Jilemnice",
         bankAccountNumber: "1261416359/0800",
         variableSymbol: null,
@@ -117,6 +123,7 @@ export const data: Array<District> = [
       {
         id: 21,
         name: "Malá Úpa",
+        slug: "malaupa",
         operator: "Obec Malá Úpa",
         bankAccountNumber: "6138641369/0800",
         variableSymbol: null,
@@ -131,6 +138,7 @@ export const data: Array<District> = [
       {
         id: 26,
         name: "Rokytnice nad Jizerou",
+        slug: "rokytnicenadjizerou",
         operator: "Město Rokytnice nad Jizerou",
         bankAccountNumber: "123-5314220287/0100",
         variableSymbol: null,
@@ -143,6 +151,7 @@ export const data: Array<District> = [
       {
         id: 22,
         name: "Vrchlabí",
+        slug: "vrchlabi",
         operator: "Areál Vejspachy",
         bankAccountNumber: "262563989/0300",
         variableSymbol: null,
@@ -155,6 +164,7 @@ export const data: Array<District> = [
       {
         id: 23,
         name: "Benecko",
+        slug: "benecko",
         operator: "Sdružení pro rozvoj na Benecku z. s.",
         bankAccountNumber: null,
         variableSymbol: null,
@@ -172,6 +182,7 @@ export const data: Array<District> = [
       {
         id: 37,
         name: "Adolfov",
+        slug: "adolfov",
         operator: "Horský spolek Adolfov, z.s.",
         bankAccountNumber: "656595/0100",
         variableSymbol: null,
@@ -184,6 +195,7 @@ export const data: Array<District> = [
       {
         id: 33,
         name: "Alšovka",
+        slug: "alsovka",
         operator: "Horal Venkov z.s.",
         bankAccountNumber: "204457600/0600",
         variableSymbol: 2021001,
@@ -196,6 +208,7 @@ export const data: Array<District> = [
       {
         id: 36,
         name: "Cínovec - Nové Město",
+        slug: "cinovec",
         operator: "MAS Cínovecko, o.p.s.",
         bankAccountNumber: "301456968/0300",
         variableSymbol: null,
@@ -208,6 +221,7 @@ export const data: Array<District> = [
       {
         id: 34,
         name: "Dlouhá Louka - Fláje",
+        slug: "dlouhalouka",
         operator: "Krušnohorský klub Osek",
         bankAccountNumber: "35-6888660227/0100",
         variableSymbol: null,
@@ -220,6 +234,7 @@ export const data: Array<District> = [
       {
         id: 32,
         name: "Loučná pod Klínovcem",
+        slug: "loucnapodklinovcem",
         operator: "Město Loučná pod Klínovcem",
         bankAccountNumber: "2302061393/2010",
         variableSymbol: 2122010,
@@ -232,6 +247,7 @@ export const data: Array<District> = [
       {
         id: 31,
         name: "Západní Krušné hory",
+        slug: "krusnehoryzapad",
         operator: "První krušnohorská o.p.s.",
         bankAccountNumber: "269980072/0300",
         variableSymbol: null,
@@ -257,7 +273,8 @@ export const data: Array<District> = [
 
       {
         id: 35,
-        name: "Děčínský Sněžník - Východní Krušné hory",
+        name: "Děčínský Sněžník",
+        slug: "decinskysneznik",
         operator: "HUDYsport a.s.",
         bankAccountNumber: null,
         variableSymbol: null,
@@ -275,6 +292,7 @@ export const data: Array<District> = [
       {
         id: 101,
         name: "Polevsko",
+        slug: "polevsko",
         operator: "SKI Polevsko - oddíl běžeckého lyžování",
         bankAccountNumber: "43-1708990227/0100",
         variableSymbol: null,
@@ -292,6 +310,7 @@ export const data: Array<District> = [
       {
         id: 42,
         name: "Buková hora - Suchý vrch",
+        slug: "bukovahora",
         operator: "Sdružení obcí Orlicko",
         bankAccountNumber: "6114987349/0800",
         variableSymbol: null,
@@ -306,6 +325,7 @@ export const data: Array<District> = [
       {
         id: 43,
         name: "Deštné v Orlických horách",
+        slug: "orlickehorydestne",
         operator: "Deštenský spolek",
         bankAccountNumber: "293272551/0300",
         variableSymbol: null,
@@ -319,6 +339,7 @@ export const data: Array<District> = [
       {
         id: 44,
         name: "Orlické Záhoří",
+        slug: "orlickezahori",
         operator: "Obec Orlické Záhoří",
         bankAccountNumber: "296969346/0300",
         variableSymbol: null,
@@ -332,6 +353,7 @@ export const data: Array<District> = [
       {
         id: 41,
         name: "Říčky v Orlických horách",
+        slug: "orlickehoryricky",
         operator: "Obec Rokytnice v Orlických horách",
         variableSymbol: 672003429,
         bankAccountNumber: "276681775/0300",
@@ -348,7 +370,8 @@ export const data: Array<District> = [
     trailparks: [
       {
         id: 51,
-        name: "Hlavní část Šumavy",
+        name: "Šumavská magistrála",
+        slug: "sumavamagistrala",
         operator: "Regionální rozvojová agentura Šumava, o.p.s.",
         bankAccountNumber: "207602447/0600",
         variableSymbol: null,
@@ -361,6 +384,7 @@ export const data: Array<District> = [
       {
         id: 52,
         name: "Pasečná",
+        slug: "pasecna",
         operator: "Reuterovy paseky SE",
         bankAccountNumber: "299936101/0300",
         variableSymbol: 202300080,
@@ -378,6 +402,7 @@ export const data: Array<District> = [
       {
         id: 91,
         name: "Hojná Voda",
+        slug: "hojnavoda",
         operator: "Sportklub Hojná Voda, z.s.",
         bankAccountNumber: "2102245016/2010",
         variableSymbol: null,
@@ -394,7 +419,8 @@ export const data: Array<District> = [
     trailparks: [
       {
         id: 61,
-        name: "Celé hory Jeseníky",
+        name: "Jeseníky magistrála",
+        slug: "jesenikymagistrala",
         operator: "Sdružení cestovního ruchu Jeseníky",
         bankAccountNumber: "283995131/0300",
         variableSymbol: null,
@@ -415,6 +441,7 @@ export const data: Array<District> = [
       {
         id: 72,
         name: "Pustevny",
+        slug: "pustevny",
         operator: "Běžecký areál Pustevny z.s.",
         bankAccountNumber: "6003963379/0800",
         variableSymbol: null,
@@ -427,6 +454,7 @@ export const data: Array<District> = [
       {
         id: 71,
         name: "Velké Karlovice",
+        slug: "velkekarlovice",
         operator: "Obec Velké Karlovice",
         bankAccountNumber: "20036-1765312369/0800",
         variableSymbol: null,
@@ -444,6 +472,7 @@ export const data: Array<District> = [
       {
         id: 84,
         name: "Novoměstsko",
+        slug: "novomestsko",
         operator: "Mikroregion Novoměstsko",
         bankAccountNumber: "107-3157480237/0100",
         variableSymbol: null,
@@ -456,6 +485,7 @@ export const data: Array<District> = [
       {
         id: 83,
         name: "Svratka",
+        slug: "svratka",
         operator: "Niva Svratky, o.p.s.",
         bankAccountNumber: "2802081518/2010",
         variableSymbol: null,
@@ -468,6 +498,7 @@ export const data: Array<District> = [
       {
         id: 82,
         name: "Velké Dářko",
+        slug: "velkedarko",
         operator: "DSO Subregion Velké Dářko",
         bankAccountNumber: "287591038/0300",
         variableSymbol: null,
@@ -481,6 +512,7 @@ export const data: Array<District> = [
       {
         id: 81,
         name: "Žďár nad Sázavou",
+        slug: "zdarnadsazavou",
         operator: "Sportis Žďár nad Sázavou",
         bankAccountNumber: "317339651/0300",
         variableSymbol: null,

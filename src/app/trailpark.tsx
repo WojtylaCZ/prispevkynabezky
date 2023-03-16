@@ -1,5 +1,7 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Col, Collapse, Container, Image, Row, Stack } from "react-bootstrap";
+import { useParams } from "react-router-dom";
+
 import { ChevronDownIcon } from "../assets/icons/chevronDown";
 import { ChevronUpIcon } from "../assets/icons/chevronUp";
 import FacebookIcon from "../assets/icons/facebook.svg";
@@ -10,6 +12,7 @@ ReactGA.initialize("G-TJGECJ2MHV");
 export type Trailpark = {
   id: number;
   name: string;
+  slug: string;
   qrImage: string | null;
   bankAccountNumber: string | null;
   transparentBankAccountUrl: string | null;
@@ -28,6 +31,22 @@ export const TrailparkCard = ({
   isFirst: boolean;
 }) => {
   const [isExpanded, setIsExpanded] = useState(isFirst);
+  const ref = React.useRef<HTMLInputElement>(null);
+  let { trailparkSlug } = useParams();
+
+  const scrollToTarget = () => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({
+        block: "center",
+      });
+    }
+  };
+
+  useEffect(() => {
+    if (trailparkSlug === trailpark.slug) {
+      scrollToTarget();
+    }
+  }, [trailparkSlug, trailpark.slug]);
 
   const handleClick = useCallback(() => {
     if (!isExpanded) {
@@ -53,6 +72,7 @@ export const TrailparkCard = ({
       }}
       aria-controls="example-collapse-text"
       aria-expanded={isExpanded}
+      ref={ref}
     >
       <style type="text/css">
         {`
