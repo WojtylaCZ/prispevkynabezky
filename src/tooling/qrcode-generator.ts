@@ -3,7 +3,7 @@ import { getIban, getSpaydString } from "./spayd-generator";
 
 require.extensions[".png"] = function () {};
 // eslint-disable-next-line
-import { data } from "../assets/data/data";
+import { data } from "../assets/data/data-new";
 
 export const generateAll = () => {
   // 11 Jizerka ignore
