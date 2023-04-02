@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Navbar, Container, Image, Stack } from "react-bootstrap";
 import { DistrictSection } from "./district";
 import Skier from "../assets/img/skier2.png";
 
 import { data } from "../assets/data/data-new";
+import { useNavigate, useParams } from "react-router-dom";
 
 export const Main = () => {
+  const { trailparkSlug } = useParams();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const slugs = data.flatMap((district) => district.trailparks).map((t) => t.slug);
+    if (trailparkSlug && !slugs.includes(trailparkSlug)) {
+      navigate("/", { replace: true });
+    }
+  }, [navigate, trailparkSlug]);
+
   const districtsList = data.map((district, id) => (
     <DistrictSection
       key={id}

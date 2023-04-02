@@ -30,23 +30,29 @@ export const TrailparkCard = ({
   trailpark: Trailpark;
   isFirst: boolean;
 }) => {
-  const [isExpanded, setIsExpanded] = useState(isFirst);
+  const { trailparkSlug } = useParams();
+  const [isExpanded, setIsExpanded] = useState(false);
   const ref = React.useRef<HTMLInputElement>(null);
-  let { trailparkSlug } = useParams();
 
   const scrollToTarget = () => {
     if (ref && ref.current) {
-      ref.current.scrollIntoView({
-        block: "center",
-      });
+      const position = ref.current.getBoundingClientRect();
+      window.scrollTo({ top: position.top - 90, left: 0 });
     }
   };
 
   useEffect(() => {
     if (trailparkSlug === trailpark.slug) {
+      setIsExpanded(true);
       scrollToTarget();
+      return;
     }
-  }, [trailparkSlug, trailpark.slug]);
+
+    if (!trailparkSlug) {
+      setIsExpanded(isFirst);
+      window.scrollTo(0, 0);
+    }
+  }, [trailparkSlug, trailpark.slug, setIsExpanded, isFirst]);
 
   const handleClick = useCallback(() => {
     if (!isExpanded) {
