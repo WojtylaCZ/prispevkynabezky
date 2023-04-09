@@ -24,6 +24,7 @@ import Id51_207602447_0600 from "./qr-codes-new/Id51_207602447_0600.png";
 import Id52_299936101_0300 from "./qr-codes-new/Id52_299936101_0300.png";
 import Id91_2102245016_2010 from "./qr-codes-new/Id91_2102245016_2010.png";
 import Id61_283995131_0300 from "./qr-codes-new/Id61_283995131_0300.png";
+import Id62_296575726_0300 from "./qr-codes-new/Id62_296575726_0300.png";
 import Id72_6003963379_0800 from "./qr-codes-new/Id72_6003963379_0800.png";
 import Id71_20036_1765312369_0800 from "./qr-codes-new/Id71_20036_1765312369_0800.png";
 import Id84_107_3157480237_0100 from "./qr-codes-new/Id84_107_3157480237_0100.png";
@@ -431,19 +432,19 @@ export const data: Array<District> = [
         facebookPageUrl: "https://www.facebook.com/navstivtejeseniky.cz/",
         checkedAt: "6.2.2023",
       },
-      // {
-      //   id: 62,
-      //   name: "Paprsek",
-      //   slug: "jesenikypaprsek",
-      //   operator: "Hotel Paprsek",
-      //   bankAccountNumber: "296575726/0300",
-      //   variableSymbol: 2413,
-      //   transparentBankAccountUrl: null,
-      //   url: "https://www.horskyarealpaprsek.cz/zimni-sezona/bezecke-trasy/",
-      //   qrImage: Id61_283995131_0300,
-      //   facebookPageUrl: "https://www.facebook.com/chatapaprsek",
-      //   checkedAt: "2.4.2023",
-      // },
+      {
+        id: 62,
+        name: "Paprsek",
+        slug: "jesenikypaprsek",
+        operator: "Hotel Paprsek",
+        bankAccountNumber: "296575726/0300",
+        variableSymbol: 2413,
+        transparentBankAccountUrl: null,
+        url: "https://www.horskyarealpaprsek.cz/zimni-sezona/bezecke-trasy/",
+        qrImage: Id62_296575726_0300,
+        facebookPageUrl: "https://www.facebook.com/chatapaprsek",
+        checkedAt: "2.4.2023",
+      },
     ],
   },
   {
