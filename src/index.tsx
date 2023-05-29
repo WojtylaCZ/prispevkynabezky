@@ -1,49 +1,28 @@
 import React from "react";
-import "./index.css";
-import { Main } from "./app/main";
 import reportWebVitals from "./cra/reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SSRProvider from "react-bootstrap/SSRProvider";
 
 import { hydrate, render } from "react-dom";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { ErrorPage } from "./app/error-page";
+import "./index.css";
+import "./app/i18n";
+import { AppRouter } from "./app/app-router";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Main />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "oblast/:trailparkSlug",
-        element: <Main />,
-      },
-    ],
-  },
-]);
+const index = (
+  <React.StrictMode>
+    <SSRProvider>
+      <AppRouter />
+    </SSRProvider>
+  </React.StrictMode>
+);
 
 const rootElement = document.getElementById("root") as HTMLElement;
-if (rootElement.hasChildNodes()) {
-  hydrate(
-    <React.StrictMode>
-      <SSRProvider>
-        <RouterProvider router={router} />
-      </SSRProvider>
-    </React.StrictMode>,
 
-    rootElement
-  );
+if (rootElement.hasChildNodes()) {
+  hydrate(index, rootElement);
 } else {
-  render(
-    <React.StrictMode>
-      <SSRProvider>
-        <RouterProvider router={router} />
-      </SSRProvider>
-    </React.StrictMode>,
-    rootElement
-  );
+  render(index, rootElement);
 }
 
 // import ReactDOM from "react-dom/client";

@@ -1,0 +1,26 @@
+{
+  "titles": {
+    "mainH1": "Příspěvky na bežkařské tratě jednoduše",
+    "contactH2": "Kontakt",
+    "error": "Tady chybí udržovaná trať.",
+    "jumpHome": "Přejít na začátek"
+  },
+  "text": {
+    "introLine1": "Obout si běžky a vyrazit bílou stopou skoro nic nestojí. Údržba tratí ale ano.",
+    "introLine2": "Běžkařské trasy a stopy se samy neupraví. Udržují je různé kluby, spolky nebo organizace za pomocí občanských sbírek a státních příspěvků.",
+    "introLine3": "Projekt PříspěvkyNaBěžky.cz vznikl pro zjednodušení přispívání, aby na jednom místě byl seznam jednotlivých organizací s platebními údaji.",
+    "madeBy": "Tento dobročinný web vytvořil <1>Vojtěch Uhlíř</1> , sportovec, nadšenec na bežky, programátor.",
+    "footerLine1": "Jsou tu pouze areály, u kterých jsem našel číslo účtu nebo aktivní Facebook stránku.",
+    "footerLine2": "Je něco špatně nebo něco chybí?",
+    "footerLine3": "Napište a dejte mi vědet! ✍️"
+  },
+  "trailpark": {
+    "showDetailsH6": "Zobrazit detail",
+    "hideDetailsH6": "Skrýt detail",
+    "qrCodeH5": "QR kód pro platbu:",
+    "accountNumberH5": "Číslo účtu:",
+    "publicAccountH6": "Transparentní účet",
+    "operatorH5": "Provozovatel:",
+    "lastUpdatedAt": "Naposledy aktualizováno "
+  }
+}

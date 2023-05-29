@@ -1,21 +1,31 @@
-import React, { useEffect } from "react";
-import { Navbar, Container, Image, Stack } from "react-bootstrap";
+import { useEffect } from "react";
+import { Image, Stack } from "react-bootstrap";
 import { DistrictSection } from "./district";
 import Skier from "../assets/img/skier2.png";
 
 import { data } from "../assets/data/data-new";
 import { useNavigate, useParams } from "react-router-dom";
 
+import { useTranslation, Trans } from "react-i18next";
+import { HeaderBar } from "./header-bar";
+import { supportedLocales } from "./i18n";
+import { FooterBar } from "./footer-bar";
+
 export const Main = () => {
-  const { trailparkSlug } = useParams();
   const navigate = useNavigate();
+  const { t } = useTranslation();
+
+  const { trailparkSlug, locale } = useParams();
 
   useEffect(() => {
+    if (locale && !supportedLocales.includes(locale)) {
+      navigate("/", { replace: true });
+    }
     const slugs = data.flatMap((district) => district.trailparks).map((t) => t.slug);
     if (trailparkSlug && !slugs.includes(trailparkSlug)) {
       navigate("/", { replace: true });
     }
-  }, [navigate, trailparkSlug]);
+  }, [navigate, trailparkSlug, locale]);
 
   const districtsList = data.map((district, id) => (
     <DistrictSection
@@ -28,63 +38,36 @@ export const Main = () => {
 
   return (
     <>
-      <>
-        <style type="text/css">
-          {`
-          .navbar-custom {
-            background-color: #0a3383;
-          }
-          `}
-        </style>
-
-        <Navbar variant="custom" sticky="top">
-          <Container
-            style={{
-              maxWidth: "1080px",
-            }}
-          >
-            <Navbar.Brand>
-              <h3
-                style={{
-                  // fontFamily: "Kaushan Script",
-                  color: "white",
-                  margin: "0px",
-                }}
-              >
-                PříspěvkyNaBěžky.cz
-              </h3>
-            </Navbar.Brand>
-          </Container>
-        </Navbar>
-        <div
+      <HeaderBar />
+      <div
+        style={{
+          margin: "auto",
+          maxWidth: "1400px",
+          height: "300px",
+          position: "relative",
+          width: "100%",
+          backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 92.61%), url("https://upload.wikimedia.org/wikipedia/commons/2/28/Skate_skiing_track.jpg")`,
+          // "Tiia Monto, CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0, via Wikimedia Commons",
+          backgroundSize: "cover",
+        }}
+      >
+        <h1
           style={{
-            margin: "auto",
-            maxWidth: "1400px",
-            height: "300px",
-            position: "relative",
-            width: "100%",
-            backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 92.61%), url("https://upload.wikimedia.org/wikipedia/commons/2/28/Skate_skiing_track.jpg")`,
-            // "Tiia Monto, CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0, via Wikimedia Commons",
-            backgroundSize: "cover",
+            color: "#0a3383",
+            textAlign: "center",
+            fontFamily: "Kaushan Script",
+            zIndex: "10",
+            position: "absolute",
+            left: "0px",
+            bottom: "30%",
+            right: "0px",
+            fontSize: "calc(1.975rem + 1.3vw)",
           }}
         >
-          <h1
-            style={{
-              color: "#0a3383",
-              textAlign: "center",
-              fontFamily: "Kaushan Script",
-              zIndex: "10",
-              position: "absolute",
-              left: "0px",
-              bottom: "30%",
-              right: "0px",
-              fontSize: "calc(1.975rem + 1.3vw)",
-            }}
-          >
-            Příspěvky na bežkařské tratě jednoduše
-          </h1>
-        </div>
-      </>
+          {t("titles.mainH1")}
+        </h1>
+      </div>
+
       <Stack
         gap={4}
         style={{
@@ -93,6 +76,7 @@ export const Main = () => {
           margin: "auto",
           maxWidth: "690px",
           marginBottom: "16px",
+          marginTop: "16px",
         }}
       >
         <div
@@ -103,19 +87,11 @@ export const Main = () => {
             textAlign: "center",
           }}
         >
-          <span>
-            Obout si běžky a vyrazit bílou stopou skoro nic nestojí. Údržba tratí ale ano.
-          </span>
+          <span>{t("text.introLine1")}</span>
 
-          <span>
-            Běžkařské trasy a stopy se samy neupraví. Udržují je různé kluby, spolky nebo organizace
-            za pomocí občanských sbírek a státních příspěvků.
-          </span>
+          <span>{t("text.introLine2")}</span>
           <br />
-          <span>
-            Projekt PříspěvkyNaBěžky.cz vznikl pro zjednodušení přispívání, aby na jednom místě byl
-            seznam jednotlivých organizací s platebními údaji.
-          </span>
+          <span>{t("text.introLine3")}</span>
           <hr
             style={{
               width: "100px",
@@ -153,23 +129,23 @@ export const Main = () => {
               fontSize: "calc(1.775rem + 1.1vw)",
             }}
           >
-            Kontakt
+            {t("titles.contactH2")}
           </h2>
           <span>
-            Tento dobročinný web vytvořil{" "}
-            <a
-              href={"https://www.facebook.com/WojtylaCZ/"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Vojtěch Uhlíř
-            </a>
-            , sportovec, nadšenec na bežky, programátor.
+            <Trans i18nKey="text.madeBy">
+              before
+              <a
+                href={"https://www.facebook.com/WojtylaCZ/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Vojtěch Uhlíř
+              </a>
+              after
+            </Trans>
           </span>
           <br />
-          <span>
-            Jsou tu pouze areály, u kterých jsem našel číslo účtu nebo aktivní Facebook stránku.
-          </span>
+          <span>{t("text.footerLine1")}</span>
         </div>
         <div
           style={{
@@ -177,27 +153,14 @@ export const Main = () => {
             textAlign: "center",
           }}
         >
-          <span>Je něco špatně nebo něco chybí?</span>
+          <span>{t("text.footerLine2")}</span>
           <br />
           <a href={"https://www.facebook.com/WojtylaCZ/"} target="_blank" rel="noopener noreferrer">
-            Napište a dejte mi vědet! ✍️
+            {t("text.footerLine3")}
           </a>
         </div>
       </Stack>
-      <div
-        style={{
-          fontSize: "small",
-          color: "grey",
-          width: "100%",
-          display: "flex",
-          height: "48px",
-          justifyContent: "center",
-          backgroundColor: "#0a3383",
-          alignItems: "center",
-        }}
-      >
-        <span style={{ color: "white" }}>2023, Vojtech Uhlir</span>
-      </div>
+      <FooterBar />
     </>
   );
 };

@@ -1,0 +1,26 @@
+{
+  "titles": {
+    "mainH1": "Donations for cross-country trails in Czechia",
+    "contactH2": "Contact",
+    "error": "There is no maintained track over here.",
+    "jumpHome": "Go to homepage"
+  },
+  "text": {
+    "introLine1": "You can go for cross-country ski trip almost for free, it costs nothing to enjoy the trail. But trails do not groom themselves and maintanance is not cheap.",
+    "introLine2": "Tracks are maintained by various clubs, non-profit organisations or enthusiats with help of donations from civic collections and state contributions.",
+    "introLine3": "Project PrispevkyNaBezky.cz was created to made contributions and donations easy by listing or parties with payment information.",
+    "madeBy": "This non-profit web was created by <1>Vojtěch Uhlíř</1>, a sportman, a x-country skier and a software engineer.",
+    "footerLine1": "There are only trails listed I found a bank account number or a Facebook webpage for.",
+    "footerLine2": "Is there something wrong or missing?",
+    "footerLine3": "Write me and get in touch! ✍️"
+  },
+  "trailpark": {
+    "showDetailsH6": "Show detail",
+    "hideDetailsH6": "Hide detail",
+    "qrCodeH5": "QR code bank transfer:",
+    "accountNumberH5": "Bank account number:",
+    "publicAccountH6": "Public account",
+    "operatorH5": "Operator:",
+    "lastUpdatedAt": "Last updated at "
+  }
+}

@@ -1,36 +1,15 @@
-import { Navbar, Container, Image, Stack } from "react-bootstrap";
+import { Image, Stack } from "react-bootstrap";
 import Skier from "../assets/img/skier2.png";
+import { HeaderBar } from "./header-bar";
+import { useTranslation } from "react-i18next";
+import { FooterBar } from "./footer-bar";
 
 export const ErrorPage = () => {
-  return (
-    <>
-      <style type="text/css">
-        {`
-          .navbar-custom {
-            background-color: #0a3383;
-          }
-          `}
-      </style>
+  const { t } = useTranslation();
 
-      <Navbar variant="custom" sticky="top">
-        <Container
-          style={{
-            maxWidth: "1080px",
-          }}
-        >
-          <Navbar.Brand>
-            <h3
-              style={{
-                margin: "0px",
-              }}
-            >
-              <a style={{ color: "white", textDecoration: "none" }} href="/">
-                PříspěvkyNaBěžky.cz
-              </a>
-            </h3>
-          </Navbar.Brand>
-        </Container>
-      </Navbar>
+  return (
+    <div style={{ height: "100vh" }}>
+      <HeaderBar />
 
       <div
         style={{
@@ -70,9 +49,10 @@ export const ErrorPage = () => {
           margin: "auto",
           maxWidth: "690px",
           marginBottom: "16px",
+          marginTop: "16px",
         }}
       >
-        <span>Tady chybí udržovaná trať.</span>
+        <span>{t("titles.error")}</span>
         <hr
           style={{
             width: "100px",
@@ -83,7 +63,7 @@ export const ErrorPage = () => {
           }}
         />
 
-        <a href="/">Přejít na začátek</a>
+        <a href="/">{t("titles.jumpHome")}</a>
 
         <Image
           src={Skier}
@@ -94,6 +74,9 @@ export const ErrorPage = () => {
           }}
         />
       </Stack>
-    </>
+      <div style={{ position: "absolute", bottom: "0px", width: "100%" }}>
+        <FooterBar />
+      </div>
+    </div>
   );
 };

@@ -6,6 +6,7 @@ import { ChevronDownIcon } from "../assets/icons/chevronDown";
 import { ChevronUpIcon } from "../assets/icons/chevronUp";
 import FacebookIcon from "../assets/icons/facebook.svg";
 import ReactGA from "react-ga4";
+import { useTranslation } from "react-i18next";
 
 ReactGA.initialize("G-TJGECJ2MHV");
 
@@ -30,6 +31,8 @@ export const TrailparkCard = ({
   trailpark: Trailpark;
   isFirst: boolean;
 }) => {
+  const { t } = useTranslation();
+
   const { trailparkSlug } = useParams();
   const [isExpanded, setIsExpanded] = useState(false);
   const ref = React.useRef<HTMLInputElement>(null);
@@ -37,7 +40,7 @@ export const TrailparkCard = ({
   const scrollToTarget = () => {
     if (ref && ref.current) {
       const position = ref.current.getBoundingClientRect();
-      window.scrollTo({ top: position.top - 90, left: 0 });
+      window.scrollTo({ top: position.top, left: 0 });
     }
   };
 
@@ -130,7 +133,7 @@ export const TrailparkCard = ({
                 textAlign: "right",
               }}
             >
-              {isExpanded ? "Skrýt detail" : "Zobrazit detail"}
+              {isExpanded ? t("trailpark.hideDetailsH6") : t("trailpark.showDetailsH6")}
             </h6>
 
             <div style={{ width: "10px" }}>
@@ -146,7 +149,7 @@ export const TrailparkCard = ({
           <Container>
             <Row>
               <Col sm style={{ marginBottom: "0.5em" }}>
-                <h5 style={{ fontWeight: "bold", minWidth: "170px" }}>QR kód pro platbu:</h5>
+                <h5 style={{ fontWeight: "bold", minWidth: "210px" }}>{t("trailpark.qrCodeH5")}</h5>
 
                 <div style={{ margin: "auto", maxWidth: "250px" }}>
                   {trailpark.qrImage ? <Image src={trailpark.qrImage} thumbnail /> : "❌"}
@@ -154,7 +157,7 @@ export const TrailparkCard = ({
               </Col>
               <Col sm style={{ marginBottom: "0.5em" }}>
                 <div>
-                  <h5 style={{ fontWeight: "bold" }}>Číslo účtu:</h5>
+                  <h5 style={{ fontWeight: "bold" }}>{t("trailpark.accountNumberH5")}</h5>
                   <h6
                     style={{
                       fontSize: "large",
@@ -168,14 +171,14 @@ export const TrailparkCard = ({
 
                 {trailpark.transparentBankAccountUrl && (
                   <div style={{ marginTop: "12px" }}>
-                    <h6 style={{}}>
+                    <h6>
                       <a
                         href={trailpark.transparentBankAccountUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ color: "#000000" }}
                       >
-                        Transparentní účet
+                        {t("trailpark.publicAccountH6")}
                       </a>
                     </h6>
                   </div>
@@ -193,7 +196,7 @@ export const TrailparkCard = ({
                 >
                   <Stack gap={3}>
                     <div>
-                      <h5 style={{ fontWeight: "bold" }}>Provozovatel:</h5>
+                      <h5 style={{ fontWeight: "bold" }}>{t("trailpark.operatorH5")}</h5>
                       <h6 style={{ color: "#000000" }}>{trailpark.operator}</h6>
                     </div>
 
@@ -240,7 +243,7 @@ export const TrailparkCard = ({
                         color: "grey",
                       }}
                     >
-                      Naposledy aktualizováno {trailpark.checkedAt}
+                      {t("trailpark.lastUpdatedAt")} {trailpark.checkedAt}
                     </span>
                   </div>
                 </div>
