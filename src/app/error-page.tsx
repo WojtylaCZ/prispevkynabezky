@@ -1,15 +1,39 @@
-import { Image, Stack } from "react-bootstrap";
+import { Container, Image, Navbar, Stack } from "react-bootstrap";
 import Skier from "../assets/img/skier2.png";
-import { HeaderBar } from "./header-bar";
 import { useTranslation } from "react-i18next";
-import { FooterBar } from "./footer-bar";
 
 export const ErrorPage = () => {
   const { t } = useTranslation();
 
   return (
-    <div style={{ height: "100vh" }}>
-      <HeaderBar />
+    <>
+      <style type="text/css">
+        {`
+          .navbar-custom {
+            background-color: #0a3383;
+          }
+          `}
+      </style>
+
+      <Navbar variant="custom" sticky="top">
+        <Container
+          style={{
+            maxWidth: "1080px",
+          }}
+        >
+          <Navbar.Brand>
+            <h3
+              style={{
+                margin: "0px",
+              }}
+            >
+              <a style={{ color: "white", textDecoration: "none" }} href="/">
+                PříspěvkyNaBěžky.cz
+              </a>
+            </h3>
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
 
       <div
         style={{
@@ -74,9 +98,6 @@ export const ErrorPage = () => {
           }}
         />
       </Stack>
-      <div style={{ position: "absolute", bottom: "0px", width: "100%" }}>
-        <FooterBar />
-      </div>
-    </div>
+    </>
   );
 };
