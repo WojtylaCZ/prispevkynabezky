@@ -146,6 +146,16 @@ export const Main = () => {
           </span>
           <br />
           <span>{t("text.footerLine1")}</span>
+          <br />
+          <span>
+            <Trans i18nKey="text.alsoMade">
+              before
+              <a href={"https://www.improbox.cz"} target="_blank" rel="noopener noreferrer">
+                Vojtěch Uhlíř
+              </a>
+              after
+            </Trans>
+          </span>
         </div>
         <div
           style={{
