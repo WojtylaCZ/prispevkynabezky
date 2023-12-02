@@ -76,7 +76,10 @@ export const TrailparkCard = ({
     <div
       style={{
         backgroundColor: "#ffffff",
-        borderRadius: "2px",
+        border: `${trailparkSlug === trailpark.slug ? "3px" : "0px"} solid ${
+          trailparkSlug === trailpark.slug ? "#f7b500" : "#ffffff"
+        }`,
+        borderRadius: "4px",
         boxShadow: "0 0 20px 0 rgba(29, 17, 86, 0.12)",
       }}
       aria-controls="example-collapse-text"
