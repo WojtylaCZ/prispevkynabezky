@@ -53,7 +53,7 @@ export const TrailparkCard = ({
 
     if (!trailparkSlug) {
       setIsExpanded(isFirst);
-      window.scrollTo(0, 0);
+      // window.scrollTo(0, 0);
     }
   }, [trailparkSlug, trailpark.slug, setIsExpanded, isFirst]);
 
@@ -76,10 +76,11 @@ export const TrailparkCard = ({
     <div
       style={{
         backgroundColor: "#ffffff",
-        border: `${trailparkSlug === trailpark.slug ? "3px" : "0px"} solid ${
-          trailparkSlug === trailpark.slug ? "#f7b500" : "#ffffff"
-        }`,
-        borderRadius: "4px",
+        border:
+          isExpanded && trailparkSlug === trailpark.slug
+            ? "3px solid #f7b500"
+            : "0px solid #ffffff",
+        borderRadius: "6px",
         boxShadow: "0 0 20px 0 rgba(29, 17, 86, 0.12)",
       }}
       aria-controls="example-collapse-text"

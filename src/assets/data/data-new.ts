@@ -29,13 +29,15 @@ import Id61_283995131_0300 from "./qr-codes-new/Id61_283995131_0300.png";
 import Id62_296575726_0300 from "./qr-codes-new/Id62_296575726_0300.png";
 import Id72_6003963379_0800 from "./qr-codes-new/Id72_6003963379_0800.png";
 import Id71_20036_1765312369_0800 from "./qr-codes-new/Id71_20036_1765312369_0800.png";
+
+import Id85_2100411762_2010 from "./qr-codes-new/Id85_2100411762_2010.png";
 import Id84_107_3157480237_0100 from "./qr-codes-new/Id84_107_3157480237_0100.png";
 import Id83_2802081518_2010 from "./qr-codes-new/Id83_2802081518_2010.png";
 import Id82_287591038_0300 from "./qr-codes-new/Id82_287591038_0300.png";
 import Id81_317339651_0300 from "./qr-codes-new/Id81_317339651_0300.png";
 
 import Id111_245192928_0300 from "./qr-codes-new/Id111_245192928_0300.png";
-
+import Id112_227229248_0300 from "./qr-codes-new/Id112_227229248_0300.png";
 export const data: Array<District> = [
   {
     name: "Jizerské hory",
@@ -501,6 +503,19 @@ export const data: Array<District> = [
     name: "Vysočina",
     trailparks: [
       {
+        id: 85,
+        name: "Jihlavsko",
+        slug: "jihlavsko",
+        operator: "Lyžařské Jihlavsko, z.s.",
+        bankAccountNumber: "2100411762/2010",
+        variableSymbol: null,
+        transparentBankAccountUrl: null,
+        url: "https://www.lyzarskejihlavsko.cz/",
+        qrImage: Id85_2100411762_2010,
+        facebookPageUrl: "https://www.facebook.com/lyzarskejihlavsko/",
+        checkedAt: "3.12.2023",
+      },
+      {
         id: 84,
         name: "Novoměstsko",
         slug: "novomestsko",
@@ -557,7 +572,7 @@ export const data: Array<District> = [
     ],
   },
   {
-    name: "Česká Sibiř",
+    name: "Střední Čechy",
     trailparks: [
       {
         id: 111,
@@ -571,6 +586,19 @@ export const data: Array<District> = [
         qrImage: Id111_245192928_0300,
         facebookPageUrl: "https://www.facebook.com/profile.php?id=100063484092919",
         checkedAt: "2.12.2023",
+      },
+      {
+        id: 112,
+        name: "Polánka",
+        slug: "polanka",
+        operator: "Občanské sdružení Polánka",
+        bankAccountNumber: "227229248/0300",
+        variableSymbol: null,
+        transparentBankAccountUrl: null,
+        url: "https://www.ospolanka.cz/",
+        qrImage: Id112_227229248_0300,
+        facebookPageUrl: "https://www.facebook.com/ospolanka.cz",
+        checkedAt: "3.12.2023",
       },
     ],
   },

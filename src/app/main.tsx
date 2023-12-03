@@ -92,6 +92,16 @@ export const Main = () => {
           <span>{t("text.introLine2")}</span>
           <br />
           <span>{t("text.introLine3")}</span>
+          <br />
+          <span>
+            <Trans i18nKey="text.introLine4">
+              before
+              <a href={"https://www.kamzasnehem.cz"} target="_blank" rel="noopener noreferrer">
+                wwww.kamzasnehem.cz
+              </a>
+              after
+            </Trans>
+          </span>
           <hr
             style={{
               width: "100px",
