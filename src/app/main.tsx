@@ -111,6 +111,24 @@ export const Main = () => {
               opacity: "90%",
             }}
           />
+          <span>
+            <Trans i18nKey="text.introLineKosile">
+              before
+              <a href={"https://www.kosileoduhlire.cz"} target="_blank" rel="noopener noreferrer">
+                wwww.kosileoduhlire.cz
+              </a>
+              after
+            </Trans>
+          </span>
+          <hr
+            style={{
+              width: "100px",
+              color: "#f7b500",
+              border: 0,
+              borderTop: "1px solid",
+              opacity: "90%",
+            }}
+          />
         </div>
 
         <Stack gap={5}>{districtsList}</Stack>
