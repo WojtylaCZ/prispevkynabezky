@@ -25,7 +25,7 @@ import Id41_276681775_0300 from "./qr-codes-new/Id41_276681775_0300.png";
 import Id51_207602447_0600 from "./qr-codes-new/Id51_207602447_0600.png";
 import Id52_299936101_0300 from "./qr-codes-new/Id52_299936101_0300.png";
 import Id91_2102245016_2010 from "./qr-codes-new/Id91_2102245016_2010.png";
-import Id61_283995131_0300 from "./qr-codes-new/Id61_283995131_0300.png";
+import Id61_123_7845000207_0100 from "./qr-codes-new/Id61_123_7845000207_0100.png";
 import Id62_296575726_0300 from "./qr-codes-new/Id62_296575726_0300.png";
 import Id72_6003963379_0800 from "./qr-codes-new/Id72_6003963379_0800.png";
 import Id71_20036_1765312369_0800 from "./qr-codes-new/Id71_20036_1765312369_0800.png";
@@ -442,14 +442,13 @@ export const data: Array<District> = [
         name: "Jeseníky magistrála",
         slug: "jesenikymagistrala",
         operator: "Sdružení cestovního ruchu Jeseníky",
-        bankAccountNumber: "283995131/0300",
+        bankAccountNumber: "123-7845000207/0100",
         variableSymbol: null,
-        transparentBankAccountUrl:
-          "https://www.csob.cz/portal/firmy/bezne-ucty/transparentni-ucty/ucet?account=283995131",
+        transparentBankAccountUrl: "https://www.kb.cz/cs/transparentni-ucty/123-7845000207",
         url: "https://www.jeseniky.cz/cz/turisticke-cile/k2198-lyzarska-bezecka-centra/",
-        qrImage: Id61_283995131_0300,
+        qrImage: Id61_123_7845000207_0100,
         facebookPageUrl: "https://www.facebook.com/navstivtejeseniky.cz/",
-        checkedAt: "2.12.2023",
+        checkedAt: "11.1.2024",
       },
       {
         id: 62,
