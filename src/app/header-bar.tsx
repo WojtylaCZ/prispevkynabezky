@@ -1,6 +1,8 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { SelectLocaleDropdown } from "./select-locale-dropdown";
 import { AnalyticsEvents, sendAnalyticsEvent } from "./analytics";
+import { useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 <Navbar variant="custom" sticky="top">
   <Container
@@ -23,6 +25,10 @@ import { AnalyticsEvents, sendAnalyticsEvent } from "./analytics";
 </Navbar>;
 
 export const HeaderBar = () => {
+  const { t } = useTranslation();
+
+  const { locale: localeParam } = useParams();
+
   return (
     <Navbar
       sticky="top"
@@ -33,7 +39,7 @@ export const HeaderBar = () => {
     >
       <Container style={{ maxWidth: "750px" }}>
         <Navbar.Brand
-          href="#"
+          href={`/${localeParam ? localeParam : ""}`}
           onClick={() => sendAnalyticsEvent(AnalyticsEvents.MenuBrandClicked, {})}
         >
           <span
@@ -53,17 +59,17 @@ export const HeaderBar = () => {
             {/* bootstrap 5: margin-start: auto */}
             <Nav.Link
               className="mx-1 text-light text-nowrap"
-              href="#oblasti"
+              href={`/${localeParam ? localeParam.concat("/#oblasti") : "#oblasti"}`}
               onClick={() => sendAnalyticsEvent(AnalyticsEvents.MenuTrailparksClicked, {})}
             >
-              Oblasti a tratě
+              {t("menu.districts")}
             </Nav.Link>
-            {/* <Nav.Link className="mx-2 text-light" href="#info">
-              Info
+            <Nav.Link
+              className="mx-2 text-light text-nowrap"
+              href={`/${localeParam ? localeParam.concat("/about") : "about"}`}
+            >
+              {t("menu.story")}
             </Nav.Link>
-            <Nav.Link className="mx-2 text-light" href="#link">
-              Podpořte
-            </Nav.Link> */}
             <Nav.Item style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
               <SelectLocaleDropdown />
             </Nav.Item>

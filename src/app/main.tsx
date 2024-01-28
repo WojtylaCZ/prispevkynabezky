@@ -10,6 +10,8 @@ import { useTranslation, Trans } from "react-i18next";
 import { HeaderBar } from "./header-bar";
 import { supportedLocales } from "./i18n";
 import { FooterBar } from "./footer-bar";
+import { PageContent } from "./page-content";
+import { PageHeaderImage } from "./page-header-image";
 
 export const Main = () => {
   const navigate = useNavigate();
@@ -39,46 +41,9 @@ export const Main = () => {
   return (
     <>
       <HeaderBar />
-      <div
-        style={{
-          margin: "auto",
-          maxWidth: "1400px",
-          height: "300px",
-          position: "relative",
-          width: "100%",
-          backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 92.61%), url("https://upload.wikimedia.org/wikipedia/commons/2/28/Skate_skiing_track.jpg")`,
-          // "Tiia Monto, CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0, via Wikimedia Commons",
-          backgroundSize: "cover",
-        }}
-      >
-        <h1
-          style={{
-            color: "#0a3383",
-            textAlign: "center",
-            fontFamily: "Kaushan Script",
-            zIndex: "10",
-            position: "absolute",
-            left: "0px",
-            bottom: "30%",
-            right: "0px",
-            fontSize: "calc(1.975rem + 1.3vw)",
-          }}
-        >
-          {t("titles.mainH1")}
-        </h1>
-      </div>
+      <PageHeaderImage />
 
-      <Stack
-        gap={4}
-        style={{
-          alignItems: "center",
-          width: "95%",
-          margin: "auto",
-          maxWidth: "690px",
-          marginBottom: "16px",
-          marginTop: "16px",
-        }}
-      >
+      <PageContent>
         <div
           style={{
             display: "flex",
@@ -87,21 +52,8 @@ export const Main = () => {
             textAlign: "center",
           }}
         >
-          <span>{t("text.introLine1")}</span>
+          <span>{t("text.introLinePNB")}</span>
 
-          <span>{t("text.introLine2")}</span>
-          <br />
-          <span>{t("text.introLine3")}</span>
-          <br />
-          <span>
-            <Trans i18nKey="text.introLine4">
-              before
-              <a href={"https://www.kamzasnehem.cz"} target="_blank" rel="noopener noreferrer">
-                wwww.kamzasnehem.cz
-              </a>
-              after
-            </Trans>
-          </span>
           <hr
             style={{
               width: "100px",
@@ -129,14 +81,22 @@ export const Main = () => {
               opacity: "90%",
             }}
           />
+          <span>
+            <Trans i18nKey="text.introLineKZS">
+              before
+              <a href={"https://www.kamzasnehem.cz"} target="_blank" rel="noopener noreferrer">
+                wwww.kamzasnehem.cz
+              </a>
+              after
+            </Trans>
+          </span>
         </div>
 
         <Stack
           id="oblasti"
           gap={5}
           style={{
-            paddingTop: "165px",
-            marginTop: "-165px", //hack na odscrollovani
+            marginTop: "25px",
           }}
         >
           {districtsList}
@@ -149,64 +109,7 @@ export const Main = () => {
             width: "100%",
           }}
         />
-
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            textAlign: "center",
-          }}
-        >
-          <h2
-            style={{
-              fontFamily: "Kaushan Script",
-              color: "#f7b500",
-              marginBottom: "24px",
-              fontSize: "calc(1.775rem + 1.1vw)",
-            }}
-          >
-            {t("titles.contactH2")}
-          </h2>
-          <span>
-            <Trans i18nKey="text.madeBy">
-              before
-              <a
-                href={"https://www.facebook.com/WojtylaCZ/"}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Vojtěch Uhlíř
-              </a>
-              after
-            </Trans>
-          </span>
-          <br />
-          <span>{t("text.footerLine1")}</span>
-          <br />
-          <span>
-            <Trans i18nKey="text.alsoMade">
-              before
-              <a href={"https://www.improbox.cz"} target="_blank" rel="noopener noreferrer">
-                Vojtěch Uhlíř
-              </a>
-              after
-            </Trans>
-          </span>
-        </div>
-        <div
-          style={{
-            color: "#0a3383",
-            textAlign: "center",
-          }}
-        >
-          <span>{t("text.footerLine2")}</span>
-          <br />
-          <a href={"https://www.facebook.com/WojtylaCZ/"} target="_blank" rel="noopener noreferrer">
-            {t("text.footerLine3")}
-          </a>
-        </div>
-      </Stack>
+      </PageContent>
       <FooterBar />
     </>
   );

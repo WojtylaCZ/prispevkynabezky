@@ -1,19 +1,28 @@
 {
+  "menu": {
+    "districts": "Districs and trails",
+    "story": "Story"
+  },
   "titles": {
-    "mainH1": "Donations for cross-country trails in Czechia",
-    "contactH2": "Contact",
+    "mainH1": "Donations for X-country trails made easy",
+    "webStoryH2": "Story of the web",
     "error": "There is no maintained track over here.",
     "jumpHome": "Go to homepage"
   },
   "text": {
-    "introLine1": "You can go for cross-country ski trip almost for free, it costs nothing to enjoy the trail.",
-    "introLine2": "Tracks are groomed and maintained by various clubs and non-profits with help of donations from civic collections and state contributions.",
-    "introLine3": "Nonprofit project PrispevkyNaBezky.cz was created to make contributions and donations easy by listing all parties with payment information.",
-    "introLine4": "What is a current state of tracks and snow? You can find up to date info at <1>www.kamzasnehem.cz</1> we are happy to share here.",
-    "introLineKosile": "Support further updates of this web by purchasing a premium, czech handmade shirt on <1>košile Od Uhlíře</1>, which myself, author, I'm offering.",
+    "introLinePNB": "List of non profit and volunteer groups with their payment details to support them for their maintanance work on grooming cross-country trails around Czechia.",
+    "introLineKosile": "Thisi is a non profit website. Support further updates and the author by purchasing a premium, czech handmade shirt on <1>košile Od Uhlíře</1>, which myself as author, I'm producing.",
+    "introLineKZS": "What is a current state of tracks and snow? Find out at partner web <1>www.kamzasnehem.cz</1>.",
+
+    "aboutLine1": "You can go for cross-country ski trip almost for free, it costs nothing to enjoy the trail.",
+    "aboutLine2": "Tracks are groomed and maintained by various clubs and non-profits with help of donations from civic collections and state contributions.",
+    "aboutLine3": "I made this nonprofit web to make contributions and donations easy and simple.",
+
+    "aboutLine4": "There are only trails listed I found a bank account number or a Facebook webpage for.",
+
     "madeBy": "This non-profit web was created by <1>Vojtěch Uhlíř</1>, a sportman, a x-country skier and a software engineer.",
     "alsoMade": "Do you know improvisation, improv shows and standups? Check out <1>www.improbox.cz</1>! <br/> Web that is hub of Czech improv scene which I also made.",
-    "footerLine1": "There are only trails listed I found a bank account number or a Facebook webpage for.",
+
     "footerLine2": "Is there something wrong or missing?",
     "footerLine3": "Write me and get in touch! ✍️"
   },

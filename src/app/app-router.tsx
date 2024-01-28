@@ -7,6 +7,7 @@ import {
 
 import { ErrorPage } from "./error-page";
 import { Main } from "./main";
+import { AboutPage } from "./about-page";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
         element={<Main />}
         errorElement={<ErrorPage />}
       />
+      <Route path="/:locale?/about" element={<AboutPage />} errorElement={<ErrorPage />} />
       <Route path="*" element={<ErrorPage />} errorElement={<ErrorPage />} />
     </>
   )

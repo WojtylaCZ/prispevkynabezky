@@ -1,22 +1,15 @@
-export const FooterBar = () => {
+import { Navbar, Container } from "react-bootstrap";
+
+export const FooterBar = ({ fixed }: { fixed?: "bottom" }) => {
   return (
-    <div
-      style={{
-        fontSize: "small",
-        color: "grey",
-        width: "100%",
-        display: "flex",
-        height: "48px",
-        justifyContent: "center",
-        backgroundColor: "#0a3383",
-        alignItems: "center",
-        position: "relative",
-        left: "0px",
-        bottom: "0px",
-        right: "0px",
-      }}
-    >
-      <span style={{ color: "white" }}>2023, Vojtech Uhlir</span>
-    </div>
+    <Navbar fixed={fixed} variant="dark" style={{ backgroundColor: "#0a3383" }}>
+      <Container className="d-flex justify-content-center" style={{ maxWidth: "750px" }}>
+        <Navbar.Brand>
+          <span style={{ color: "white", fontSize: "small", textAlign: "center" }}>
+            2024, Vojtěch Uhlíř
+          </span>
+        </Navbar.Brand>
+      </Container>
+    </Navbar>
   );
 };

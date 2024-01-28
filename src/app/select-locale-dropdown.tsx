@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Dropdown } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import { useNavigate, useParams } from "react-router-dom";
-import { fallbackLocale } from "./i18n";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { fallbackLocale, supportedLocales } from "./i18n";
 import { sendAnalyticsEvent, AnalyticsEvents } from "./analytics";
 
 export const SelectLocaleDropdown = () => {
@@ -10,6 +10,7 @@ export const SelectLocaleDropdown = () => {
   const navigate = useNavigate();
 
   const { locale: localeParam } = useParams();
+  const location = useLocation();
 
   const [locale, setLocale] = useState(localeParam || fallbackLocale);
 
@@ -20,7 +21,17 @@ export const SelectLocaleDropdown = () => {
 
     i18n.changeLanguage(newLocale);
     setLocale(newLocale);
-    navigate(`/${newLocale}`);
+
+    const urlSegments = location.pathname.split("/");
+
+    if (supportedLocales.includes(urlSegments[1])) {
+      urlSegments[1] = newLocale;
+    } else {
+      urlSegments.shift();
+      urlSegments.unshift("", newLocale);
+    }
+
+    navigate(urlSegments.join("/"));
   };
 
   return (

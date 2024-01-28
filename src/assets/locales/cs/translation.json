@@ -1,19 +1,29 @@
 {
+  "menu": {
+    "districts": "Oblasti a tratě",
+    "story": "Příběh webu"
+  },
+
   "titles": {
     "mainH1": "Příspěvky na běžkařské tratě jednoduše",
-    "contactH2": "Kontakt",
+    "webStoryH2": "Příběh",
     "error": "Tady chybí udržovaná trať.",
     "jumpHome": "Přejít na začátek"
   },
   "text": {
-    "introLine1": "Obout si běžky a vyrazit bílou stopou skoro nic nestojí. Údržba tratí ale ano.",
-    "introLine2": "Stopy udržují různé kluby a spolky za pomocí občanských sbírek a státních příspěvků.",
-    "introLine3": "Neziskový dobroWeb PříspěvkyNaBěžky.cz dává na jedno místo seznam všech organizací s platebními údaji. Zdarma, jen pro dobrý pocit a lepší karmu. ",
-    "introLine4": "Jaký je stav tratí a sněhu? Aktuální info najdete na <1>www.kamzasnehem.cz</1>, který tu rádi sdílíme.",
-    "introLineKosile": "Podpořtě další rozvoj webu nákupem kvalitní, české <1>košile od Uhlíře</1>, které jako autor nabízím.",
+    "introLinePNB": "Seznam spolků a oblastí z celého Česka s platebními údaji, jak jim přispět za jejich úpravu a údržbu běžkařských tratí.",
+    "introLineKosile": "Toto je neziskový dobroweb. Přispějte na jeho provoz a další rozvoj, ideálně nákupem kvalitní, české, ručně šité <1>košile od Uhlíře</1>, které jako autor nabízím.",
+    "introLineKZS": "Aktuální info o stavu sněhu a jednotlivých tratí na partnerském webu <1>www.kamzasnehem.cz</1>.",
+
+    "aboutLine1": "Obout si běžky a vyrazit bílou stopou skoro nic nestojí. Údržba tratí ale ano.",
+    "aboutLine2": "Stopy udržují různé kluby a spolky za pomocí občanských sbírek a státních příspěvků.",
+    "aboutLine3": "Tento dobroweb jsem vytvořil, aby šlo přispět a podpořit úpravu bežkařských tratí jednoduše rychle a moderně.",
+
+    "aboutLine4": "Jsou tu pouze areály, u kterých jsem našel číslo účtu nebo aktivní Facebook stránku.",
+
     "madeBy": "Tento dobročinný web vytvořil <1>Vojtěch Uhlíř</1> , sportovec, nadšenec na bežky, programátor.",
     "alsoMade": "Znáte improvizační vystoupení, impro standupy nebo impro show? Koukněte na <1>www.improbox.cz</1>! Web, který je centrem české improvizace, jehož jsem také autorem.",
-    "footerLine1": "Jsou tu pouze areály, u kterých jsem našel číslo účtu nebo aktivní Facebook stránku.",
+
     "footerLine2": "Je něco špatně nebo něco chybí?",
     "footerLine3": "Napište a dejte mi vědet! ✍️"
   },
