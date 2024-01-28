@@ -1,9 +1,9 @@
 import React from "react";
 import reportWebVitals from "./cra/reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
-import SSRProvider from "react-bootstrap/SSRProvider";
 
-import { hydrate, render } from "react-dom";
+import { hydrateRoot } from "react-dom/client";
+import { createRoot } from "react-dom/client";
 
 import "./index.css";
 import "./app/i18n";
@@ -11,29 +11,18 @@ import { AppRouter } from "./app/app-router";
 
 const index = (
   <React.StrictMode>
-    <SSRProvider>
-      <AppRouter />
-    </SSRProvider>
+    <AppRouter />
   </React.StrictMode>
 );
 
-const rootElement = document.getElementById("root") as HTMLElement;
+const container = document.getElementById("app") as HTMLElement;
 
-if (rootElement.hasChildNodes()) {
-  hydrate(index, rootElement);
+if (container.hasChildNodes()) {
+  hydrateRoot(container, index);
 } else {
-  render(index, rootElement);
+  const root = createRoot(container!);
+  root.render(index);
 }
-
-// import ReactDOM from "react-dom/client";
-// const root = ReactDOM.createRoot(
-//   document.getElementById("root") as HTMLElement
-// );
-// root.render(
-//   <React.StrictMode>
-//     <Main />
-//   </React.StrictMode>
-// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
