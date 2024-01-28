@@ -131,7 +131,16 @@ export const Main = () => {
           />
         </div>
 
-        <Stack gap={5}>{districtsList}</Stack>
+        <Stack
+          id="oblasti"
+          gap={5}
+          style={{
+            paddingTop: "165px",
+            marginTop: "-165px", //hack na odscrollovani
+          }}
+        >
+          {districtsList}
+        </Stack>
 
         <Image
           src={Skier}
