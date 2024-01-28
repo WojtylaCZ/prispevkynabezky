@@ -59,7 +59,7 @@ export const TrailparkCard = ({
     if (!isExpanded) {
       sendAnalyticsEvent(AnalyticsEvents.TrailparkCardExpanded, { trailparkId: trailpark.id });
     } else {
-      sendAnalyticsEvent(AnalyticsEvents.TrailparkCardClosed, { trailparkId: trailpark.id });
+      sendAnalyticsEvent(AnalyticsEvents.TrailparkCardCollapsed, { trailparkId: trailpark.id });
     }
     setIsExpanded(!isExpanded);
   }, [trailpark.id, isExpanded]);

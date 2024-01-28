@@ -6,7 +6,7 @@ export const initAnalytics = () => {
 
 export const enum AnalyticsEvents {
   TrailparkCardExpanded = "TrailparkCardExpanded",
-  TrailparkCardClosed = "TrailparkCardClosed",
+  TrailparkCardCollapsed = "TrailparkCardCollapsed",
 
   MenuBrandClicked = "MenuBrandClicked",
   MenuTrailparksClicked = "MenuTrailparksClicked",
