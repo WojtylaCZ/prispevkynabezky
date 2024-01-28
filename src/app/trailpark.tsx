@@ -5,10 +5,8 @@ import { useParams } from "react-router-dom";
 import { ChevronDownIcon } from "../assets/icons/chevronDown";
 import { ChevronUpIcon } from "../assets/icons/chevronUp";
 import FacebookIcon from "../assets/icons/facebook.svg";
-import ReactGA from "react-ga4";
 import { useTranslation } from "react-i18next";
-
-ReactGA.initialize("G-TJGECJ2MHV");
+import { AnalyticsEvents, sendAnalyticsEvent } from "./analytics";
 
 export type Trailpark = {
   id: number;
@@ -59,15 +57,9 @@ export const TrailparkCard = ({
 
   const handleClick = useCallback(() => {
     if (!isExpanded) {
-      ReactGA.event("trailparkcard_expanded", {
-        trailparkId: trailpark.id,
-      });
-      ReactGA.event({
-        // action becomes the event name
-        action: `trailparkcardexpanded2_${trailpark.id}`,
-        //  "event_category" becomes a custom parameter
-        category: `${trailpark.id}`,
-      });
+      sendAnalyticsEvent(AnalyticsEvents.TrailparkCardExpanded, { trailparkId: trailpark.id });
+    } else {
+      sendAnalyticsEvent(AnalyticsEvents.TrailparkCardClosed, { trailparkId: trailpark.id });
     }
     setIsExpanded(!isExpanded);
   }, [trailpark.id, isExpanded]);

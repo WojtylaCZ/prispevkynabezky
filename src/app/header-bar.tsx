@@ -1,5 +1,6 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { SelectLocaleDropdown } from "./select-locale-dropdown";
+import { AnalyticsEvents, sendAnalyticsEvent } from "./analytics";
 
 <Navbar variant="custom" sticky="top">
   <Container
@@ -31,7 +32,10 @@ export const HeaderBar = () => {
       style={{ backgroundColor: "#0a3383" }}
     >
       <Container style={{ maxWidth: "750px" }}>
-        <Navbar.Brand href="#">
+        <Navbar.Brand
+          href="#"
+          onClick={() => sendAnalyticsEvent(AnalyticsEvents.MenuBrandClicked, {})}
+        >
           <span
             style={{
               fontFamily: "Kaushan Script",
@@ -47,7 +51,11 @@ export const HeaderBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto" justify>
             {/* bootstrap 5: margin-start: auto */}
-            <Nav.Link className="mx-1 text-light text-nowrap" href="#oblasti">
+            <Nav.Link
+              className="mx-1 text-light text-nowrap"
+              href="#oblasti"
+              onClick={() => sendAnalyticsEvent(AnalyticsEvents.MenuTrailparksClicked, {})}
+            >
               Oblasti a tratě
             </Nav.Link>
             {/* <Nav.Link className="mx-2 text-light" href="#info">

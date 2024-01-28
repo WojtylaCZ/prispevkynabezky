@@ -3,6 +3,7 @@ import { Dropdown } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { useNavigate, useParams } from "react-router-dom";
 import { fallbackLocale } from "./i18n";
+import { sendAnalyticsEvent, AnalyticsEvents } from "./analytics";
 
 export const SelectLocaleDropdown = () => {
   const { i18n } = useTranslation();
@@ -14,6 +15,9 @@ export const SelectLocaleDropdown = () => {
 
   const handleSelectLocale = (locale: string | null) => {
     const newLocale = locale || fallbackLocale;
+
+    sendAnalyticsEvent(AnalyticsEvents.LanguageChanged, { newLocale: newLocale });
+
     i18n.changeLanguage(newLocale);
     setLocale(newLocale);
     navigate(`/${newLocale}`);
