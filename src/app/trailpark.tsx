@@ -38,7 +38,7 @@ export const TrailparkCard = ({
   const scrollToTarget = () => {
     if (ref && ref.current) {
       const position = ref.current.getBoundingClientRect();
-      window.scrollTo({ top: position.top, left: 0 });
+      window.scrollTo({ top: position.top - 60, left: 0 });
     }
   };
 
