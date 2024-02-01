@@ -19,11 +19,13 @@
     "introLineKZS": "What is a current state of tracks and snow? Find out at partner web <1>www.kamzasnehem.cz</1>.",
     "introLineMapycz": "There is also a link how to donate at cross country trail starting points on <1>Mapy.cz</1>.",
 
-    "aboutLine1": "You can go for cross-country ski trip almost for free, it costs nothing to enjoy the trail.",
-    "aboutLine2": "Tracks are groomed and maintained by various clubs and non-profits with help of donations from civic collections and state contributions.",
-    "aboutLine3": "I made this nonprofit web to make contributions and donations easy and simple.",
-
-    "aboutLine4": "There are only trails listed I found a bank account number or a Facebook webpage for.",
+    "about": {
+      "1": "You can go for cross-country ski trip almost for free, it costs nothing to enjoy the trail.",
+      "2": "Tracks are groomed and maintained by various clubs and non-profits with help of donations from civic collections and state contributions.",
+      "3": "I made this nonprofit web to make contributions and donations easy and simple.",
+      "4": "There are only trails listed I found a bank account number or a Facebook webpage for.",
+      "5": "This web was featured in:"
+    },
 
     "donate": {
       "1": "Donation is a classic bank transfer in Czechia. The target account is already the direct recepient - x-country trail maintainer, a volunteer or a non-profit. This web does not have anything from the amount being sent if you ask.",

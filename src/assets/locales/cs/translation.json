@@ -20,11 +20,13 @@
     "introLineKZS": "Aktuální info o stavu sněhu a jednotlivých tratí na partnerském webu <1>www.kamzasnehem.cz</1>.",
     "introLineMapycz": "Jak přispět na běžky v dané lokaci můžete nalézt také na nástupních místech tratí na <1>Mapy.cz</1>.",
 
-    "aboutLine1": "Obout si běžky a vyrazit bílou stopou skoro nic nestojí. Údržba tratí ale ano.",
-    "aboutLine2": "Stopy udržují různé kluby a spolky za pomocí občanských sbírek a státních příspěvků.",
-    "aboutLine3": "Tento dobroweb jsem vytvořil, aby šlo přispět a podpořit úpravu bežkařských tratí jednoduše, rychle a moderně.",
-
-    "aboutLine4": "Jsou tu pouze areály, u kterých jsem našel číslo účtu nebo aktivní Facebook stránku.",
+    "about": {
+      "1": "Obout si běžky a vyrazit bílou stopou skoro nic nestojí. Údržba tratí ale ano.",
+      "2": "Stopy udržují různé kluby a spolky za pomocí občanských sbírek a státních příspěvků.",
+      "3": "Tento dobroweb jsem vytvořil, aby šlo přispět a podpořit úpravu bežkařských tratí jednoduše, rychle a moderně.",
+      "4": "Jsou tu pouze areály, u kterých jsem našel číslo účtu nebo aktivní Facebook stránku.",
+      "5": "O webu napsali:"
+    },
 
     "donate": {
       "1": "Příspěvěk se zasílá jako klasický převod peněz na účet. Cílový účet je přímo daného rolbaře, dobrovolníka, spolku. Ten web pouze zobrazuje dané platební informace.",
