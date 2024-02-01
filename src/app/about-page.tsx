@@ -5,6 +5,7 @@ import { PageContent } from "./page-content";
 import { Image } from "react-bootstrap";
 import Skier from "../assets/img/skier2.png";
 import { PageHeaderImage } from "./page-header-image";
+import { LineSeparator } from "./line-separator";
 
 export const AboutPage = () => {
   const { t } = useTranslation();
@@ -30,7 +31,7 @@ export const AboutPage = () => {
               fontSize: "calc(1.775rem + 1.1vw)",
             }}
           >
-            {t("titles.webStoryH2")}
+            {t("titles.aboutH2")}
           </h2>
           <span>{t("text.aboutLine1")}</span>
           <span>{t("text.aboutLine2")}</span>
@@ -39,7 +40,8 @@ export const AboutPage = () => {
           <span>{t("text.aboutLine3")}</span>
           <span>{t("text.aboutLine4")}</span>
           <br />
-
+          <LineSeparator />
+          <br />
           <span>
             <Trans i18nKey="text.madeBy">
               before
@@ -65,6 +67,7 @@ export const AboutPage = () => {
             </Trans>
           </span>
         </div>
+        <LineSeparator />
         <div
           style={{
             color: "#0a3383",

@@ -1,17 +1,21 @@
 {
   "menu": {
     "districts": "Districs and trails",
-    "story": "Story"
+    "donate": "How to donate?",
+    "about": "About"
   },
   "titles": {
     "mainH1": "Donations for X-country trails made easy",
-    "webStoryH2": "Story of the web",
+    "donateH2": "How to donate?",
+    "donateH2toPNB": "Support this web",
+    "aboutH2": "About the web",
+
     "error": "There is no maintained track over here.",
     "jumpHome": "Go to homepage"
   },
   "text": {
     "introLinePNB": "List of non profit and volunteer groups with their payment details to support them for their maintanance work on grooming cross-country trails around Czechia.",
-    "introLineKosile": "Thisi is a non profit website. Support further updates and the author by purchasing a premium, czech handmade shirt on <1>košile Od Uhlíře</1>, which myself as author, I'm producing.",
+    "introLineKosile": "This is a non profit website. Support further updates and the author by purchasing a premium, czech handmade shirt on <1>košile Od Uhlíře</1>, which myself as author, I'm making.",
     "introLineKZS": "What is a current state of tracks and snow? Find out at partner web <1>www.kamzasnehem.cz</1>.",
 
     "aboutLine1": "You can go for cross-country ski trip almost for free, it costs nothing to enjoy the trail.",
@@ -19,6 +23,13 @@
     "aboutLine3": "I made this nonprofit web to make contributions and donations easy and simple.",
 
     "aboutLine4": "There are only trails listed I found a bank account number or a Facebook webpage for.",
+
+    "donate": {
+      "1": "Donation is a classic bank transfer in Czechia. The target account is already the direct recepient - x-country trail maintainer, a volunteer or a non-profit. This web does not have anything from the amount being sent if you ask.",
+      "2": "If you are using a mobile banking app, you can scan the QR code to get the payment details and bank transfer prefilled.",
+      "3": "At each trail location there is also the recepient's bank account number listed if you don't want to use QR code or you want to check correctness of the data.",
+      "4": "If the track maintainer has a public bank account, there is also link listed. So you can valide your money has been received, for example."
+    },
 
     "madeBy": "This non-profit web was created by <1>Vojtěch Uhlíř</1>, a sportman, a x-country skier and a software engineer.",
     "alsoMade": "Do you know improvisation, improv shows and standups? Check out <1>www.improbox.cz</1>! <br/> Web that is hub of Czech improv scene which I also made.",

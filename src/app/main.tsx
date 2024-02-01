@@ -12,6 +12,7 @@ import { supportedLocales } from "./i18n";
 import { FooterBar } from "./footer-bar";
 import { PageContent } from "./page-content";
 import { PageHeaderImage } from "./page-header-image";
+import { LineSeparator } from "./line-separator";
 
 export const Main = () => {
   const navigate = useNavigate();
@@ -54,15 +55,7 @@ export const Main = () => {
         >
           <span>{t("text.introLinePNB")}</span>
 
-          <hr
-            style={{
-              width: "100px",
-              color: "#f7b500",
-              border: 0,
-              borderTop: "1px solid",
-              opacity: "90%",
-            }}
-          />
+          <LineSeparator />
           <span>
             <Trans i18nKey="text.introLineKosile">
               before

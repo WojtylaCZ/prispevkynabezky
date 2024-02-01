@@ -37,7 +37,7 @@ export const HeaderBar = () => {
       collapseOnSelect
       style={{ backgroundColor: "#0a3383" }}
     >
-      <Container style={{ maxWidth: "750px" }}>
+      <Container style={{ maxWidth: "850px" }}>
         <Navbar.Brand
           href={`/${localeParam ? localeParam : ""}`}
           onClick={() => sendAnalyticsEvent(AnalyticsEvents.MenuBrandClicked, {})}
@@ -66,9 +66,15 @@ export const HeaderBar = () => {
             </Nav.Link>
             <Nav.Link
               className="mx-2 text-light text-nowrap"
-              href={`/${localeParam ? localeParam.concat("/about") : "about"}`}
+              href={`/${localeParam ? localeParam.concat("/jak-prispet") : "about"}`}
             >
-              {t("menu.story")}
+              {t("menu.donate")}
+            </Nav.Link>
+            <Nav.Link
+              className="mx-2 text-light text-nowrap"
+              href={`/${localeParam ? localeParam.concat("/o-webu") : "about"}`}
+            >
+              {t("menu.about")}
             </Nav.Link>
             <Nav.Item style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
               <SelectLocaleDropdown />

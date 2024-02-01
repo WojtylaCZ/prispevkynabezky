@@ -1,12 +1,16 @@
 {
   "menu": {
     "districts": "Oblasti a tratě",
-    "story": "Příběh webu"
+    "donate": "Jak přispět?",
+    "about": "O webu"
   },
 
   "titles": {
     "mainH1": "Příspěvky na běžkařské tratě jednoduše",
-    "webStoryH2": "Příběh",
+    "donateH2": "Jak přispět?",
+    "donateH2toPNB": "Podpořte tento web",
+    "aboutH2": "O webu",
+
     "error": "Tady chybí udržovaná trať.",
     "jumpHome": "Přejít na začátek"
   },
@@ -17,9 +21,16 @@
 
     "aboutLine1": "Obout si běžky a vyrazit bílou stopou skoro nic nestojí. Údržba tratí ale ano.",
     "aboutLine2": "Stopy udržují různé kluby a spolky za pomocí občanských sbírek a státních příspěvků.",
-    "aboutLine3": "Tento dobroweb jsem vytvořil, aby šlo přispět a podpořit úpravu bežkařských tratí jednoduše rychle a moderně.",
+    "aboutLine3": "Tento dobroweb jsem vytvořil, aby šlo přispět a podpořit úpravu bežkařských tratí jednoduše, rychle a moderně.",
 
     "aboutLine4": "Jsou tu pouze areály, u kterých jsem našel číslo účtu nebo aktivní Facebook stránku.",
+
+    "donate": {
+      "1": "Příspěvěk se zasílá jako klasický převod peněz na účet. Cílový účet je přímo daného rolbaře, dobrovolníka, spolku. Ten web pouze zobrazuje dané platební informace.",
+      "2": "Pokud máte aplikaci banky v mobilu, můžete využít QR kód, který naskenujete a platba danému spolku se vám automaticky předvyplní.",
+      "3": "U každé oblasti je uvedeno i samotné číslo účtu, pokud mobilní aplikaci nepoužíváte a nebo si chcete ověřit platnost informací z QR kódu.",
+      "4": "Pokud daný spolek či organizace vede svůj bankovní účet jako transparentní, v kartě oblasti je uveden také odkaz. Můžete si tak například zkontrolovat, že vaše peníze v pořádku dorazily."
+    },
 
     "madeBy": "Tento dobročinný web vytvořil <1>Vojtěch Uhlíř</1> , sportovec, nadšenec na bežky, programátor.",
     "alsoMade": "Znáte improvizační vystoupení, impro standupy nebo impro show? Koukněte na <1>www.improbox.cz</1>! Web, který je centrem české improvizace, jehož jsem také autorem.",

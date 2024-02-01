@@ -1,6 +1,7 @@
 import { Container, Image, Navbar, Stack } from "react-bootstrap";
 import Skier from "../assets/img/skier2.png";
 import { useTranslation } from "react-i18next";
+import { LineSeparator } from "./line-separator";
 
 export const ErrorPage = () => {
   const { t } = useTranslation();
@@ -77,15 +78,7 @@ export const ErrorPage = () => {
         }}
       >
         <span>{t("titles.error")}</span>
-        <hr
-          style={{
-            width: "100px",
-            color: "#f7b500",
-            border: 0,
-            borderTop: "1px solid",
-            opacity: "90%",
-          }}
-        />
+        <LineSeparator />
 
         <a href="/">{t("titles.jumpHome")}</a>
 
