@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Image, Stack } from "react-bootstrap";
 import { DistrictSection } from "./district";
 import Skier from "../assets/img/skier2.png";
+import Mapycz from "../assets/img/example-mapycz.png";
 
 import { data } from "../assets/data/data-new";
 import { useNavigate, useParams } from "react-router-dom";
@@ -84,7 +85,6 @@ export const Main = () => {
             </Trans>
           </span>
         </div>
-
         <Stack
           id="oblasti"
           gap={5}
@@ -94,7 +94,25 @@ export const Main = () => {
         >
           {districtsList}
         </Stack>
-
+        <LineSeparator />
+        <span>
+          <Trans i18nKey="text.introLineMapycz">
+            before
+            <a href={"https://mapy.cz/s/bukabaruru"} target="_blank" rel="noopener noreferrer">
+              wwww.mapy.cz
+            </a>
+            after
+          </Trans>
+        </span>
+        <a href={"https://mapy.cz/s/bukabaruru"} target="_blank" rel="noopener noreferrer">
+          <Image
+            src={Mapycz}
+            style={{
+              maxWidth: "600px",
+              width: "100%",
+            }}
+          />
+        </a>
         <Image
           src={Skier}
           style={{
