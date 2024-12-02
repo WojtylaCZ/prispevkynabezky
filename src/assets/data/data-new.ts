@@ -24,6 +24,10 @@ import Id44_296969346_0300 from "./qr-codes-new/Id44_296969346_0300.png";
 import Id41_276681775_0300 from "./qr-codes-new/Id41_276681775_0300.png";
 import Id51_207602447_0600 from "./qr-codes-new/Id51_207602447_0600.png";
 import Id52_299936101_0300 from "./qr-codes-new/Id52_299936101_0300.png";
+
+import Id121_3533910_8030 from "./qr-codes-new/Id121_3533910_8030.png";
+import Id122_107_1388920237_0100 from "./qr-codes-new/Id122_107_1388920237_0100.png";
+
 import Id91_2102245016_2010 from "./qr-codes-new/Id91_2102245016_2010.png";
 import Id61_123_7845000207_0100 from "./qr-codes-new/Id61_123_7845000207_0100.png";
 import Id62_296575726_0300 from "./qr-codes-new/Id62_296575726_0300.png";
@@ -386,6 +390,37 @@ export const data: Array<District> = [
     ],
   },
   {
+    name: "Západní Čechy",
+    trailparks: [
+      {
+        id: 121,
+        name: "Lipová, Dyleň",
+        slug: "dylen",
+        operator: "Život na Dyleň, z.s.",
+        bankAccountNumber: "3533910/8030",
+        variableSymbol: 500,
+        transparentBankAccountUrl: null,
+        url: "http://zivotnadylen.cz/bezecke%2Dtrate%2Dpod%2Ddyleni/ds-1003",
+        qrImage: Id121_3533910_8030,
+        facebookPageUrl: "https://www.facebook.com/zivotnadylen",
+        checkedAt: "2.12.2024",
+      },
+      {
+        id: 122,
+        name: "Mariánské lázně",
+        slug: "marianskelazne",
+        operator: "Ski Nordic Mariánské Lázně",
+        bankAccountNumber: "107-1388920237/0100",
+        variableSymbol: null,
+        transparentBankAccountUrl: null,
+        url: "https://skinordicml.cz/bezecke-trate/",
+        qrImage: Id122_107_1388920237_0100,
+        facebookPageUrl: "https://www.facebook.com/skinordicml/",
+        checkedAt: "2.12.2024",
+      },
+    ],
+  },
+  {
     name: "Šumava",
     trailparks: [
       {
@@ -416,6 +451,7 @@ export const data: Array<District> = [
       },
     ],
   },
+
   {
     name: "Novohradské hory",
     trailparks: [
