@@ -18,6 +18,8 @@ import Id36_301456968_0300 from "./qr-codes-new/Id36_301456968_0300.png";
 import Id37_45454575_2010 from "./qr-codes-new/Id37_45454575_2010.png";
 import Id32_2302061393_2010 from "./qr-codes-new/Id32_2302061393_2010.png";
 import Id31_269980072_0300 from "./qr-codes-new/Id31_269980072_0300.png";
+import Id38_4445967319_0800 from "./qr-codes-new/Id38_4445967319_0800.png";
+
 import Id101_43_1708990227_0100 from "./qr-codes-new/Id101_43_1708990227_0100.png";
 import Id42_6114987349_0800 from "./qr-codes-new/Id42_6114987349_0800.png";
 import Id43_293272551_0300 from "./qr-codes-new/Id43_293272551_0300.png";
@@ -253,6 +255,19 @@ export const data: Array<District> = [
         transparentBankAccountUrl: null,
         url: "http://kbstopa.cz/",
         qrImage: Id34_35_6888660227_0100,
+        facebookPageUrl: "https://www.facebook.com/krusnohorskabilastopa",
+        checkedAt: "2.12.2024",
+      },
+      {
+        id: 38,
+        name: "Lesná, Nová Ves",
+        slug: "lesnanovaves",
+        operator: "Horský klub Lesná z.s.",
+        bankAccountNumber: "4445967319/0800",
+        variableSymbol: null,
+        transparentBankAccountUrl: null,
+        url: "www.krusnohorskabilastopa.cz",
+        qrImage: Id38_4445967319_0800,
         facebookPageUrl: "https://www.facebook.com/krusnohorskabilastopa",
         checkedAt: "2.12.2024",
       },
