@@ -48,7 +48,7 @@ export const AboutPage = () => {
             <Trans i18nKey="text.madeBy">
               before
               <a
-                href={"https://www.facebook.com/WojtylaCZ/"}
+                href={"https://www.linkedin.com/in/vojtechuhlir/"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -110,7 +110,7 @@ export const AboutPage = () => {
         >
           <span>{t("text.footerLine2")}</span>
           <br />
-          <a href={"https://www.facebook.com/WojtylaCZ/"} target="_blank" rel="noopener noreferrer">
+          <a href={"https://www.linkedin.com/in/vojtechuhlir/"} target="_blank" rel="noopener noreferrer">
             {t("text.footerLine3")}
           </a>
         </div>

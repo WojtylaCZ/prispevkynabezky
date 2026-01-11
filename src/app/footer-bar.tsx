@@ -6,7 +6,7 @@ export const FooterBar = ({ fixed }: { fixed?: "bottom" }) => {
       <Container className="d-flex justify-content-center" style={{ maxWidth: "750px" }}>
         <Navbar.Brand>
           <span style={{ color: "white", fontSize: "small", textAlign: "center" }}>
-            2024, Vojtěch Uhlíř
+            2026, <a href="https://www.linkedin.com/in/vojtechuhlir/" target="_blank" rel="noopener noreferrer">Vojtěch Uhlíř</a>
           </span>
         </Navbar.Brand>
       </Container>
