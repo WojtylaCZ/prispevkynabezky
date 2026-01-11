@@ -2,10 +2,10 @@ import type { District } from "../../app/district";
 
 import Id11_255899476_0300 from "./qr-codes-new/Id11_255899476_0300.png";
 import Id12_123_4434000217_0100 from "./qr-codes-new/Id12_123_4434000217_0100.png";
-import Id15_115_8520840237_0100 from "./qr-codes-new/Id15_115_8520840237_0100.png";
-import Id16_4327550053_0800 from "./qr-codes-new/Id16_4327550053_0800.png";
+import Id15_605376123_0300 from "./qr-codes-new/Id15_605376123_0300.png";
+import Id16_605376123_0300 from "./qr-codes-new/Id16_605376123_0300.png";
 import Id14_123_3394480257_0100 from "./qr-codes-new/Id14_123_3394480257_0100.png";
-
+import Id23_181931903_0600 from "./qr-codes-new/Id23_181931903_0600.png";
 import Id25_20036_1263085389_0800 from "./qr-codes-new/Id25_20036_1263085389_0800.png";
 import Id24_1261416359_0800 from "./qr-codes-new/Id24_1261416359_0800.png";
 import Id21_6138641369_0800 from "./qr-codes-new/Id21_6138641369_0800.png";
@@ -14,19 +14,19 @@ import Id22_262563989_0300 from "./qr-codes-new/Id22_262563989_0300.png";
 
 import Id33_204457600_0600 from "./qr-codes-new/Id33_204457600_0600.png";
 import Id34_35_6888660227_0100 from "./qr-codes-new/Id34_35_6888660227_0100.png";
-import Id36_301456968_0300 from "./qr-codes-new/Id36_301456968_0300.png";
 import Id37_45454575_2010 from "./qr-codes-new/Id37_45454575_2010.png";
-import Id32_2302061393_2010 from "./qr-codes-new/Id32_2302061393_2010.png";
+import Id32_269980072_0300 from "./qr-codes-new/Id32_269980072_0300.png";
 import Id31_269980072_0300 from "./qr-codes-new/Id31_269980072_0300.png";
 import Id38_4445967319_0800 from "./qr-codes-new/Id38_4445967319_0800.png";
 
 import Id101_43_1708990227_0100 from "./qr-codes-new/Id101_43_1708990227_0100.png";
 import Id42_6114987349_0800 from "./qr-codes-new/Id42_6114987349_0800.png";
-import Id43_293272551_0300 from "./qr-codes-new/Id43_293272551_0300.png";
 import Id44_296969346_0300 from "./qr-codes-new/Id44_296969346_0300.png";
 import Id41_276681775_0300 from "./qr-codes-new/Id41_276681775_0300.png";
+
 import Id51_207602447_0600 from "./qr-codes-new/Id51_207602447_0600.png";
 import Id52_299936101_0300 from "./qr-codes-new/Id52_299936101_0300.png";
+import Id53_4295230257_0100 from "./qr-codes-new/Id53_4295230257_0100.png";
 
 import Id121_3533910_8030 from "./qr-codes-new/Id121_3533910_8030.png";
 import Id122_107_1388920237_0100 from "./qr-codes-new/Id122_107_1388920237_0100.png";
@@ -60,7 +60,7 @@ export const data: Array<District> = [
         url: "https://www.jizerskaops.cz/chci-prispet/moznosti-podpory/",
         qrImage: Id11_255899476_0300,
         facebookPageUrl: "https://www.facebook.com/jizerskamagistrala",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 12,
@@ -73,33 +73,33 @@ export const data: Array<District> = [
         url: "http://www.jizerkyprovas.cz/",
         qrImage: Id12_123_4434000217_0100,
         facebookPageUrl: null,
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 15,
         name: "Pěnčínská magistrála - východ",
         slug: "pencinskamagistralavychod",
-        operator: "Josef Bouda - Alšovice",
-        bankAccountNumber: "115-8520840237/0100",
+        operator: "Sokol Skuhrov",
+        bankAccountNumber: "605376123/0300",
         variableSymbol: null,
         transparentBankAccountUrl: null,
-        url: "https://bezecke-trate-huntirov.webnode.cz/",
-        qrImage: Id15_115_8520840237_0100,
+        url: "https://www.pencinska-magistrala.cz/",
+        qrImage: Id15_605376123_0300,
         facebookPageUrl: "https://www.facebook.com/pencinskamagistrala",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 16,
         name: "Pěnčínská magistrála - západ",
         slug: "pencinskamagistralazapad",
-        operator: "Pavel Pavlata - Huntířov",
-        bankAccountNumber: "4327550053/0800",
+        operator: "Sokol Skuhrov",
+        bankAccountNumber: "605376123/0300",
         variableSymbol: null,
         transparentBankAccountUrl: null,
-        url: "https://bezecke-trate-huntirov.webnode.cz/",
-        qrImage: Id16_4327550053_0800,
+        url: "https://www.pencinska-magistrala.cz/",
+        qrImage: Id16_605376123_0300,
         facebookPageUrl: "https://www.facebook.com/pencinskamagistrala",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 14,
@@ -112,7 +112,7 @@ export const data: Array<District> = [
         url: "https://www.zasada.cz/volny-cas/lyzarske-bezecke-trate",
         qrImage: Id14_123_3394480257_0100,
         facebookPageUrl: "https://www.facebook.com/CrossCountrySkiZasada",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
     ],
   },
@@ -132,7 +132,7 @@ export const data: Array<District> = [
         url: "https://www.harrachovcard.cz/harrachov/verejna-sbirka",
         qrImage: Id25_20036_1263085389_0800,
         facebookPageUrl: null,
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 24,
@@ -145,7 +145,7 @@ export const data: Array<District> = [
         url: "https://www.skijilemnice.cz/web/trate/mapy",
         qrImage: Id24_1261416359_0800,
         facebookPageUrl: null,
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 21,
@@ -160,7 +160,7 @@ export const data: Array<District> = [
         url: "https://malaupa.cz/blog/2022/02/07/dobrovolny-prispevek-na-upravu-bezeckych-trati-v-male-upe/",
         qrImage: Id21_6138641369_0800,
         facebookPageUrl: "https://www.facebook.com/malaupa",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 26,
@@ -173,7 +173,7 @@ export const data: Array<District> = [
         url: "https://www.mesto-rokytnice.cz/cs/informacni-centrum/lyze-bezky-snowboard.html",
         qrImage: Id26_123_5314220287_0100,
         facebookPageUrl: null,
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 22,
@@ -186,20 +186,20 @@ export const data: Array<District> = [
         url: "https://www.nabezky.cz/#plan-trati",
         qrImage: Id22_262563989_0300,
         facebookPageUrl: "https://www.facebook.com/nabezkydoVejsplach/",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 23,
         name: "Benecko",
         slug: "benecko",
         operator: "Sdružení pro rozvoj na Benecku z. s.",
-        bankAccountNumber: null,
+        bankAccountNumber: "181931903/0600",
         variableSymbol: null,
         transparentBankAccountUrl: null,
         url: "https://www.benecko.info/zima/bezecke-lyzovani",
-        qrImage: null,
+        qrImage: Id23_181931903_0600,
         facebookPageUrl: "https://www.facebook.com/BeneckoKrkonose/",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
     ],
   },
@@ -217,7 +217,7 @@ export const data: Array<District> = [
         url: "https://www.hsadolfov.cz/zima/",
         qrImage: Id37_45454575_2010,
         facebookPageUrl: "https://www.facebook.com/hsadolfov",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 33,
@@ -230,20 +230,22 @@ export const data: Array<District> = [
         url: "https://alsovka.cz/bezecke-trasy/",
         qrImage: Id33_204457600_0600,
         facebookPageUrl: "https://www.facebook.com/SkiarealAlsovka",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 36,
         name: "Cínovec - Nové Město",
         slug: "cinovec",
         operator: "MAS Cínovecko, o.p.s.",
-        bankAccountNumber: "301456968/0300",
+        // bankAccountNumber: "301456968/0300",
+        bankAccountNumber: null,
         variableSymbol: null,
         transparentBankAccountUrl: null,
         url: "https://bezky.mascinovecko.cz/",
-        qrImage: Id36_301456968_0300,
+        // qrImage: Id36_301456968_0300,
+        qrImage: null,
         facebookPageUrl: "https://www.facebook.com/bezeckestopy",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 34,
@@ -256,7 +258,7 @@ export const data: Array<District> = [
         url: "http://kbstopa.cz/",
         qrImage: Id34_35_6888660227_0100,
         facebookPageUrl: "https://www.facebook.com/krusnohorskabilastopa",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 38,
@@ -266,23 +268,23 @@ export const data: Array<District> = [
         bankAccountNumber: "4445967319/0800",
         variableSymbol: null,
         transparentBankAccountUrl: null,
-        url: "www.krusnohorskabilastopa.cz",
+        url: "https://www.krusnohorskabilastopa.cz",
         qrImage: Id38_4445967319_0800,
         facebookPageUrl: "https://www.facebook.com/krusnohorskabilastopa",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 32,
         name: "Loučná pod Klínovcem",
         slug: "loucnapodklinovcem",
-        operator: "Město Loučná pod Klínovcem",
-        bankAccountNumber: "2302061393/2010",
-        variableSymbol: 2122010,
+        operator: "První Krušnohorské o.p.s.",
+        bankAccountNumber: "269980072/0300",
+        variableSymbol: null,
         transparentBankAccountUrl: null,
         url: "https://www.loucna.eu/infocentrum/zima/bezecke-lyzovani-1/loucna-pod-klinovcem/",
-        qrImage: Id32_2302061393_2010,
+        qrImage: Id32_269980072_0300,
         facebookPageUrl: "https://www.facebook.com/mestoloucna",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 31,
@@ -293,11 +295,10 @@ export const data: Array<District> = [
         variableSymbol: null,
         transparentBankAccountUrl:
           "https://www.csob.cz/portal/firmy/bezne-ucty/transparentni-ucty/ucet?account=269980072",
-        // url: "http://www.krusnehoryaktivne.cz/",
-        url: "http://www.krusnehoryaktivne.cz/?page_id=11",
+        url: "https://www.krusnehoryaktivne.cz/?page_id=11",
         qrImage: Id31_269980072_0300,
         facebookPageUrl: "https://www.facebook.com/KLMzapad",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
 
       // {
@@ -308,7 +309,7 @@ export const data: Array<District> = [
       //   url: "https://kliny.cz/bezecke-trasy/",
       //   qrImage: null,
       //   facebookPageUrl: null,
-      //   checkedAt: "4.2.2023",
+      //   checkedAt: "11.1.2026",
       // },
 
       {
@@ -322,7 +323,7 @@ export const data: Array<District> = [
         url: null,
         qrImage: null,
         facebookPageUrl: "https://www.facebook.com/bezkysneznik/",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
     ],
   },
@@ -340,7 +341,7 @@ export const data: Array<District> = [
         url: "https://skipolevsko.estranky.cz/clanky/kontakt.html",
         qrImage: Id101_43_1708990227_0100,
         facebookPageUrl: "https://www.facebook.com/ski.polevsko/",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
     ],
   },
@@ -360,21 +361,24 @@ export const data: Array<District> = [
         qrImage: Id42_6114987349_0800,
         facebookPageUrl:
           "https://www.facebook.com/Sdru%C5%BEen%C3%AD-obc%C3%AD-Orlicko-1621311478157605",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 43,
         name: "Deštné v Orlických horách",
         slug: "orlickehorydestne",
         operator: "Deštenský spolek",
-        bankAccountNumber: "293272551/0300",
+        // bankAccountNumber: "293272551/0300",
+        bankAccountNumber: null,
         variableSymbol: null,
-        transparentBankAccountUrl:
-          "https://www.csob.cz/portal/firmy/bezne-ucty/transparentni-ucty/ucet?account=293272551",
+        // transparentBankAccountUrl:
+        //   "https://www.csob.cz/portal/firmy/bezne-ucty/transparentni-ucty/ucet?account=293272551",
+        transparentBankAccountUrl: null,
         url: "https://www.destne.info/#/aktuality",
-        qrImage: Id43_293272551_0300,
+        // qrImage: Id43_293272551_0300,
+        qrImage: null,
         facebookPageUrl: "",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 44,
@@ -388,7 +392,7 @@ export const data: Array<District> = [
         url: "https://www.orlickezahori.eu",
         qrImage: Id44_296969346_0300,
         facebookPageUrl: "https://www.facebook.com/orlickezahori.eu",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 41,
@@ -401,7 +405,7 @@ export const data: Array<District> = [
         url: "https://info.rokytnicevoh.cz/prakticke-informace/turisticke-informace/bezecke-trate-v-orlickych-horach/financni-dary-na-udrzbu-bezeckych-trati-422cs.html",
         qrImage: Id41_276681775_0300,
         facebookPageUrl: "",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
     ],
   },
@@ -419,7 +423,7 @@ export const data: Array<District> = [
         url: "http://zivotnadylen.cz/bezecke%2Dtrate%2Dpod%2Ddyleni/ds-1003",
         qrImage: Id121_3533910_8030,
         facebookPageUrl: "https://www.facebook.com/zivotnadylen",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 122,
@@ -432,7 +436,7 @@ export const data: Array<District> = [
         url: "https://skinordicml.cz/bezecke-trate/",
         qrImage: Id122_107_1388920237_0100,
         facebookPageUrl: "https://www.facebook.com/skinordicml/",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
     ],
   },
@@ -450,7 +454,7 @@ export const data: Array<District> = [
         url: "https://bilastopa.cz/cs/financovani/",
         qrImage: Id51_207602447_0600,
         facebookPageUrl: "https://www.facebook.com/bilastopasumava",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 52,
@@ -463,7 +467,20 @@ export const data: Array<District> = [
         url: "https://bezkypasecna.cz/",
         qrImage: Id52_299936101_0300,
         facebookPageUrl: "https://www.facebook.com/bezky.pasecna",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
+      },
+      {
+        id: 53,
+        name: "Frymburk Lipno",
+        slug: "frymburklipno",
+        operator: "Lyžaři Frymburk, z.s. (Atletiko Frymburk)",
+        bankAccountNumber: "4295230257/0100",
+        variableSymbol: null,
+        transparentBankAccountUrl: null,
+        url: "https://www.lipnocentrum.cz/bila-stopa-frymburk",
+        qrImage: Id53_4295230257_0100,
+        facebookPageUrl: "https://www.facebook.com/bezkyfrymburk",
+        checkedAt: "11.1.2026",
       },
     ],
   },
@@ -482,7 +499,7 @@ export const data: Array<District> = [
         url: "https://www.hojna-voda.eu/index.php/bezky",
         qrImage: Id91_2102245016_2010,
         facebookPageUrl: null,
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
     ],
   },
@@ -500,7 +517,7 @@ export const data: Array<District> = [
         url: "https://www.jeseniky.cz/cz/turisticke-cile/k2198-lyzarska-bezecka-centra/",
         qrImage: Id61_123_7845000207_0100,
         facebookPageUrl: "https://www.facebook.com/navstivtejeseniky.cz/",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 62,
@@ -513,7 +530,7 @@ export const data: Array<District> = [
         url: "https://www.horskyarealpaprsek.cz/zimni-sezona/bezecke-trasy/",
         qrImage: Id62_296575726_0300,
         facebookPageUrl: "https://www.facebook.com/skiarealpaprsek",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
     ],
   },
@@ -533,7 +550,7 @@ export const data: Array<District> = [
         url: "http://www.ba-pustevny.cz/",
         qrImage: Id72_6003963379_0800,
         facebookPageUrl: "https://www.facebook.com/bapustevny",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 71,
@@ -546,7 +563,7 @@ export const data: Array<District> = [
         url: "https://www.velkekarlovice.cz/rekreace-sport/zimni-sporty/bezecke-trasy-1/",
         qrImage: Id71_20036_1765312369_0800,
         facebookPageUrl: "",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
     ],
   },
@@ -564,7 +581,7 @@ export const data: Array<District> = [
         url: "https://www.lyzarskejihlavsko.cz/",
         qrImage: Id85_2100411762_2010,
         facebookPageUrl: "https://www.facebook.com/lyzarskejihlavsko/",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 84,
@@ -577,7 +594,7 @@ export const data: Array<District> = [
         url: "https://lyzovani.nmnm.cz/verejna-sbirka-na-udrzbu-trati/",
         qrImage: Id84_107_3157480237_0100,
         facebookPageUrl: null,
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 83,
@@ -590,7 +607,7 @@ export const data: Array<District> = [
         url: null,
         qrImage: Id83_2802081518_2010,
         facebookPageUrl: "https://www.facebook.com/xcskisvratka/",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 82,
@@ -604,7 +621,7 @@ export const data: Array<District> = [
         url: "http://www.ski-velkedarko.cz/financovani",
         qrImage: Id82_287591038_0300,
         facebookPageUrl: "https://www.facebook.com/skivelkedarko",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       {
         id: 81,
@@ -618,7 +635,7 @@ export const data: Array<District> = [
         url: "https://www.sportispo.cz/page.aspx?IDTema=12",
         qrImage: Id81_317339651_0300,
         facebookPageUrl: "",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
     ],
   },
@@ -636,7 +653,7 @@ export const data: Array<District> = [
         url: "https://www.certovo-bremeno.cz/bezkarske-trasy",
         qrImage: Id111_245192928_0300,
         facebookPageUrl: "https://www.facebook.com/profile.php?id=100063484092919",
-        checkedAt: "2.12.2024",
+        checkedAt: "11.1.2026",
       },
       // {
       //   id: 112,
@@ -649,7 +666,7 @@ export const data: Array<District> = [
       //   url: "https://www.ospolanka.cz/",
       //   qrImage: Id112_227229248_0300,
       //   facebookPageUrl: "https://www.facebook.com/ospolanka.cz",
-      //   checkedAt: "3.12.2023",
+      //   checkedAt: "11.1.2026",
       // },
     ],
   },
