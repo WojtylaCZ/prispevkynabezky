@@ -43,6 +43,8 @@ import Id83_2802081518_2010 from "./qr-codes-new/Id83_2802081518_2010.png";
 import Id82_287591038_0300 from "./qr-codes-new/Id82_287591038_0300.png";
 import Id81_317339651_0300 from "./qr-codes-new/Id81_317339651_0300.png";
 
+import Id54_19_722281_0100 from "./qr-codes-new/Id54_19_722281_0100.png";
+
 import Id111_245192928_0300 from "./qr-codes-new/Id111_245192928_0300.png";
 // import Id112_227229248_0300 from "./qr-codes-new/Id112_227229248_0300.png";
 export const data: Array<District> = [
@@ -481,6 +483,19 @@ export const data: Array<District> = [
         qrImage: Id53_4295230257_0100,
         facebookPageUrl: "https://www.facebook.com/bezkyfrymburk",
         checkedAt: "11.1.2026",
+      },
+      {
+        id: 54,
+        name: "Areál Vodník, Vimperk",
+        slug: "vodnikvimperk",
+        operator: "Město Vimperk, Fischer Ski klub Šumava Vimperk, z. s.",
+        bankAccountNumber: "19-722281/0100",
+        variableSymbol: 3128000001,
+        transparentBankAccountUrl: null,
+        url: "http://isenzor.cz/vodnik",
+        qrImage: Id54_19_722281_0100,
+        facebookPageUrl: "https://www.facebook.com/skisumavavimperk",
+        checkedAt: "1.5.2025",
       },
     ],
   },
